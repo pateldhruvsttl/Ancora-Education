@@ -1,0 +1,11 @@
+@mixin hfontLarge{
+    font-size:40px;
+    line-height:20px;
+    color: #000;
+}
+
+@mixin grey-hline{
+    border: 1px solid #f3f3f3;
+    opacity: 1;
+    width: 100%;
+}

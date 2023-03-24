@@ -1,0 +1,61 @@
+@import '../../utils/colors/_color';
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
+
+* {
+    font-family: 'Roboto sans-serif';
+}
+
+.text-field {
+    flex-direction: column;
+    text-align: left;
+}
+
+.text-field label {
+    font-size: 0.8em;
+    margin-bottom: 4px;
+}
+
+.text-field span {
+    color: $red
+}
+
+label {
+    margin-bottom: 0rem;
+}
+
+::placeholder {
+    font-size: 0.8rem;
+    font-family: 'Roboto sans-serif';
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    .text-field {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    .text-field {
+        width: 50%;
+    }
+
+    // label {
+    //     margin-bottom: 0rem;
+    //     width: 100px;
+    //     white-space: nowrap;
+    //     overflow: hidden;
+    //     text-overflow: ellipsis;
+    //     font-family: 'roboto sans-serif';
+    // }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1200px) {
+    .text-field {
+        width: 100%;
+    }
+}

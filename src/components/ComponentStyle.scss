@@ -1,0 +1,17 @@
+@import '../utils/colors/_color';
+
+.contact-form{
+    background-color:$whiteShadeFour;
+    padding-bottom: 10px;
+}
+.progress-line{
+    margin-top: 20px;
+}
+.footer-space{
+    margin: 20px 60px;
+}
+@media only screen and (min-width:320px) and (max-width: 481px) {
+    .footer-space{
+        margin: 0px;
+    }
+}

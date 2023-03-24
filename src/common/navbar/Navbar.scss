@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
+@import '../../utils/colors/_color';
+
+
+.navbar-cal {
+    // padding-top: 3px;
+    // min-height: 8vh;
+    border-bottom-color:$whiteShadeTwo;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    background-color: $white;
+}
+
+.navbar-cal header {
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    min-width: 100%;
+    z-index: 10;
+}
+
+.logo-cal img {
+    object-fit: contain;
+    width: 100px;
+    height: 50px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.notification-cal {
+    background-color:$whiteShadeOne;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile img {
+    object-fit: fill;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.user-detail {
+    margin-right: 9px;
+    display: flex;
+}
+
+.user-profile .user-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+
+.user-detail .user-name {
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: 'roboto sans-serif';
+}
+
+.user-detail .sub-name {
+    margin-top: 3px;
+    font-size: 0.65em;
+    font-weight: 400;
+    font-family: 'roboto sans-serif';
+}
+
+.count-not {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $red;
+    position: absolute;
+    top: 18px;
+    right: 203px;
+    color: $white;
+    font-size: 0.4em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:320px) and (max-width: 481px) {
+    .navbar-cal header {
+        padding: 0px 10px 0px 15px;
+    }
+
+    .count-not,
+    .sub-name,
+    .user-name,
+    .notification-cal,
+    .nav-down {
+        display: none;
+    }
+
+    .user-profile {
+        margin-right: 0
+    }
+
+    .user-profile img {
+        margin-right: 0
+    }
+}
