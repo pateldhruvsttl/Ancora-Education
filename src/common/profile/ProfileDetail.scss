@@ -1,5 +1,13 @@
+@import '../../utils/colors/_color';
+@import '../../css/_mixin';
+
 .profileDetai {
+    @include grey-hline;
     padding: 20px 40px;
+    background-color:$white;
+    margin-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .equal-width {

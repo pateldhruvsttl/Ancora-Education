@@ -19,29 +19,29 @@
 }
 
 .darkblue {
-    background-color:$blueShade;
+    background-color: $blueShade;
 }
 
 .gray {
-    background-color:$grayShade;
+    background-color: $grayShade;
 }
 
 .orange {
-    background-color:$orange;
+    background-color: $orange;
 }
 
 .tab-comp {
     width: '200px';
     text-align: 'left';
-    background-color:$grayShade;
+    background-color: $grayShade;
 }
-
 .tab-cal {
     background-color:$whiteShadeThree;
     @include grey-hline;
-    padding-bottom: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .tlabel {
@@ -52,14 +52,17 @@
     font-family: 'roboto sans-serif';
     font-weight: 600;
 }
-.orange-col{
+
+.orange-col {
     color: $orange;
 }
-.darkblue-col{
-    color:$blueShade;
+
+.darkblue-col {
+    color: $blueShade;
 }
-.gray-col{
-    color:$grayShade;
+
+.gray-col {
+    color: $grayShade;
 }
 
 // resposive for mobile
