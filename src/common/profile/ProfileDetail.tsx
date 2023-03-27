@@ -8,7 +8,7 @@ import ProfileHeading from './ProfileHeading'
 function ProfileDetail() {
   return (
     <div className='profileDetai'>
-      <ProfileHeading />
+      <ProfileHeading {...detail}/>
       <form>
         <div className="form-row">
           <GetInputField data={fields} />
@@ -24,6 +24,10 @@ function ProfileDetail() {
 }
 
 export default ProfileDetail
+const detail = {
+  heading : 'Contact Information',
+  subDetail : 'Please provide your contact information below. When entering your phone number, enter the best number to reach you in the primary phone number field. If you have questions about specific fields, click on the "" for more information.'
+}
 const fields = [
   {
     type: 'text',
