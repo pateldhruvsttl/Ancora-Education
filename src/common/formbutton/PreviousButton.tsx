@@ -2,12 +2,14 @@ import React from 'react'
 import './buttons.scss'
 import IcnLeft from '../../assets/icons/IcnLeft'
 
-
-function PreviousButton() {
+interface title{
+    title : string
+}
+function PreviousButton({title}:title) {
     return (
         <div className='previous-button'>
             <IcnLeft />
-            <button>Previous Step</button>
+            <button>{title}</button>
         </div>
     )
 }

@@ -35,8 +35,9 @@
     text-align: 'left';
     background-color: $grayShade;
 }
+
 .tab-cal {
-    background-color:$whiteShadeThree;
+    background-color: $whiteShadeThree;
     @include grey-hline;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -65,10 +66,119 @@
     color: $grayShade;
 }
 
-// resposive for mobile
+// add collage style
 
-@media screen and (max-width: 480px) {
+.add-collage {
+    // display: flex;
+    // flex-direction: column;
+    background-color: $whiteShadeOne;
+    padding: 20px 20px 20px 30px;
+    margin: 30px 0px;
+}
+
+.icon-to-mobile {
+    position: absolute;
+    right: 1rem;
+    bottom: 3.3rem;
+}
+
+.mobile-field-cal {
+    position: relative;
+}
+
+.add-sub-collage {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.date-field-mobile {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+}
+
+.add-collage-btn {
+    background-color: $addBtn;
+    padding: 3px 0px;
+    border-radius: 5px;
+
+}
+
+.add-collage-btn button {
+    border: none;
+    background-color: $addBtn;
+    color: $addBtnTxt;
+    font-size: 0.9rem;
+}
+
+.add-collage-btn span {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.collage-field {
+    // padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+}
+
+.collage-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.edit-icn {
+    border-radius: 5px;
+    background-color: $white;
+    padding: 4px 7px;
+    margin-top: 8px;
+}
+
+.line-break {
+    margin: 20px 0px 30px 0px;
+}
+
+// resposive for mobile
+@media only screen and (min-width:320px) and (max-width: 730px) {
     .profile-cal {
         margin: 10px 0px;
+    }
+
+    .add-collage {
+        background-color: $white;
+        padding: 0px 0px 0px 4px;
+        margin: 0px;
+    }
+
+    .collage-field {
+        // padding: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .add-sub-collage {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .date-field-mobile {
+        width: 100%;
+    }
+
+    .mobile-field-cal {
+        width: 100%;
+        display: flex;
+        margin-left: 3px;
+    }
+    .date-field-mobile{
+        margin-left: 3px;
     }
 }

@@ -8,7 +8,7 @@ import ProfileHeading from './ProfileHeading'
 function ProfileDetail() {
   return (
     <div className='profileDetai'>
-      <ProfileHeading {...detail}/>
+      <ProfileHeading {...detail} />
       <form>
         <div className="form-row">
           <GetInputField data={fields} />
@@ -16,8 +16,8 @@ function ProfileDetail() {
       </form>
       <div className='profile-hline' />
       <div className='buttons-cal'>
-        <PreviousButton />
-        <NextButton />
+        <PreviousButton title={'Previous Step'} />
+        <NextButton title={'Personal Information'} />
       </div>
     </div>
   )
@@ -25,8 +25,8 @@ function ProfileDetail() {
 
 export default ProfileDetail
 const detail = {
-  heading : 'Contact Information',
-  subDetail : 'Please provide your contact information below. When entering your phone number, enter the best number to reach you in the primary phone number field. If you have questions about specific fields, click on the "" for more information.'
+  heading: 'Contact Information',
+  subDetail: 'Please provide your contact information below. When entering your phone number, enter the best number to reach you in the primary phone number field. If you have questions about specific fields, click on the "" for more information.'
 }
 const fields = [
   {
@@ -35,7 +35,7 @@ const fields = [
     title: 'First Name',
     required: true,
     isField: 'text',
-    colSpan:'col-md-4'
+    colSpan: 'col-md-4'
   },
   {
     type: 'text',
@@ -43,7 +43,7 @@ const fields = [
     title: 'Middle Name',
     required: false,
     isField: 'text',
-    colSpan:'col-md-4'
+    colSpan: 'col-md-4'
   },
   {
     type: 'text',
@@ -51,7 +51,7 @@ const fields = [
     title: 'Email',
     required: true,
     isField: 'text',
-    colSpan:'col-md-4'
+    colSpan: 'col-md-4'
   },
   {
     type: 'text',
@@ -59,7 +59,7 @@ const fields = [
     title: 'Middle Name',
     required: false,
     isField: 'dropDown',
-    colSpan:'col-md-4'
+    colSpan: 'col-md-4'
   },
   {
     type: 'text',
@@ -67,7 +67,7 @@ const fields = [
     title: 'City',
     required: true,
     isField: 'dropDown',
-    colSpan:'col-md-4'
+    colSpan: 'col-md-4'
   },
   {
     type: 'text',
@@ -75,7 +75,7 @@ const fields = [
     title: 'City',
     required: true,
     isField: 'dropDown',
-    colSpan:'col-md-4'
+    colSpan: 'col-md-4'
   },
   {
     type: 'text',
@@ -83,7 +83,7 @@ const fields = [
     title: 'Phone Type',
     required: true,
     isField: 'dropDown',
-    colSpan:'col-md-2'
+    colSpan: 'col-md-2'
   },
   {
     type: 'text',
@@ -91,7 +91,7 @@ const fields = [
     title: 'Cell',
     required: true,
     isField: 'dropDown',
-    colSpan:'col-md-2'
+    colSpan: 'col-md-2'
   },
 
 ]

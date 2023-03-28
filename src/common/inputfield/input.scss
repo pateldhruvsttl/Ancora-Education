@@ -33,6 +33,35 @@ label {
     font-size: 0.8rem;
 }
 
+// label {
+//     // overflow: hidden;
+//     // text-overflow: ellipsis;
+//     // display: -webkit-box;
+//     // -webkit-line-clamp: 1;
+//     // /* number of lines to show */
+//     // line-clamp: 1;
+//     // -webkit-box-orient: vertical; 
+//     background-color: azure;
+//     min-height: 2.3rem;
+
+//     display: flex;
+//     position: relative;
+//     align-items: flex-end;
+   
+// }
+
+@media screen and (max-width:330px) {
+
+    label {
+        margin-bottom: 0rem;
+        width: 130px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'roboto sans-serif';
+    }
+}
+
 @media only screen and (min-width:320px) and (max-width: 480px) {
     .text-field {
         width: 100%;
@@ -44,14 +73,6 @@ label {
         width: 50%;
     }
 
-    // label {
-    //     margin-bottom: 0rem;
-    //     width: 100px;
-    //     white-space: nowrap;
-    //     overflow: hidden;
-    //     text-overflow: ellipsis;
-    //     font-family: 'roboto sans-serif';
-    // }
 }
 
 @media only screen and (min-width:769px) and (max-width: 1200px) {
@@ -59,3 +80,23 @@ label {
         width: 100%;
     }
 }
+
+@media only screen and (min-width:320px) and (max-width: 730px) {
+    .change-width {
+        width: 100%;
+    }
+}
+
+// @media only screen and (min-width:632px) and (max-width: 730px) {
+//     label {
+//         margin-bottom: 0rem;
+//         // width: 130px;
+//         height: 50px;
+//         // background-color: red;
+//         white-space: nowrap;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         font-family: 'roboto sans-serif';
+//         font-size: 0.8rem;
+//     }
+// }

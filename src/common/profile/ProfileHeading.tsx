@@ -1,8 +1,8 @@
 import React from 'react'
 import './ProfileHeading.scss'
-interface detail{
-  heading:string,
-  subDetail:string
+interface detail {
+  heading: string,
+  subDetail: string
 }
 function ProfileHeading(props: detail) {
   return (

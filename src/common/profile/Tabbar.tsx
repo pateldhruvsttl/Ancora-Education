@@ -5,6 +5,7 @@ import IcnCheck from '../../assets/icons/IcnCheck'
 import './Profile.scss'
 import ProfileDetail from './ProfileDetail';
 import TabPanel from './TabPanel';
+import EducationBackground from '../../components/EducationBackground';
 
 
 function a11yProps(index: any) {
@@ -53,17 +54,18 @@ export default function IconTabs() {
             >
 
                 <Tab {...a11yProps(0)} icon={<span className='tabi darkblue'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel darkblue-col'>Contact Information</span>} />
-                <Tab {...a11yProps(1)} icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Military Background</span>} />
-                {/* <Tab icon={<span className='tabi orange'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel orange-col'>Education Background</span>} /> */}
-                {/* <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel'>Program Selection</span>} />
-            <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel'>Program Preferences</span>} /> */}
+                <Tab {...a11yProps(1)} icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Personal Information</span>} />
+                <Tab {...a11yProps(2)} icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Military Background</span>} />
+                <Tab icon={<span className='tabi orange'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel orange-col'>Education Background</span>} />
+                <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Selection</span>} />
+            <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Preferences</span>} />
 
             </Tabs>
             <TabPanel value={value} index={0}>
                 <ProfileDetail />
             </TabPanel>
             <TabPanel value={value} index={1}>
-                Item Two
+               <EducationBackground />
             </TabPanel>
         </>
     );
