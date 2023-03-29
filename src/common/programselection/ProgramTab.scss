@@ -1,0 +1,100 @@
+.cardTabBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cardTab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #D4ECFF;
+    justify-content: center;
+    width: 20%;
+    padding: 15px 0px;
+    color: #2B4574;
+}
+
+.cardTab p {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    padding-left: 8px;
+    font-size: 0.95rem;
+    vertical-align: middle;
+    line-height: 1.8rem;
+    letter-spacing: 0.4px;
+}
+
+.innerCardTab {
+    border-right: 1px solid #8AAEEE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.removeTabBorder {
+    border: none;
+}
+
+.cardTab .programTabs {
+    text-align: center;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+}
+
+.shadeOne {
+    color: white;
+    background-color: #2B4574;
+}
+
+@media screen and (min-width:481px) and (max-width:1121px){
+   
+    .innerCardTab{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: center;
+    }
+    .cardTab p{
+        text-align: left;
+        line-height: 1.3rem;
+        margin-left: 2px;
+    }
+    .cardTab{
+        padding: 0;
+    }
+    .cardTab .programTabs{
+        align-items: center;
+        justify-content: center;
+        bottom: 2px;
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width:703px) and (max-width:910px){
+    .innerCardTab{
+        display: flex;
+        align-items: center;
+        height: 90px;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:481px) and (max-width:703px){
+    .cardTab p{
+       display: none
+    }
+    .innerCardTab{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: center;
+    }
+}
+.myClass{
+    background-color: red;
+}

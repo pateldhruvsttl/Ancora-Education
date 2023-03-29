@@ -1,17 +1,45 @@
 @import '../utils/colors/_color';
 
-.contact-form{
-    background-color:$whiteShadeFour;
+.contact-form {
+    background-color: $whiteShadeFour;
     padding-bottom: 10px;
 }
-.progress-line{
+
+.progress-line {
     margin-top: 20px;
 }
-.footer-space{
+
+.footer-space {
     margin: 20px 60px;
 }
+
+// add program selection style
+.campus-onl {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85em;
+}
+.campus-onl span{
+    color:#2792D3;
+    font-weight: 400;
+}
+.add-space-both{
+    padding: 40px 60px;
+}
+
 @media only screen and (min-width:320px) and (max-width: 481px) {
-    .footer-space{
+    .footer-space {
         margin: 0px;
+    }
+    .add-space-both{
+        padding: 20px 20px;
+    }
+}
+@media only screen and (min-width:482px) and (max-width: 1200px) {
+    .footer-space {
+        margin: 0px;
+    }
+    .add-space-both{
+        padding: 20px 40px;
     }
 }

@@ -6,6 +6,7 @@ import './Profile.scss'
 import ProfileDetail from './ProfileDetail';
 import TabPanel from './TabPanel';
 import EducationBackground from '../../components/EducationBackground';
+import ProgramSelection from '../../components/ProgramSelection';
 
 
 function a11yProps(index: any) {
@@ -58,14 +59,17 @@ export default function IconTabs() {
                 <Tab {...a11yProps(2)} icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Military Background</span>} />
                 <Tab icon={<span className='tabi orange'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel orange-col'>Education Background</span>} />
                 <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Selection</span>} />
-            <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Preferences</span>} />
+                <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Preferences</span>} />
 
             </Tabs>
             <TabPanel value={value} index={0}>
                 <ProfileDetail />
             </TabPanel>
             <TabPanel value={value} index={1}>
-               <EducationBackground />
+                <EducationBackground />
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                <ProgramSelection />
             </TabPanel>
         </>
     );

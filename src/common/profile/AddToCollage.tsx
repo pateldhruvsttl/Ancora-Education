@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Dimention from '../../utils/Dimention';
 import DropDown from '../inputfield/DropDown'
 import TextField from '../inputfield/TextField'
 import '../profile/Profile.scss'
@@ -12,28 +13,12 @@ interface field {
 }
 
 function AddToCollage({ data, Icon }: field) {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    function getWindowDimensions() {
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-            width,
-            height
-        };
-    }
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    const { width, height } = Dimention()
 
     return (
         <div className='add-sub-collage f'>
             {
-                windowDimensions.width >= 730 ?
+                width >= 730 ?
                     <AddCollageToOther data={data} Icon={Icon} />
                     :
                     <div className='form-row'>

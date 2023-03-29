@@ -10,7 +10,7 @@ function ProfileHeading(props: detail) {
       <h1>{props.heading}</h1>
       <div className='profile-gline' />
       <p className='profile-content'>{props.subDetail}</p>
-      <div className='profile-hline' />
+      {props.heading !== "Program Selection" && <div className='profile-hline' />}
     </div>
   )
 }
