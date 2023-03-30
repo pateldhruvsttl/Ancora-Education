@@ -1,5 +1,5 @@
 @import '../../utils/colors/_color';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 
 .footer-container {
@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-radius: 15px;
-    
+
 }
 
 .footer-cal {
@@ -19,14 +19,14 @@
 }
 
 .footer-cal h4 {
-    margin:0;
+    margin: 0;
     padding: 0;
     font-size: 0.9rem;
     color: $white;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     letter-spacing: 0.8px;
-    font-family: 'roboto sans-serif';
+    font-family: 'Roboto', sans-serif;
     margin-left: -18px;
 }
 
@@ -47,8 +47,6 @@
     line-height: 1.3rem;
     margin-top: 10px;
     opacity: 1;
-    font-weight: 500;
-    font-family: 'roboto sans-serif';
 }
 
 .first-link {
@@ -58,11 +56,15 @@
 .first-link li {
     list-style-type: square;
     color: $white;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .second-link li {
     list-style-type: square;
     color: $white;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .question-icon {
@@ -76,7 +78,7 @@
     background-color: $blueHeader;
     border: none;
     color: $white;
-    padding: 9px 9px;
+    padding: 6px 9px 6px 7px;
     font-size: 0.8rem;
     font-weight: 600;
     display: flex;
@@ -93,8 +95,8 @@
 }
 
 .scan-cal img {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
 }
 
 .scan-img {
@@ -104,10 +106,13 @@
 .scan-content {
     padding: 0;
     margin: 0;
-    width: 150px;
+    width: 130px;
     text-align: left;
     margin-left: 10px;
     line-height: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
 }
 
 *:focus {
@@ -115,15 +120,19 @@
 }
 
 @media screen and (max-width:628px) {
-    .footer-container, .second-flabel{
-        flex-direction:column;
+
+    .footer-container,
+    .second-flabel {
+        flex-direction: column;
     }
-    .first-link{
-        margin:0
+
+    .first-link {
+        margin: 0
     }
-    .scan-cal{
-       display: flex;
-       justify-content: center;
-       padding-bottom: 10px;
+
+    .scan-cal {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 }

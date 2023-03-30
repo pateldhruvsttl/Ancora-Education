@@ -1,5 +1,6 @@
 @import '../../css/_mixin';
 @import '../../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 
 .profile-cal {
@@ -11,8 +12,8 @@
 
 .tabi {
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +29,9 @@
 
 .orange {
     background-color: $orange;
+}
+.lightgreen{
+    background-color: $greenLight;
 }
 
 .tab-comp {
@@ -50,20 +54,27 @@
     text-align: left;
     text-transform: capitalize;
     font-size: 0.8rem;
-    font-family: 'roboto sans-serif';
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
 .orange-col {
     color: $orange;
+    font-weight: 500;
 }
 
 .darkblue-col {
     color: $blueShade;
+    font-weight: 700;
 }
 
 .gray-col {
     color: $grayShade;
+    font-weight: 400;
+}
+
+.green-col{
+    color: $greenLight;
+    font-weight: 400;
 }
 
 // add collage style
@@ -110,6 +121,9 @@
     background-color: $addBtn;
     color: $addBtnTxt;
     font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;   
+    font-weight: 400;
+
 }
 
 .add-collage-btn span {
@@ -178,7 +192,8 @@
         display: flex;
         margin-left: 3px;
     }
-    .date-field-mobile{
+
+    .date-field-mobile {
         margin-left: 3px;
     }
 }

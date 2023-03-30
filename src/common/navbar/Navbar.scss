@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
 @import '../../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
 
 
 .navbar-cal {
     // padding-top: 3px;
     // min-height: 8vh;
-    border-bottom-color:$whiteShadeTwo;
+    border-bottom-color: $whiteShadeTwo;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     background-color: $white;
@@ -33,7 +33,7 @@
 }
 
 .notification-cal {
-    background-color:$whiteShadeOne;
+    background-color: $whiteShadeOne;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -66,15 +66,18 @@
 
 .user-detail .user-name {
     font-size: 0.8em;
-    font-weight: 600;
-    font-family: 'roboto sans-serif';
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: $textColor;
+    letter-spacing: 0.2px;
+    opacity: 1;
 }
 
 .user-detail .sub-name {
     margin-top: 3px;
     font-size: 0.65em;
     font-weight: 400;
-    font-family: 'roboto sans-serif';
+    font-family: 'Roboto', sans-serif;   
 }
 
 .count-not {
@@ -86,18 +89,32 @@
     top: 18px;
     right: 203px;
     color: $white;
+    opacity: 1;
     font-size: 0.4em;
-    font-weight: 800;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;   
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
     .navbar-cal header {
-        padding: 0px 10px 0px 15px;
+        // padding: 0px 10px 0px 15px;
+        padding: 15px 20px 15px 25px;
     }
-
+    .logo-cal img {
+        object-fit: contain;
+        width: 150px;
+        height: 60px;
+    }
+    .user-profile img {
+        object-fit:cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 9px;
+    }
     .count-not,
     .sub-name,
     .user-name,

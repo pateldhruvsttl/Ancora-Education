@@ -1,4 +1,5 @@
 @import '../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .contact-form {
     background-color: $whiteShadeFour;
@@ -16,11 +17,12 @@
 // add program selection style
 .campus-onl {
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.85em;
+    font-family: 'Roboto', sans-serif;
 }
 .campus-onl span{
-    color:#2792D3;
+    color:$onlBlue;
     font-weight: 400;
 }
 .add-space-both{
@@ -35,10 +37,21 @@
         padding: 20px 20px;
     }
 }
-@media only screen and (min-width:482px) and (max-width: 1200px) {
+@media only screen and (min-width:736px) and (max-width: 1200px) {
+    .add-space-both{
+        padding: 20px 40px;
+    }
+}
+@media only screen and (min-width:484px) and (max-width: 732px) {
     .footer-space {
         margin: 0px;
     }
+    .add-space-both{
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (min-width:482px) and (max-width: 735px) {
     .add-space-both{
         padding: 20px 40px;
     }

@@ -41,7 +41,7 @@ export default function CardPage() {
                                         image="https://fashinza.com/textile/wp-content/uploads/2023/01/Business-administration.jpg"
                                         alt="random"
                                     />
-                                    <CardContent sx={Style.cardContent}>
+                                    <CardContent sx={{...Style.cardContent,...Style.addCardBottomSpace}}>
                                         <Typography sx={Style.cardHeader}>{card.heading}</Typography>
                                         <Typography sx={Style.cardSubHeader}>{card.subHeading}</Typography>
                                         <Typography sx={Style.cardParagraph}>{card.detail}</Typography>

@@ -2,11 +2,13 @@ import * as React from 'react';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import IcnCheck from '../../assets/icons/IcnCheck'
+import IcnLock from '../../assets/icons/IcnLock'
 import './Profile.scss'
 import ProfileDetail from './ProfileDetail';
 import TabPanel from './TabPanel';
 import EducationBackground from '../../components/EducationBackground';
 import ProgramSelection from '../../components/ProgramSelection';
+import ProfileConfirmation from '../../components/ProfileConfirmation';
 
 
 function a11yProps(index: any) {
@@ -44,21 +46,22 @@ export default function IconTabs() {
                     paddingLeft: '20px',
                     [`& .${tabsClasses.scrollButtons}`]: {
                         '&.Mui-disabled': { opacity: 0.3 },
-                        height: '25px',
-                        width: '25px',
-                        backgroundColor: 'white',
+                        height: '25px', width: '25px', backgroundColor: 'white',
                         border: '1px solid',
-                        marginRight: '20px',
-                        marginLeft: '20px',
+                        marginRight: '20px', marginLeft: '20px',
                     },
                 }}
             >
+                {/* for blue color of icon use darkblue class and blue color label use darkblue-col*/}
+                {/* for grey color of icon use gray class and gray color label use gray-col */}
+                {/* for orange color of icon use orange class and orange color label use orange-col */}
+                {/* for lightgreen color of icon use lightgreen class and green color label use green-col */}
 
                 <Tab {...a11yProps(0)} icon={<span className='tabi darkblue'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel darkblue-col'>Contact Information</span>} />
                 <Tab {...a11yProps(1)} icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Personal Information</span>} />
                 <Tab {...a11yProps(2)} icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Military Background</span>} />
-                <Tab icon={<span className='tabi orange'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel orange-col'>Education Background</span>} />
-                <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Selection</span>} />
+                <Tab {...a11yProps(3)} icon={<span className='tabi orange'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel orange-col'>Education Background</span>} />
+                <Tab icon={<span className='tabi lightgreen'><IcnLock width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel green-col'>Program Selection</span>} />
                 <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Preferences</span>} />
 
             </Tabs>
@@ -70,6 +73,9 @@ export default function IconTabs() {
             </TabPanel>
             <TabPanel value={value} index={2}>
                 <ProgramSelection />
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+                <ProfileConfirmation />
             </TabPanel>
         </>
     );

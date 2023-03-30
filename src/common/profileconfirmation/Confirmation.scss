@@ -1,0 +1,11 @@
+@import '../../css/_mixin';
+@import '../../utils/colors/_color';
+
+.confirmation-heading{
+    color:$headingColorBlue;
+    text-align: left;
+    margin: 20px 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+}
