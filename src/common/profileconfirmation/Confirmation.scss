@@ -1,11 +1,64 @@
 @import '../../css/_mixin';
 @import '../../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-.confirmation-heading{
-    color:$headingColorBlue;
+
+.confirmation-heading {
+    color: $headingColorBlue;
     text-align: left;
-    margin: 20px 0px;
+    padding: 0;
+    margin:0;
+    margin-bottom:20px;
     font-size: 1rem;
     font-weight: 700;
     line-height: 20px;
+}
+
+.edit-common-btn {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top:13px
+}
+
+.edit-common-btn button {
+    background-color: $white;
+    border: 1px solid #a9b4c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1.5px 13px;
+}
+
+.edit-common-btn span {
+    vertical-align: sub;
+    display: inline-block;
+}
+
+.edit-txt {
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:$editBtnBorder;
+    font-size: 0.8rem;
+}
+.edit-iconn{
+    position: relative;
+    bottom: 1.5px;
+    margin-right: 6px;
+}
+
+@media screen and (min-width:320px) and (max-width:599px){
+    .edit-iconn{
+        margin:0;
+    }
+    .edit-common-btn button {
+        padding:0;
+        padding: 6px 8px;
+    }
+    .confirmation-heading{
+        font-size: 1.2rem;
+    }
 }

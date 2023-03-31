@@ -7,7 +7,7 @@ import ProfileHeading from './ProfileHeading'
 
 function ProfileDetail() {
   return (
-    <div className='profileDetai'>
+    <div className='profileDetai add-space-both'>
       <ProfileHeading {...detail} />
       <form>
         <div className="form-row">

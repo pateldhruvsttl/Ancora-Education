@@ -1,12 +1,19 @@
 import React from 'react'
 import CommonSubInformation from './CommonSubInformation'
 import ConfirmationHeadings from './ConfirmationHeadings'
+import EditButton from './EditButton'
 
-function CommonInformation() {
+interface data {
+    data: {}[]
+    heading: string
+}
+function CommonInformation({ data, heading }: data) {
     return (
         <>
-            <ConfirmationHeadings />
-            <CommonSubInformation />
+            <EditButton />
+            <ConfirmationHeadings heading={heading} />
+            <CommonSubInformation data={data} />
+            <div className='profile-hline' />
         </>
     )
 }

@@ -6,6 +6,8 @@ import CardPage from '../common/programselection/CardPage'
 import FilterTab from '../common/programselection/FilterTab'
 import ProgramTab from '../common/programselection/ProgramTab'
 import './ComponentStyle.scss'
+import '../common/profile/ProfileDetail.scss'
+
 
 function ProgramSelection() {
   return (

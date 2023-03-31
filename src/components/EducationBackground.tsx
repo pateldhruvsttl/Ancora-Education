@@ -1,16 +1,14 @@
 import React from 'react'
-import CommonHeading from '../common/commonheading/CommonHeading'
 import NextButton from '../common/formbutton/NextButton'
 import PreviousButton from '../common/formbutton/PreviousButton'
-import DropDown from '../common/inputfield/DropDown'
 import GetCollage from '../common/profile/GetCollage'
 import GetCommonField from '../common/profile/GetCommonField'
-import GetInputField from '../common/profile/GetInputField'
+import '../common/profile/ProfileDetail.scss'
 import ProfileHeading from '../common/profile/ProfileHeading'
 
 function EducationBackground() {
     return (
-        <div className='profileDetai'>
+        <div className='profileDetai add-space-both'>
             <ProfileHeading {...heading} />
             <form>
                 <GetCommonField headings={detailOne} field={fieldOne} />

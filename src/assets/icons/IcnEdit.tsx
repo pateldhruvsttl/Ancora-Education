@@ -1,5 +1,7 @@
 import * as React from "react"
-
+interface props{
+  color:string
+}
 const SvgComponent = (props:any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +12,7 @@ const SvgComponent = (props:any) => (
   >
     <g
       fill="none"
-      stroke="#2894d1"
+      stroke={props.color ? props.color : "#506588"}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.2}

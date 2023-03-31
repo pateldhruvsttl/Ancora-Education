@@ -1,10 +1,14 @@
 import React from 'react'
 import './Confirmation.scss'
 
-function ConfirmationHeadings() {
+interface heading {
+  heading: string
+}
+function ConfirmationHeadings( { heading }: heading) {
   return (
-    <div className='confirmation-heading'
-    >ConfirmationHeadings</div>
+    <div className='confirmation-heading'>
+      {heading}
+    </div>
   )
 }
 
