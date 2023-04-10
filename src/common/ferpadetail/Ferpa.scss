@@ -1,0 +1,76 @@
+@import '../../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.add-enrollment {
+    background-color: #fbfbfb;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0px 0px 15px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+}
+
+.enroll-spacing {
+    display: flex;
+    flex: 1
+}
+
+.enrollBtn-cal {
+    width: 150px;
+    border: 1px solid $editBtnBorder;
+    background-color: white;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.enrollBtn-cal button {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    color: $editBtnBorder;
+    margin-left: 8px;
+}
+
+.enroll-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enrolltab{
+    background-color: #fbfbfb;
+    // vertical-align: baseline;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    padding: 17px 0px 0px 15px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    columns: 2;
+}
+.enrol-input{
+    width: 100%;
+}
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    .add-enrollment{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    // .add-enrollment{
+    //     flex-direction: column;
+    //     width: 100%;
+    // }
+}

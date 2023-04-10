@@ -12,7 +12,7 @@ import '../common/profile/ProfileDetail.scss'
 function ProgramSelection() {
   return (
     <div className='profileDetai add-space-both'>
-      <ProfileHeading {...heading} />
+      <ProfileHeading {...heading} isBorder={false} />
       <div className='campus-onl'>Campus: <span>ONL - Miller-Motte Online Programs (CHAT)</span></div>
       <ProgramTab />
       <FilterTab />

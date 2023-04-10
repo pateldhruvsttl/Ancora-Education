@@ -18,7 +18,7 @@ function DropDown({ type, placeholder, title, required, colSpan, isType }: field
     return (
         <div className={width <= 730 && isType === "EduBack" ? `text-field change-width ${colSpan}` : `text-field ${colSpan}`}>
             <div className="form-group col-md-12">
-                <label>{title}{required && <span>*</span>}</label>
+               {title && <label>{title}{required && <span>*</span>}</label>}
                 <select id="inputState" className="form-control">
                     <option selected>Choose</option>
                     <option>One</option>

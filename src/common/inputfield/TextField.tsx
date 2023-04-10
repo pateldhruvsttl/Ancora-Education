@@ -8,11 +8,11 @@ interface field {
     required: boolean;
     colSpan: string;
 }
-function TextField({ type, placeholder, title, required ,colSpan}: field) {
+function TextField({ type, placeholder, title, required, colSpan }: field) {
     return (
         <div className={`text-field ${colSpan}`}>
             <div className={`form-group col-md-12`}>
-                <label>{title}{required && <span>*</span>}</label>
+                {title && <label>{title}{required && <span>*</span>}</label>}
                 <input type={type} className="form-control" id="inputEmail4" placeholder={placeholder} />
             </div>
         </div>

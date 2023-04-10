@@ -16,7 +16,7 @@ function AddToCollage({ data, Icon }: field) {
     const { width, height } = Dimention()
 
     return (
-        <div className='add-sub-collage f'>
+        <div className='add-sub-collage'>
             {
                 width >= 730 ?
                     <AddCollageToOther data={data} Icon={Icon} />
