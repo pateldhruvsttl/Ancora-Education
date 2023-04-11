@@ -47,10 +47,6 @@
 }
 .enrolltab{
     background-color: #fbfbfb;
-    // vertical-align: baseline;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     padding: 17px 0px 0px 15px;
     border-radius: 8px;
     border: 1px solid #dddddd;
@@ -67,10 +63,4 @@
         flex-direction: column;
         width: 100%;
     }
-}
-@media only screen and (min-width:481px) and (max-width: 768px) {
-    // .add-enrollment{
-    //     flex-direction: column;
-    //     width: 100%;
-    // }
 }
