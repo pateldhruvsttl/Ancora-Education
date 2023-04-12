@@ -9,7 +9,7 @@ import ProfileHeading from '../common/profile/ProfileHeading'
 function EducationBackground() {
     return (
         <div className='profileDetai add-space-both'>
-            <ProfileHeading {...heading} />
+            <ProfileHeading {...heading} isBorder={true}/>
             <form>
                 <GetCommonField headings={detailOne} field={fieldOne} />
                 <GetCommonField headings={detailTwo} field={fieldTwo} />

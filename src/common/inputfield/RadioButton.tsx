@@ -9,7 +9,6 @@ interface detail {
     }
 }
 function RadioButton({ detail }: detail) {
-    console.log(detail?.selectOne);
 
     return (
         <div className='radio-cal'>

@@ -1,0 +1,170 @@
+@import '../../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+.common-academic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E8F7FF;
+    border: 1px solid #AAD8F1;
+    opacity: 1;
+    padding: 9px 15px;
+    margin-top: 30px;
+ }
+
+.delAcadeSpace {
+    margin: 0;
+}
+
+.common-acaleft {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.common-acaleft :nth-child(1) {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: $editBtnBorder;
+    padding: 0;
+    margin: 0;
+    margin: '100px';
+    font-size: 0.9rem;
+}
+
+.common-acaleft :nth-child(2) {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: $textColor;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+.funding-netcost {
+    background-color: $fundingCostBack;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    border: 1px solid #8ACCF1;
+    padding: 0px 0px 0px 15px;
+    margin-top: 30px;
+}
+
+.funding-netcost :nth-child(1) {
+    text-align: left;
+    color: $blueShade;
+    font-family: 'Roboto', sans-serif;
+}
+
+.funding-netcost :nth-child(1) span:nth-child(1) {
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.funding-netcost :nth-child(1) span:nth-child(2) {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.fund-netValue {
+    background-color: #2792D3;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    color: $white;
+    font-size: 0.82rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.funding-footerTxt {
+    margin: 20px 0px 40px 0px
+}
+
+.funding-footerTxt p {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $textColor;
+    text-align: left;
+    line-height: 1.8rem;
+    margin: 0;
+    padding: 0
+}
+// fundingPlan screen buttons design
+
+.funding-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.printFun-btn {
+    padding: 0px 10px;
+    background-color:$blueShade;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.printFun-btn button {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    background-color:$blueShade;
+    color: $white;
+    border: none;
+    margin-left: 5px;
+}
+.printbtn-right {
+    display: flex;
+   justify-content: flex-end;
+}
+
+@media screen and (min-width:496px) and (max-width:825px) {
+    .funding-netcost {
+        height: 60px;
+    }
+
+    .fund-netValue {
+        margin-left: 40px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:495px) {
+    .funding-netcost {
+        height: 80px;
+    }
+    .fund-netValue {
+        margin-left: 40px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:385px) {
+    .funding-netcost {
+        height: 150px;
+    }
+    .fund-netValue {
+        margin-left: 40px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:481px) {
+    .delAcadeSpace {
+        margin: 0;
+        min-width: 588px;
+    }
+}
+@media screen and (min-width:482px) and (max-width:800px) {
+    .delAcadeSpace {
+        margin: 0;
+        min-width: 590px;
+    }
+}

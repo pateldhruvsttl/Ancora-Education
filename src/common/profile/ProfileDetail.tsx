@@ -8,7 +8,7 @@ import ProfileHeading from './ProfileHeading'
 function ProfileDetail() {
   return (
     <div className='profileDetai add-space-both'>
-      <ProfileHeading {...detail} />
+      <ProfileHeading {...detail} isBorder={true}/>
       <form>
         <div className="form-row">
           <GetInputField data={fields} />

@@ -14,7 +14,7 @@ import '../common/profile/ProfileDetail.scss'
 function ProfileConfirmation() {
     return (
         <div className='profileDetai add-space-both'>
-            <ProfileHeading {...heading} />
+            <ProfileHeading {...heading} isBorder={true}/>
             <CommonInformation data={contactInformation} heading={"Contact Information"} />
             <CommonInformation data={personalInformation} heading={"Personal Information"} />
             <CommonInformation data={militaryBackground} heading={"Military Background"} />

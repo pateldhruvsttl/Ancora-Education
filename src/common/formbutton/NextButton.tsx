@@ -8,7 +8,7 @@ function NextButton({title}:title) {
     return (
         <div className='next-button'>
             <button>{title}</button>
-            <IcnRight />
+            <IcnRight width={10} height={10}/>
         </div>
     )
 }
