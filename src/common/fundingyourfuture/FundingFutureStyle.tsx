@@ -14,8 +14,8 @@ const Style = {
     },
     addBottomBorder: {
         borderBottom: '1px solid #BAD4E9',
-        paddingTop:0,
-        paddingBottom:0,
+        paddingTop:'10px',
+        paddingBottom:'10px',
         fontSize : '13.5px'
     },
     evenCell: {
