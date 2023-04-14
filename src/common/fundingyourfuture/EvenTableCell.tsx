@@ -18,10 +18,10 @@ function EvenTableCell({ row, index }: props) {
             key={index}
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
         >
-            <TableCell style={{ ...Style.fundingType, ...Style.evenCell, }} align="left">
+            <TableCell style={{ ...Style.fundingType, ...Style.evenCell as React.CSSProperties, }}>
                 {row.fundingType}
             </TableCell>
-            <TableCell style={{ ...Style.evenCell }} align="left">{row.fundingDesc}</TableCell>
+            <TableCell style={{ ...Style.evenCell as React.CSSProperties }} align="left">{row.fundingDesc}</TableCell>
         </TableRow>
     )
 }

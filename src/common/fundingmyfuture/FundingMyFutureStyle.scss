@@ -1,0 +1,95 @@
+@import '../../utils/colors/_color';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+
+.myFuture-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.myfuture-boxtab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.myFuture-box h6 {
+    color: $textColor;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.myfuture-rightcal {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+}
+
+.left-myfuturecal {
+    font-size: 12px;
+    font-weight: 400;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.myfuture-select {
+    flex: 1;
+    border-radius: 8px;
+    margin-left: 20px;
+
+}
+
+.myfuture-select select {
+    margin-bottom: 10px;
+    border: none;
+    border: 1px solid #ccced1;
+    display: flex;
+    height: 30px;
+    flex: 1;
+    width: 100%;
+    border-radius: 8px;
+    color: $textColor;
+    font-size: 12px;
+    padding: 0px 5px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.myfuture-select p {
+    font-size: 11.5px;
+    font-weight: 400;
+    color: $textColor;
+    font-family: 'Roboto', sans-serif;
+}
+
+// for tab
+@media screen and (min-width:481px) and (max-width:800px) {
+    .myfuture-rightcal {
+        flex-direction: column;
+    }
+
+    .myfuture-select select {
+        flex: none;
+        width: 50%;
+    }
+
+    .myfuture-select {
+        margin-left: 0;
+    }
+
+    .myfuture-boxtab select {
+        margin-right: 10px;
+    }
+}
+// for mobile
+@media screen and (min-width:320px) and (max-width:481px) {
+    .myfuture-rightcal {
+        display: flex;
+        flex-direction: column;
+    }
+    .myfuture-select {
+        margin-left: 0;
+    }
+}

@@ -20,7 +20,7 @@ const Style = {
     },
     evenCell: {
         borderBottom: '1px solid #BAD4E9',
-        backgroundColor: '#f2f9ff',
+        // backgroundColor: '#f2f9ff',
         fontSize: '0.76rem',
         fontWeight: '400',
     },
