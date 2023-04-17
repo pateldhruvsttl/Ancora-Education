@@ -31,7 +31,7 @@ const detail = {
 const fields = [
   {
     type: 'text',
-    placeholder: 'Joe',
+    placeholder: 'First Name',
     title: 'First Name',
     required: true,
     isField: 'text',
@@ -63,7 +63,7 @@ const fields = [
   },
   {
     type: 'text',
-    placeholder: 'Middle Name',
+    placeholder: 'Beverly Hills',
     title: 'City',
     required: true,
     isField: 'dropDown',
@@ -71,9 +71,9 @@ const fields = [
   },
   {
     type: 'text',
-    placeholder: 'Middle Name',
+    placeholder: 'Abd',
     title: 'City',
-    required: true,
+    required: false,
     isField: 'dropDown',
     colSpan: 'col-md-4'
   },
@@ -81,7 +81,7 @@ const fields = [
     type: 'text',
     placeholder: 'Middle Name',
     title: 'Phone Type',
-    required: true,
+    required: false,
     isField: 'dropDown',
     colSpan: 'col-md-2'
   },
@@ -89,7 +89,7 @@ const fields = [
     type: 'text',
     placeholder: 'Middle Name',
     title: 'Cell',
-    required: true,
+    required: false,
     isField: 'dropDown',
     colSpan: 'col-md-2'
   },
