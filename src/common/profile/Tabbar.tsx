@@ -14,6 +14,7 @@ import EnrollmentEducation from '../../components/EnrollmentEducation';
 import MyFundingPlan from '../../components/MyFundingPlan';
 import FundingYourFuture from '../../components/FundingYourFuture';
 import FundingMyEducation from '../../components/FundingMyEducation';
+import TabForProgramSelection from '../../components/TabForProgramSelection';
 
 
 function a11yProps(index: any) {
@@ -71,8 +72,9 @@ export default function IconTabs() {
                 <Tab {...a11yProps(6)} icon={<span className='tabi darkblue'><IcnCheck width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel darkblue-col'>My Funding Plan</span>} />
                 <Tab {...a11yProps(7)} icon={<span className='tabi darkblue'><IcnCheck width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel darkblue-col'>Funding Your Future</span>} />
                 <Tab {...a11yProps(8)} icon={<span className='tabi darkblue'><IcnCheck width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel darkblue-col'>How Am I Funding My Education?</span>} />
-                <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Preferences</span>} />
-                <Tab icon={<span className='tabi lightgreen'><IcnLock width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel green-col'>Program Selection</span>} />
+                <Tab {...a11yProps(9)} icon={<span className='tabi darkblue'><IcnCheck width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel darkblue-col'>Tab Program Selection</span>} />
+                {/* <Tab icon={<span className='tabi gray'><IcnCheck /></span>} iconPosition="start" label={<span className='tlabel gray-col'>Program Preferences</span>} />
+                <Tab icon={<span className='tabi lightgreen'><IcnLock width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel green-col'>Program Selection</span>} /> */}
 
             </Tabs>
             <TabPanel value={value} index={0}>
@@ -101,6 +103,9 @@ export default function IconTabs() {
             </TabPanel>
             <TabPanel value={value} index={8}>
                 <FundingMyEducation />
+            </TabPanel>
+            <TabPanel value={value} index={9}>
+                <TabForProgramSelection />
             </TabPanel>
         </>
     );
