@@ -19,12 +19,14 @@ const fields = [
     {
         type: 'text',
         placeholder: 'Testy',
+        title:'Testy',
         required: false,
         isField: 'text',
         colSpan: 'col-md-3'
     },
     {
         type: 'text',
+        title:"Mc Tester",
         placeholder: 'Mc Tester',
         required: false,
         isField: 'text',
@@ -32,6 +34,7 @@ const fields = [
     },
     {
         type: 'text',
+        title:"33333333",
         placeholder: '33333333',
         required: false,
         isField: 'text',
@@ -39,6 +42,7 @@ const fields = [
     },
     {
         type: 'date',
+        title:"Counselor",
         placeholder: 'Counselor',
         required: false,
         isField: 'dropDown',

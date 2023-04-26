@@ -1,5 +1,5 @@
 import React from "react";
-import Tabs, { tabsClasses } from "@mui/material/Tabs";
+import Tabs from "@mui/material/Tabs";
 import { Tab } from "@mui/material";
 import IcnBusiness from "../assets/icons/IcnBusiness";
 import IcnEducation from "../assets/icons/IcnEducation";
@@ -16,7 +16,6 @@ import { Typography } from "@mui/material";
 import Style from "./ProgramSelectionStyle";
 import Dimention from "../utils/Dimention";
 import Button from "@mui/material/Button";
-// import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";

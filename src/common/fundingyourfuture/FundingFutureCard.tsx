@@ -21,7 +21,7 @@ export default function FundingFutureCard({ data }: props) {
                     {
                         data.map((item: any, index) => {
                             return (
-                                <Grid item key={index} xs={12} sm={6} md={6} lg={4}>
+                                <Grid item key={index} xs={12} sm={6} md={6} lg={4} sx={{maxHeight:'300px'}}>
                                     <Card sx={Style.futureCard}>
                                         <CardActionArea>
                                             <CardMedia
