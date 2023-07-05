@@ -77,6 +77,7 @@ export default function IconTabs() {
                 <Tab icon={<span className='tabi lightgreen'><IcnLock width={15} height={12} /></span>} iconPosition="start" label={<span className='tlabel green-col'>Program Selection</span>} /> */}
 
             </Tabs>
+           
             <TabPanel value={value} index={0}>
                 <ProfileDetail />
             </TabPanel>

@@ -16,12 +16,15 @@ function Navbar() {
                     <a className='notification-cal'><IcnBell /></a>
                     <div className='count-not'>1</div>
                     <img src={profile} />
+                    
                     <div className='user-detail'>
                         <label className='user-name'>Krupa Patel</label>
                         <label className='sub-name'>Profile</label>
                     </div>
+                    
                     <span className='nav-down'><IcnDown /></span>
                 </div>
+
             </header>
         </div>
     )

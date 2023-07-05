@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ContactInfromation from './components/ContactInfromation';
+// import ContactInfromation from './components/ContactInfromation';
+import ContactInfromation from './components/Dashboard';
 
 function App() {
   return (
