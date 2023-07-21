@@ -59,10 +59,11 @@
                 border-radius: 15px;
                 border: 2px solid #ccc;
                 overflow: hidden;
+
                 @media (max-width:476px) {
                     width: 65px;
                     height: 70px;
-                    
+
                 }
 
                 img {
@@ -82,11 +83,12 @@
                     display: flex;
                     justify-content: space-between;
                 }
+
                 @media (max-width:476px) {
                     padding: 0;
                     width: 100%;
-                    margin: 20px 0 0 0 ;
-                    
+                    margin: 20px 0 0 0;
+
                 }
 
 
@@ -94,9 +96,10 @@
                     font-size: 18px;
                     color: #506588;
                     font-weight: 600;
+
                     @media (max-width:476px) {
                         line-height: 20px;
-                        
+
                     }
 
                     strong {
@@ -189,7 +192,7 @@
                 span {
                     color: #888888;
                     font-size: 14px;
-                    
+
                 }
 
                 p {
@@ -615,6 +618,7 @@
                         padding: 2px 0;
                         display: flex;
                         align-items: center;
+
                         &:nth-child(2) {
                             color: #2B4574;
                             font-weight: 600;

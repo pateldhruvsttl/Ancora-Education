@@ -68,15 +68,16 @@
         background-color: #2B4574;
         color: #fff;
         padding: 12px 20px;
-        border: 2px solid transparent;
         border-radius: 8px;
         display: inline-block;
         transition: all 0.3s;
+        svg{
+            margin: 0 0 0 5px;
+        }
 
         &:hover {
-            background-color: transparent;
-            border: 2px solid #2B4574;
-            color: #2B4574;
+            background-color: #2894D1 ;
+            color: #fff;
         }
     }
 }

@@ -12,6 +12,7 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import Button from '@mui/material/Button';
 import EditBtn from '../../assets/icons/Edit';
 import EyeBtn from '../../assets/icons/eye';
+import LeftArrow from '../../assets/icons/LeftArrow'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -252,7 +253,7 @@ function userprofile() {
                                                     </div>
                                                 </div>
                                                 <div className="cradBtn">
-                                                    <a href="#" className="Btn">Make Payment <IcnDown /></a>
+                                                    <a href="#" className="Btn">Make Payment <LeftArrow /></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,7 +272,7 @@ function userprofile() {
                                                     <p>To access the online bookstore please click the link below.</p>
                                                 </div>
                                                 <div className="cradBtn">
-                                                    <a href="#" className="Btn">Access Bookstore <IcnDown /></a>
+                                                    <a href="#" className="Btn">Access Bookstore <LeftArrow /></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -322,7 +323,7 @@ function userprofile() {
                                                     </li>
                                                 </ul>
                                                 <div className="cradBtn">
-                                                    <a href="#" className="Btn">Submit a Support Ticket <IcnDown /></a>
+                                                    <a href="#" className="Btn">Submit a Support Ticket <LeftArrow /></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -342,7 +343,7 @@ function userprofile() {
                                                     <p>To access Paramount Student Loans please click the link below. For information on how to use Paramount Student Loans, <a href="#">click HERE.</a> </p>
                                                 </div>
                                                 <div className="cradBtn">
-                                                    <a href="#" className="Btn">Access Bookstore <IcnDown /></a>
+                                                    <a href="#" className="Btn">Access Bookstore <LeftArrow /></a>
                                                 </div>
                                             </div>
                                         </div>
