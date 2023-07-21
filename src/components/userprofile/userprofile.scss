@@ -228,8 +228,8 @@
         }
 
         .table1 {
-            overflow: auto;
-            max-height: 300px;
+            // overflow: auto;
+            // max-height: 300px;
             box-shadow: none;
 
             @media (max-width:1199px) {
@@ -256,8 +256,8 @@
         }
 
         .table2 {
-            overflow: auto;
-            max-height: 240px;
+            // overflow: auto;
+            // max-height: 240px;
 
             @media (max-width:1200px) {
                 max-height: 350px;

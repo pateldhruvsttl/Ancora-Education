@@ -29,7 +29,7 @@ import Phone from '../../assets/icons/Phone';
 import Clock from '../../assets/icons/Clock';
 import Map from "../../assets/icons/Map";
 import Mail from '../../assets/icons/Mail';
-// import { Scrollbars } from 'react-custom-scrollbars';
+import Scrollbars from "react-custom-scrollbars";
 
 
 function userprofile() {
@@ -147,30 +147,32 @@ function userprofile() {
                                     <div className="heading">
                                         <h3>Required Documents</h3>
                                     </div>
-                                    <TableContainer className="table table1">
-                                        <Table size="small" aria-label="a dense table">
-                                            <TableHead>
-                                                <TableRow className="tableHeading">
-                                                    <TableCell>Document</TableCell>
-                                                    <TableCell align="right">Status</TableCell>
-                                                </TableRow>
-                                            </TableHead>
-                                            <TableBody>
-                                                {table1.map((row) => (
-                                                    <TableRow
-                                                        key={row.document}
-                                                        className="tableContant"
-                                                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                                    >
-                                                        <TableCell component="th" scope="row">
-                                                            {row.document}
-                                                        </TableCell>
-                                                        <TableCell align="right">{row.status}</TableCell>
+                                    <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
+                                        <TableContainer className="table table1">
+                                            <Table size="small" aria-label="a dense table">
+                                                <TableHead>
+                                                    <TableRow className="tableHeading">
+                                                        <TableCell>Document</TableCell>
+                                                        <TableCell align="right">Status</TableCell>
                                                     </TableRow>
-                                                ))}
-                                            </TableBody>
-                                        </Table>
-                                    </TableContainer>
+                                                </TableHead>
+                                                <TableBody>
+                                                    {table1.map((row) => (
+                                                        <TableRow
+                                                            key={row.document}
+                                                            className="tableContant"
+                                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                                        >
+                                                            <TableCell component="th" scope="row">
+                                                                {row.document}
+                                                            </TableCell>
+                                                            <TableCell align="right">{row.status}</TableCell>
+                                                        </TableRow>
+                                                    ))}
+                                                </TableBody>
+                                            </Table>
+                                        </TableContainer>
+                                    </Scrollbars>
                                 </div>
                             </Grid>
                             <Grid lg={4} md={4} sm={12} xs={12}>
@@ -347,40 +349,42 @@ function userprofile() {
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            <Grid lg={8} md={8} sm={12} xs={12} order={{ sm: 2 , lg: 1}}>
+                            <Grid lg={8} md={8} sm={12} xs={12} order={{ sm: 2, lg: 1 }}>
                                 <div className="tableWrap tabele2Wrap">
                                     <div className="heading">
                                         <h3>My Survey</h3>
                                     </div>
-                                    <TableContainer className="table table2">
-                                        <Table size="small" aria-label="a dense table">
-                                            <TableHead>
-                                                <TableRow className="tableHeading">
-                                                    <TableCell>Survey</TableCell>
-                                                    <TableCell align="left">Survey Description</TableCell>
-                                                    <TableCell></TableCell>
-                                                </TableRow>
-                                            </TableHead>
-                                            <TableBody>
-                                                {tabel2.map((row) => (
-                                                    <TableRow
-                                                        key={row.survey}
-                                                        className="tableContant"
-                                                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                                    >
-                                                        <TableCell component="th" scope="row" vertical-align="top">
-                                                            {row.survey}
-                                                        </TableCell>
-                                                        <TableCell align="left" vertical-align="top">{row.description}</TableCell>
-                                                        <TableCell align="left"><a href="#"><EyeBtn /></a></TableCell>
+                                    <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 240 }}>
+                                        <TableContainer className="table table2">
+                                            <Table size="small" aria-label="a dense table">
+                                                <TableHead>
+                                                    <TableRow className="tableHeading">
+                                                        <TableCell>Survey</TableCell>
+                                                        <TableCell align="left">Survey Description</TableCell>
+                                                        <TableCell></TableCell>
                                                     </TableRow>
-                                                ))}
-                                            </TableBody>
-                                        </Table>
-                                    </TableContainer>
+                                                </TableHead>
+                                                <TableBody>
+                                                    {tabel2.map((row) => (
+                                                        <TableRow
+                                                            key={row.survey}
+                                                            className="tableContant"
+                                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                                        >
+                                                            <TableCell component="th" scope="row" vertical-align="top">
+                                                                {row.survey}
+                                                            </TableCell>
+                                                            <TableCell align="left" vertical-align="top">{row.description}</TableCell>
+                                                            <TableCell align="left"><a href="#"><EyeBtn /></a></TableCell>
+                                                        </TableRow>
+                                                    ))}
+                                                </TableBody>
+                                            </Table>
+                                        </TableContainer>
+                                    </Scrollbars>
                                 </div>
                             </Grid>
-                            <Grid lg={4} md={4} sm={12} xs={12} order={{ sm: 1 , lg: 2 }}>
+                            <Grid lg={4} md={4} sm={12} xs={12} order={{ sm: 1, lg: 2 }}>
                                 <Card className="cardWrap">
                                     <CardContent>
                                         <div className="cardInner">
