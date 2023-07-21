@@ -144,7 +144,12 @@ header {
             .ball-bage {
                 @media (max-width:600px) {
                     display: none;
+                }
 
+                .MuiBadge-badge {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
                 }
             }
 
