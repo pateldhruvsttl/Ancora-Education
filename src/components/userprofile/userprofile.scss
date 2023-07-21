@@ -20,7 +20,8 @@
         .MuiAlert-icon {
             display: none;
         }
-        .MuiAlert-message{
+
+        .MuiAlert-message {
             padding: 5px;
         }
     }
@@ -303,6 +304,18 @@
                 }
             }
 
+        }
+
+        .cutomScroll {
+            div {
+                &:last-child {
+                    background-color: #e6e6e6;
+
+                    div {
+                        background-color: #2b4574 !important;
+                    }
+                }
+            }
         }
     }
 

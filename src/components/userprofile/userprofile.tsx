@@ -355,7 +355,7 @@ function userprofile() {
                                         <h3>My Survey</h3>
                                     </div>
                                     <TableContainer className="table table2">
-                                        <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
+                                        <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
                                             <Table size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow className="tableHeading">
