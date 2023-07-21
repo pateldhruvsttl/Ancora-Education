@@ -17,9 +17,10 @@
         padding: 5px 10px;
         font-size: 12px;
         border: 1px solid #F8A5A5;
+
         @media (max-width:476px) {
             padding: 0 1px;
-            
+
         }
 
         .MuiAlert-icon {
@@ -28,9 +29,10 @@
 
         .MuiAlert-message {
             padding: 5px;
+
             @media (max-width:576px) {
                 font-size: 9px;
-                
+
             }
         }
     }
@@ -167,6 +169,7 @@
                 span {
                     color: #888888;
                     font-size: 14px;
+                    
                 }
 
                 p {
@@ -317,6 +320,14 @@
 
         .cutomScroll {
             div {
+                &:nth-child(2) {
+                    background-color: #e6e6e6;
+
+                    div {
+                        background-color: #2b4574 !important;
+                    }
+                }
+
                 &:last-child {
                     background-color: #e6e6e6;
 

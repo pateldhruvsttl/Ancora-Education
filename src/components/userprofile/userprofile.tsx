@@ -100,37 +100,37 @@ function userprofile() {
                                             <Grid lg={7} md={12} sm={12} xs={12}>
                                                 <div className="profileTextListing">
                                                     <Grid container spacing={3} >
-                                                        <Grid xs={7}>
+                                                        <Grid md={7} sm={7} xs={12}>
                                                             <div className="profileTextList">
                                                                 <span className="profileTextTitle">Campus :</span>
                                                                 <p>ONL - Miller Motte Online Programs</p>
                                                             </div>
                                                         </Grid>
-                                                        <Grid xs={5}>
+                                                        <Grid md={5}  sm={5} xs={12}>
                                                             <div className="profileTextList">
                                                                 <span className="profileTextTitle">GPA :</span>
                                                                 <p>0</p>
                                                             </div>
                                                         </Grid>
-                                                        <Grid xs={7}>
+                                                        <Grid md={7} sm={7} xs={12}>
                                                             <div className="profileTextList">
                                                                 <span className="profileTextTitle">Student Status :</span>
                                                                 <p>Enroll - Being Processed</p>
                                                             </div>
                                                         </Grid>
-                                                        <Grid xs={5}>
+                                                        <Grid md={5} sm={5} xs={12}>
                                                             <div className="profileTextList">
                                                                 <span className="profileTextTitle">Complete Credit Hours :</span>
                                                                 <p>0</p>
                                                             </div>
                                                         </Grid>
-                                                        <Grid xs={7}>
+                                                        <Grid md={7} sm={7} xs={12}>
                                                             <div className="profileTextList">
                                                                 <span className="profileTextTitle">Program :</span>
                                                                 <p>AAS Business Administration</p>
                                                             </div>
                                                         </Grid>
-                                                        <Grid xs={5}>
+                                                        <Grid md={5} sm={5} xs={12}>
                                                             <div className="profileTextList">
                                                                 <span className="profileTextTitle">Remaining Credit Hours :</span>
                                                                 <p>0</p>
@@ -148,7 +148,7 @@ function userprofile() {
                                         <h3>Required Documents</h3>
                                     </div>
                                     <TableContainer className="table table1">
-                                        <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
+                                        <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 300 , width: 920 }}>
                                             <Table size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow className="tableHeading">
