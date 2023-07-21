@@ -147,8 +147,8 @@ function userprofile() {
                                     <div className="heading">
                                         <h3>Required Documents</h3>
                                     </div>
-                                    <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
-                                        <TableContainer className="table table1">
+                                    <TableContainer className="table table1">
+                                        <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
                                             <Table size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow className="tableHeading">
@@ -171,8 +171,8 @@ function userprofile() {
                                                     ))}
                                                 </TableBody>
                                             </Table>
-                                        </TableContainer>
-                                    </Scrollbars>
+                                        </Scrollbars>
+                                    </TableContainer>
                                 </div>
                             </Grid>
                             <Grid lg={4} md={4} sm={12} xs={12}>
@@ -354,8 +354,8 @@ function userprofile() {
                                     <div className="heading">
                                         <h3>My Survey</h3>
                                     </div>
-                                    <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 240 }}>
-                                        <TableContainer className="table table2">
+                                    <TableContainer className="table table2">
+                                        <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
                                             <Table size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow className="tableHeading">
@@ -380,8 +380,8 @@ function userprofile() {
                                                     ))}
                                                 </TableBody>
                                             </Table>
-                                        </TableContainer>
-                                    </Scrollbars>
+                                        </Scrollbars>
+                                    </TableContainer>
                                 </div>
                             </Grid>
                             <Grid lg={4} md={4} sm={12} xs={12} order={{ sm: 1, lg: 2 }}>
