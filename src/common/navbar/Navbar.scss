@@ -1,133 +1,207 @@
 @import '../../utils/colors/_color';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
 
+.MuiPaper-root {
+    background-color: #fff !important;
+    position: static !important;
+}
 
-.navbar-cal {
-    // padding-top: 3px;
-    // min-height: 8vh;
+header {
     border-bottom-color: $whiteShadeTwo;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     background-color: $white;
-}
-
-.navbar-cal header {
-    padding: 10px 60px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     vertical-align: middle;
-    min-width: 100%;
+    width: 100%;
     z-index: 10;
-}
 
-.logo-cal img {
-    object-fit: contain;
-    width: 100px;
-    height: 50px;
-}
-
-.user-profile {
-    display: flex;
-    align-items: center;
-}
-
-.notification-cal {
-    background-color: $whiteShadeOne;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.user-profile img {
-    object-fit: fill;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 9px;
-}
-
-.user-detail {
-    margin-right: 9px;
-    display: flex;
-}
-
-.user-profile .user-detail {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
-}
-
-
-.user-detail .user-name {
-    font-size: 0.8em;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    color: $textColor;
-    letter-spacing: 0.2px;
-    opacity: 1;
-}
-
-.user-detail .sub-name {
-    margin-top: 3px;
-    font-size: 0.65em;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;   
-}
-
-.count-not {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $red;
-    position: absolute;
-    top: 20px;
-    right: 194px;
-    color: $white;
-    opacity: 1;
-    font-size: 0.4em;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;   
-}
-
-@media only screen and (min-width:320px) and (max-width: 481px) {
-    .navbar-cal header {
-        // padding: 0px 10px 0px 15px;
-        padding: 15px 20px 15px 25px;
-    }
-    .logo-cal img {
-        object-fit: contain;
-        width: 150px;
-        height: 60px;
-    }
-    .user-profile img {
-        object-fit:cover;
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        margin-right: 9px;
-    }
-    .count-not,
-    .sub-name,
-    .user-name,
-    .notification-cal,
-    .nav-down {
-        display: none;
+    .headerWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .user-profile {
-        margin-right: 0
+    .logo-cal {
+        img {
+            object-fit: contain;
+            width: 100px;
+            height: 50px;
+        }
     }
 
-    .user-profile img {
-        margin-right: 0
+    .logo-heading {
+        display: flex;
+        align-items: center;
+
+        .desktopLogo {
+
+            img {
+                padding: 0 15px 0 0;
+                margin: 0 15px 0 0;
+                border-right: 1px solid #ccc;
+                width: 100%;
+                max-width: 170px;
+
+                @media (max-width:1230px) {
+                    max-width: 150px;
+
+                }
+
+                @media (max-width:900px) {
+                    max-width: 130px;
+
+                }
+
+                @media (max-width:600px) {
+                    display: none;
+
+                }
+            }
+        }
+
+        .mobileLogo {
+            display: none;
+            padding: 0 15px 0 0;
+            margin: 0 15px 0 0;
+            border-right: 1px solid #ccc;
+
+
+            @media (max-width:600px) {
+                display: block;
+
+            }
+        }
+
+
+        .page-title {
+
+            h2 {
+                color: $greenLight;
+
+                @media (max-width:900px) {
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+
+    .navbar-option {
+        display: flex;
+        align-items: center;
+
+        button {
+            text-decoration: none;
+            padding: 0 15px;
+            color: $textColor;
+            text-transform: capitalize;
+
+            @media (max-width:1200px) {
+                margin: 0;
+                padding: 0;
+
+            }
+        }
+
+        .navbar-ul ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            li:last-child a {
+                padding: 0;
+            }
+
+            li a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 0 15px;
+                color: $textColor;
+            }
+        }
+
+        .notification {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-icons {
+            margin: 0 0 0 20px;
+            padding: 0 0 0 20px;
+            border-left: 1px solid #C4C4C4;
+
+            @media (max-width:600px) {
+                padding: 0;
+            }
+
+            .ball-bage {
+                @media (max-width:600px) {
+                    display: none;
+
+                }
+            }
+
+            .ball-bage span {
+                background-color: #FF0000;
+                width: 10px;
+            }
+
+            .ball-bage>span {
+                background-color: $whiteShadeOne;
+                width: 30px;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .profile-image {
+                width: 32px;
+                height: 32px
+            }
+
+            .profile-btn {
+                padding: 0 0 0 15px;
+            }
+
+            .profile-btn:hover {
+                background-color: transparent;
+            }
+
+            .profile-icon {
+                display: flex;
+                align-items: center;
+            }
+
+            .person-name {
+                margin: 0 10px;
+                text-align: left;
+                text-transform: capitalize;
+                line-height: 21px;
+
+                @media (max-width:900px) {
+                    display: none;
+
+                }
+            }
+
+            .person-name span {
+                display: block;
+            }
+
+            .down-icon {
+                transform: rotate(90deg);
+
+                @media (max-width:900px) {
+                    display: none;
+
+                }
+            }
+        }
     }
 }

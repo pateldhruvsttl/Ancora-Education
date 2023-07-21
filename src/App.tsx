@@ -1,13 +1,14 @@
-import React from 'react';
+
 import './App.css';
 // import ContactInfromation from './components/ContactInfromation';
-import ContactInfromation from './components/Dashboard';
+import DashBoard from './components/newdesboard/NDashBoard';
 
 function App() {
   return (
     <div className="App">
-      <ContactInfromation  />
+      <DashBoard />
     </div>
+    
   );
 }
 

@@ -1,0 +1,607 @@
+@import "../../../src/utils/colors/color";
+@import "../../../src/css/mixin";
+
+.profileBox {
+    padding: 50px 0;
+
+    .profileContent {
+        border-radius: 20px;
+        box-shadow: 0px 2px 16px #0000001F;
+        margin-bottom: 30px;
+
+        .profileInfo {
+            display: flex;
+            align-items: flex-start;
+
+            .cardImages {
+                background-color: #f1f1f1;
+                width: 85px;
+                height: 90px;
+                border-radius: 15px;
+                border: 2px solid #ccc;
+                overflow: hidden;
+
+                img {
+                    object-position: 0 10px;
+                }
+            }
+
+            .profileMemberName {
+                padding: 0 0 0 30px;
+                text-align: left;
+                width: calc(100% - 85px);
+
+                @media (max-width:1199px) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+
+                .greeting {
+                    font-size: 18px;
+                    color: #506588;
+                    font-weight: 600;
+
+                    strong {
+                        display: block;
+                        font-size: 26px;
+                        color: #54a973;
+                        line-height: 34px;
+                        margin-top: 5px;
+
+                        @media (max-width:600px) {
+                            font-size: 22px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    p {
+                        margin: 20px 0;
+                        font-size: 14px;
+                        color: #888888;
+
+                        @media (max-width:1199px) {
+                            margin: 10px 0;
+                        }
+
+                        span {
+                            color: #323232;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .otherText {
+                    button {
+                        text-transform: capitalize;
+                        background-color: #f2f9ff;
+                        border: 1px solid #506588;
+                        color: #506588;
+                        border-radius: 8px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        padding: 10px 20px;
+                        line-height: normal;
+                        @media (max-width:600px) {
+                            padding: 11px;
+                            line-height: 0;
+                            display: initial;
+                            min-width: auto;
+                            
+                        }
+
+                        span {
+                            @media (max-width:600px) {
+                                display: none;
+
+                            }
+                        }
+                    }
+
+
+
+
+                    svg {
+                        margin: 0 5px 0 0;
+                        @media (max-width:600px) {
+                            margin: 0;
+                            width: 18px;
+                            height: 18px;
+                            
+                        }
+                    }
+
+                    svg path {
+                        stroke: #506588;
+                    }
+                }
+            }
+        }
+
+        .profileTextListing {
+            >div {
+                padding: 0;
+            }
+
+            .profileTextList {
+                text-align: left;
+
+                span {
+                    color: #888888;
+                    font-size: 14px;
+                }
+
+                p {
+                    color: #323232;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .calender {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 2px 16px #0000001f;
+        padding: 30px;
+        position: relative;
+        height: 100%;
+
+        @media (max-width:1024px) {
+            padding: 20px;
+
+        }
+
+        @media (max-width:900px) {
+            min-height: 670px;
+
+        }
+
+        .heading {
+            h3 {
+                margin: 0 0 40px 0;
+            }
+        }
+
+        >div {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    .tableContent {
+        text-align: left;
+        padding: 30px;
+        border-top: 1px solid #B5D5EF;
+        background-color: #F2F9FF;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 2px 16px #0000001F;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2B4574;
+            font-weight: 500;
+            padding: 10px 0 0 0;
+        }
+
+        .inputFuild {
+            padding: 0 0 25px 0;
+            display: flex;
+            align-items: center;
+
+            span {
+                color: #2B4574;
+                font-weight: 500;
+            }
+
+            input {
+                border-bottom: 1px solid #B5D5EF;
+                box-shadow: none;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                background-color: transparent;
+                width: 100%;
+                margin: 0 0 0 20px;
+                outline: none;
+            }
+        }
+    }
+
+    .tableWrap {
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px 2px 16px #0000001f;
+        padding: 30px;
+
+        &.tabele2Wrap {
+            height: 100%;
+        }
+
+        .table1 {
+            overflow: auto;
+            max-height: 300px;
+            box-shadow: none;
+
+            @media (max-width:1199px) {
+                max-height: 180px;
+
+            }
+
+            .tableHeading {
+                @include tableHeading;
+            }
+
+            .tableContant {
+                td {
+                    color: #A8A8A8;
+                }
+
+                th {
+                    padding: 8px;
+                    font-size: 16px;
+                    color: #2B4574;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .table2 {
+            overflow: auto;
+            max-height: 240px;
+
+            @media (max-width:1200px) {
+                max-height: 350px;
+
+            }
+
+            .tableHeading {
+                @include tableHeading
+            }
+
+            .tableContant {
+
+                th,
+                td {
+                    padding: 13px;
+                }
+            }
+
+        }
+    }
+
+
+
+    .heading {
+        h3 {
+            @include heading;
+        }
+    }
+
+
+    .cardWrap {
+        @include cardDesign;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        >div {
+            height: 100%;
+        }
+
+        .cradBtn {
+            @include accessBtn
+        }
+
+        .cardInner {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ProfileCardContent {
+            text-align: left;
+
+            p {
+                line-height: 26px;
+
+                a {
+                    text-decoration: none;
+                    color: #2792D3;
+                }
+            }
+
+            strong {
+                color: #555555;
+                margin: 10px 0;
+                display: block;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0 0 0 20px;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    line-height: 24px;
+                    color: #555555;
+                    padding: 0 0 0 10px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -15px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 9px;
+                        height: 9px;
+                        background-color: #A8A8A8;
+                    }
+                }
+            }
+        }
+
+        .myResourcesCard {
+            .resourceUl {
+                text-align: left;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li {
+                    border-bottom: 1px solid #E6E6E6;
+                    padding: 10px 0;
+                    color: #555555;
+                    font-weight: 500;
+                }
+            }
+
+            .googleApp {
+                text-align: left;
+                // position: absolute;
+                bottom: 0;
+                width: auto;
+                left: 0;
+                padding: 25px 30px;
+                border-top: 2px solid #D9D7D7;
+                background-color: #FBFBFB;
+                margin: 0 -30px -34px -30px;
+
+                strong {
+                    color: #2B4574;
+                    padding: 0 0 20px 0;
+                    display: block;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+
+                    li {
+                        a {
+                            padding: 0 20px 0 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bookStoreCard,
+        .paymentCard,
+        .myResourcesCard,
+        .supportCard,
+        .studentCard,
+        .campusCard {
+            @include innerCard
+        }
+
+
+        .paymentCard {
+            .patmentListing {
+                display: flex;
+                flex-wrap: wrap;
+
+                .patmentList {
+                    width: 50%;
+                    text-align: left;
+                    line-height: 24px;
+                    padding: 0 0 10px 0;
+
+                    span {
+                        display: block;
+                        color: #888888;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .supportCard {
+            text-align: left;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    position: relative;
+                    padding: 5px 0 5px 30px;
+                    line-height: 24px;
+
+                    svg {
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #2B4574;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        display: inline-block;
+                        color: #555555;
+
+                        span {
+                            &:last-child {
+
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .studentCard {
+            text-align: left;
+
+            p {
+                margin: 10px 0;
+                line-height: 23px;
+                color: #555555;
+
+                a {
+                    color: #2792D3;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .campusCard {
+            text-align: left;
+
+            .campusContent {
+                color: #2B4574;
+                font-size: 20px;
+
+                ul {
+                    list-style: none;
+                    margin: 15px 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 80%;
+
+                    li {
+                        padding: 10px 0 10px 30px;
+                        position: relative;
+                        font-size: 16px;
+
+                        svg {
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+
+            .cradBtn {
+                padding: 20px 0 0 0;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    font-size: 14px;
+                    color: #555555;
+
+                    li {
+                        padding: 2px 0;
+
+                        &:nth-child(2) {
+                            color: #2B4574;
+                            font-weight: 600;
+                            font-size: 16px;
+
+                        }
+
+                        &:last-child {
+                            a {
+                                text-decoration: none;
+                                color: #555555;
+                                padding: 0 0 0 10px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .MuiDayCalendar-header {
+        justify-content: space-around !important;
+
+        span {
+            font-size: 16px;
+            color: #222222;
+            font-weight: 600;
+        }
+    }
+
+    .MuiPickersCalendarHeader-label {
+        color: #2B4574;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+
+        @media (max-width:1024px) {
+            font-size: 14px;
+
+        }
+    }
+
+    .MuiPickersDay-root {
+        color: #222222;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .MuiDayCalendar-weekContainer {
+        justify-content: space-between !important;
+    }
+
+    .MuiPickersDay-today {
+        background-color: #EEF7FF !important;
+        border: 2px solid #297FB8 !important;
+    }
+
+    .MuiPickersDay-root[aria-colindex="1"] {
+        color: #ff0000;
+    }
+
+    .MuiPickersCalendarHeader-root {
+        margin: 0 0 15px 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #B5D5EF;
+    }
+
+    .MuiDayCalendar-slideTransition {
+        min-height: 290px;
+    }
+
+}
