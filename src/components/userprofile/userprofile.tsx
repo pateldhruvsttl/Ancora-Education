@@ -69,7 +69,7 @@ function userprofile() {
         <>
             <div className='alertGrp'>
                 <Alert severity="error"><strong>Alert:</strong> You have not completed the enrollment process. Complete your enrollment now!</Alert>
-                <Alert severity="error"><strong>Alert:</strong> You have not completed the enrollment process. Complete your enrollment now!</Alert>
+                <Alert severity="error"><strong>Alert:</strong> Your program cost is due today. You will be withdrawn after the due date.</Alert>
             </div>
 
             <div className="profileWrap">
@@ -355,7 +355,7 @@ function userprofile() {
                                         <h3>My Survey</h3>
                                     </div>
                                     <TableContainer className="table table2">
-                                        <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
+                                        <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 300, width: 920 }}>
                                             <Table size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow className="tableHeading">

@@ -12,7 +12,8 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.png';
+import MobileLogo from '../../assets/images/mobile-logo.png';
 import './Navbar.scss'
 import profile from '../../assets/images/profile.jpg'
 import IcnDown from '../../assets/icons/IcnDown'
@@ -68,7 +69,7 @@ export default function DrawerAppBar(props: Props) {
                             <div className='logo-cal'>
                                 <div className='logo-heading'>
                                     <a href='#' className='desktopLogo'><img src={logo} alt="logo here."></img></a>
-                                    <a href='#' className='mobileLogo'><img src={logo} alt="logo here."></img></a>
+                                    <a href='#' className='mobileLogo'><img src={MobileLogo} alt="logo here."></img></a>
                                     <div className='page-title'>
                                         <h2>My DashBoard</h2>
                                     </div>
