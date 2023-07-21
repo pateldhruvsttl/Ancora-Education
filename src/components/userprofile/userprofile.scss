@@ -1,6 +1,31 @@
 @import "../../../src/utils/colors/color";
 @import "../../../src/css/mixin";
 
+
+
+.alertGrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    flex-wrap: wrap;
+
+    .MuiPaper-rounded {
+        margin: 5px 10px;
+        border-radius: 40px;
+        color: red;
+        padding: 5px;
+        font-size: 12px;
+
+        .MuiAlert-icon {
+            display: none;
+        }
+        .MuiAlert-message{
+            padding: 5px;
+        }
+    }
+}
+
 .profileBox {
     padding: 50px 0;
 

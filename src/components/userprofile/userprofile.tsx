@@ -30,7 +30,7 @@ import Clock from '../../assets/icons/Clock';
 import Map from "../../assets/icons/Map";
 import Mail from '../../assets/icons/Mail';
 import Scrollbars from "react-custom-scrollbars";
-
+import Alert from '@mui/material/Alert';
 
 function userprofile() {
 
@@ -67,10 +67,10 @@ function userprofile() {
 
     return (
         <>
-
-            {/* <Scrollbars style={{ width: 500, height: 300 }}>
-                <p>Some great content...</p>
-            </Scrollbars> */}
+            <div className='alertGrp'>
+                <Alert severity="error"><strong>Alert:</strong> You have not completed the enrollment process. Complete your enrollment now!</Alert>
+                <Alert severity="error"><strong>Alert:</strong> You have not completed the enrollment process. Complete your enrollment now!</Alert>
+            </div>
 
             <div className="profileWrap">
                 <Container maxWidth="xl">
@@ -148,7 +148,7 @@ function userprofile() {
                                         <h3>Required Documents</h3>
                                     </div>
                                     <TableContainer className="table table1">
-                                        <Scrollbars autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
+                                        <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 300 }}>
                                             <Table size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow className="tableHeading">
