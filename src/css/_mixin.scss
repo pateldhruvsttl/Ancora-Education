@@ -62,13 +62,22 @@
     border-top: 1px solid #A8A8A8;
     text-align: center;
 
+
     .Btn {
         text-decoration: none;
         background-color: #2B4574;
         color: #fff;
         padding: 12px 20px;
+        border: 2px solid transparent;
         border-radius: 8px;
         display: inline-block;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: transparent;
+            border: 2px solid #2B4574;
+            color: #2B4574;
+        }
     }
 }
 
