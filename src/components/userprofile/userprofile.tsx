@@ -74,7 +74,7 @@ function userprofile() {
 
             <div className="profileWrap">
                 <Container maxWidth="xl">
-                    <div className="profileBox">
+                    <div className="profileBox customGrid">
                         <Grid container spacing={4}>
                             <Grid lg={8} md={8}>
                                 <Card className="profileContent">

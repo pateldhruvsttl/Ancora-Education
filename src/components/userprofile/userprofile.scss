@@ -83,12 +83,13 @@
                         font-weight: 400;
                         padding: 10px 20px;
                         line-height: normal;
+
                         @media (max-width:600px) {
                             padding: 11px;
                             line-height: 0;
                             display: initial;
                             min-width: auto;
-                            
+
                         }
 
                         span {
@@ -104,11 +105,12 @@
 
                     svg {
                         margin: 0 5px 0 0;
+
                         @media (max-width:600px) {
                             margin: 0;
                             width: 18px;
                             height: 18px;
-                            
+
                         }
                     }
 
@@ -602,6 +604,39 @@
 
     .MuiDayCalendar-slideTransition {
         min-height: 290px;
+    }
+
+
+}
+
+@media (max-width:1024px) {
+
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 33.3%;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 100%;
     }
 
 }
