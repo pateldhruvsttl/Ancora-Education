@@ -24,7 +24,7 @@ import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
-
+import { Typography } from '@mui/material';
 
 interface Props {
 
@@ -65,18 +65,16 @@ export default function DrawerAppBar(props: Props) {
                 <Container maxWidth="xl">
                     <Toolbar>
                         <header>
-
-                            <div className='logo-cal'>
-                                <div className='logo-heading'>
-                                    <a href='#' className='desktopLogo'><img src={logo} alt="logo here."></img></a>
-                                    <a href='#' className='mobileLogo'><img src={MobileLogo} alt="logo here."></img></a>
-                                    <div className='page-title'>
-                                        <h2>My DashBoard</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='navbar-option'>
+                            <Box className='logo-cal'>
+                                <Box className='logo-heading'>
+                                    <Typography component='a' href='#' className='desktopLogo'><img src={logo} alt="logo here."></img></Typography>
+                                    <Typography component='a' href='#' className='mobileLogo'><img src={MobileLogo} alt="logo here."></img></Typography>
+                                    <Box className='page-title'>
+                                        <Typography component='h2'>My DashBoard</Typography>
+                                    </Box>
+                                </Box>
+                            </Box>
+                            <Box className='navbar-option'>
                                 <IconButton
                                     aria-label="open drawer"
                                     edge="start"
@@ -92,28 +90,28 @@ export default function DrawerAppBar(props: Props) {
                                         </Button>
                                     ))}
                                 </Box>
-                                <div className='navbar-icons'>
-                                    <div className='notification'>
-                                        <div className='ball-bage'>
+                                <Box className='navbar-icons'>
+                                    <Box className='notification'>
+                                        <Box className='ball-bage'>
                                             <Badge className='count' badgeContent={3} color="primary">
                                                 <IcnBell />
                                             </Badge>
-                                        </div>
-                                        <div className='profile'>
+                                        </Box>
+                                        <Box className='profile'>
                                             <PopupState variant="popover" popupId="demo-popup-menu">
                                                 {(popupState) => (
                                                     <React.Fragment>
                                                         <Button {...bindTrigger(popupState)} className='profile-btn'>
-                                                            <div className='profile-icon'>
+                                                            <Box className='profile-icon'>
                                                                 <Avatar><img src={profile} /></Avatar>
-                                                                <div className='person-name'>
-                                                                    <strong>Edward Campbell</strong>
-                                                                    <span>Profile</span>
-                                                                </div>
-                                                                <div className='down-icon'>
+                                                                <Box className='person-name'>
+                                                                    <Typography component='strong'>Edward Campbell</Typography>
+                                                                    <Typography component='span'>Profile</Typography>
+                                                                </Box>
+                                                                <Box className='down-icon'>
                                                                     <IcnDown />
-                                                                </div>
-                                                            </div>
+                                                                </Box>
+                                                            </Box>
                                                         </Button>
                                                         <Menu {...bindMenu(popupState)} className='drop-down'>
                                                             <MenuItem onClick={popupState.close}>Profile</MenuItem>
@@ -123,10 +121,10 @@ export default function DrawerAppBar(props: Props) {
                                                     </React.Fragment>
                                                 )}
                                             </PopupState>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                        </Box>
+                                    </Box>
+                                </Box>
+                            </Box>
 
                         </header>
                     </Toolbar>

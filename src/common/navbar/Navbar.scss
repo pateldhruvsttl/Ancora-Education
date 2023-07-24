@@ -81,8 +81,10 @@ header {
 
 
         .page-title {
-
             h2 {
+                font-size: 24px;
+                font-weight: 600;
+
                 color: $greenLight;
 
                 @media (max-width:1300px) {
@@ -211,13 +213,19 @@ header {
 
                 @media (max-width:900px) {
                     display: none;
-
                 }
-            }
+                strong{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
 
-            .person-name span {
-                display: block;
-            }
+                span {
+                    display: block;
+                    font-size: 12px;
+                }
+
+
+            } 
 
             .down-icon {
                 transform: rotate(90deg);
