@@ -10,6 +10,15 @@
     margin: 20px 0 0 0;
     flex-wrap: wrap;
 
+    strong {
+        font-size: 12px;
+        font-weight: 600;
+
+        @media (max-width:576px) {
+            font-size: 9px;
+        }
+    }
+
     .MuiPaper-rounded {
         margin: 5px 10px;
         border-radius: 40px;
@@ -97,6 +106,10 @@
                     color: #506588;
                     font-weight: 600;
 
+                    span {
+                        font-weight: 600;
+                    }
+
                     @media (max-width:476px) {
                         line-height: 20px;
 
@@ -108,6 +121,7 @@
                         color: #54a973;
                         line-height: 34px;
                         margin-top: 5px;
+                        font-weight: 700;
 
                         @media (max-width:600px) {
                             font-size: 22px;
@@ -155,7 +169,6 @@
                         span {
                             @media (max-width:600px) {
                                 display: none;
-
                             }
                         }
                     }
@@ -468,14 +481,23 @@
                     color: #2B4574;
                     padding: 0 0 20px 0;
                     display: block;
+                    font-weight: 600;
                 }
 
                 ul {
                     display: flex;
                     align-items: center;
                     list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 60%;
 
                     li {
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        width: auto;
+
                         a {
                             padding: 0 20px 0 0;
                             display: block;
@@ -510,6 +532,10 @@
                         display: block;
                         color: #888888;
                         font-size: 14px;
+                    }
+
+                    strong {
+                        font-weight: 600;
                     }
                 }
             }
@@ -577,6 +603,11 @@
                 color: #2B4574;
                 font-size: 20px;
 
+                strong {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
                 ul {
                     list-style: none;
                     margin: 15px 0;
@@ -602,7 +633,7 @@
 
 
             .cradBtn {
-                padding: 20px 0 0 0;
+                padding: 10px 0 0 0;
 
                 ul {
                     list-style: none;
