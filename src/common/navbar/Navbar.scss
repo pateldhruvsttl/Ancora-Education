@@ -6,6 +6,14 @@
     position: static !important;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
 header {
     background-color: $white;
     padding: 20px 0;
@@ -214,7 +222,8 @@ header {
                 @media (max-width:900px) {
                     display: none;
                 }
-                strong{
+
+                strong {
                     font-weight: 600;
                     font-size: 14px;
                 }
@@ -225,7 +234,7 @@ header {
                 }
 
 
-            } 
+            }
 
             .down-icon {
                 transform: rotate(90deg);

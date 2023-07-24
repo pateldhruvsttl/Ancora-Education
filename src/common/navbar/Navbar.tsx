@@ -59,7 +59,7 @@ export default function DrawerAppBar(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex' }} className='navbar'>
             <CssBaseline />
             <AppBar component="nav">
                 <Container maxWidth="xl">
