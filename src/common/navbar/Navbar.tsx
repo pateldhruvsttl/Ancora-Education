@@ -63,71 +63,68 @@ export default function DrawerAppBar(props: Props) {
             <CssBaseline />
             <AppBar component="nav">
                 <Container maxWidth="xl">
-                    <Toolbar>
-                        <header>
-                            <Box className='logo-cal'>
-                                <Box className='logo-heading'>
-                                    <Typography component='a' href='#' className='desktopLogo'><img src={logo} alt="logo here."></img></Typography>
-                                    <Typography component='a' href='#' className='mobileLogo'><img src={MobileLogo} alt="logo here."></img></Typography>
-                                    <Box className='page-title'>
-                                        <Typography component='h2'>My DashBoard</Typography>
-                                    </Box>
+                    <Typography component='header'>
+                        <Box className='logo-cal'>
+                            <Box className='logo-heading'>
+                                <Typography component='a' href='#' className='desktopLogo'><img src={logo} alt="logo here."></img></Typography>
+                                <Typography component='a' href='#' className='mobileLogo'><img src={MobileLogo} alt="logo here."></img></Typography>
+                                <Box className='page-title'>
+                                    <Typography component='h2'>My DashBoard</Typography>
                                 </Box>
                             </Box>
-                            <Box className='navbar-option'>
-                                <IconButton
-                                    aria-label="open drawer"
-                                    edge="start"
-                                    onClick={handleDrawerToggle}
-                                    sx={{ mr: 2, display: { lg: 'none' } }}
-                                >
-                                    <MenuIcon />
-                                </IconButton>
-                                <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
-                                    {navItems.map((item) => (
-                                        <Button key={item}>
-                                            {item}
-                                        </Button>
-                                    ))}
-                                </Box>
-                                <Box className='navbar-icons'>
-                                    <Box className='notification'>
-                                        <Box className='ball-bage'>
-                                            <Badge className='count' badgeContent={3} color="primary">
-                                                <IcnBell />
-                                            </Badge>
-                                        </Box>
-                                        <Box className='profile'>
-                                            <PopupState variant="popover" popupId="demo-popup-menu">
-                                                {(popupState) => (
-                                                    <React.Fragment>
-                                                        <Button {...bindTrigger(popupState)} className='profile-btn'>
-                                                            <Box className='profile-icon'>
-                                                                <Avatar><img src={profile} /></Avatar>
-                                                                <Box className='person-name'>
-                                                                    <Typography component='strong'>Edward Campbell</Typography>
-                                                                    <Typography component='span'>Profile</Typography>
-                                                                </Box>
-                                                                <Box className='down-icon'>
-                                                                    <IcnDown />
-                                                                </Box>
+                        </Box>
+                        <Box className='navbar-option'>
+                            <IconButton
+                                aria-label="open drawer"
+                                edge="start"
+                                onClick={handleDrawerToggle}
+                                sx={{ mr: 2, display: { lg: 'none' } }}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+                                {navItems.map((item) => (
+                                    <Button key={item}>
+                                        {item}
+                                    </Button>
+                                ))}
+                            </Box>
+                            <Box className='navbar-icons'>
+                                <Box className='notification'>
+                                    <Box className='ball-bage'>
+                                        <Badge className='count' badgeContent={3} color="primary">
+                                            <IcnBell />
+                                        </Badge>
+                                    </Box>
+                                    <Box className='profile'>
+                                        <PopupState variant="popover" popupId="demo-popup-menu">
+                                            {(popupState) => (
+                                                <React.Fragment>
+                                                    <Button {...bindTrigger(popupState)} className='profile-btn'>
+                                                        <Box className='profile-icon'>
+                                                            <Avatar><img src={profile} /></Avatar>
+                                                            <Box className='person-name'>
+                                                                <Typography component='strong'>Edward Campbell</Typography>
+                                                                <Typography component='span'>Profile</Typography>
                                                             </Box>
-                                                        </Button>
-                                                        <Menu {...bindMenu(popupState)} className='drop-down'>
-                                                            <MenuItem onClick={popupState.close}>Profile</MenuItem>
-                                                            <MenuItem onClick={popupState.close}>My account</MenuItem>
-                                                            <MenuItem onClick={popupState.close}>Logout</MenuItem>
-                                                        </Menu>
-                                                    </React.Fragment>
-                                                )}
-                                            </PopupState>
-                                        </Box>
+                                                            <Box className='down-icon'>
+                                                                <IcnDown />
+                                                            </Box>
+                                                        </Box>
+                                                    </Button>
+                                                    <Menu {...bindMenu(popupState)} className='drop-down'>
+                                                        <MenuItem onClick={popupState.close}>Profile</MenuItem>
+                                                        <MenuItem onClick={popupState.close}>My account</MenuItem>
+                                                        <MenuItem onClick={popupState.close}>Logout</MenuItem>
+                                                    </Menu>
+                                                </React.Fragment>
+                                            )}
+                                        </PopupState>
                                     </Box>
                                 </Box>
                             </Box>
-
-                        </header>
-                    </Toolbar>
+                        </Box>
+                    </Typography>
                 </Container>
             </AppBar>
 
