@@ -12,6 +12,10 @@
     left: 0;
     width: 100%;
     z-index: 9;
+    .mui-fixed{
+        box-shadow: none;
+        border-bottom: 1px solid #D4D4D4;
+    }
 }
 
 header {
