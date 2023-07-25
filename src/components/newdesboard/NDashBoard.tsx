@@ -17,7 +17,7 @@ function Dashboard() {
     return (
         <>
             <Navbar />
-            <UserProfile />
+            <Courses />
             <Footer />
         </>
     )

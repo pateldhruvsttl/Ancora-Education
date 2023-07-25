@@ -70,20 +70,20 @@ function Courses() {
                                         <Box className="heading">
                                             <h3>Student Details</h3>
                                             <Box className="otherText">
-                                                <Button variant="outlined"><Typography component='span'><LocalPrintshopOutlinedIcon /> Print</Typography></Button>
+                                                <Button variant="outlined"><LocalPrintshopOutlinedIcon /><Typography component='span'> Print</Typography></Button>
                                             </Box>
                                         </Box>
-                                        <Box className="studentCardListing">
+                                        <Box className="studentCardListing" >
                                             <Grid container spacing={3} >
-                                                <Grid lg={3}>
+                                                <Grid xl={3} lg={2} md={6}>
                                                     <Grid container spacing={3}>
-                                                        <Grid lg={12} p={0}>
+                                                        <Grid lg={12} md={12} xs={12} p={0}>
                                                             <Box className="studentCardList">
                                                                 <Typography component='span' className="profileTextTitle">Student# :</Typography>
                                                                 <Typography component='p'>13256901</Typography>
                                                             </Box>
                                                         </Grid>
-                                                        <Grid lg={12} p={0}>
+                                                        <Grid lg={12} md={12} xs={12} p={0}>
                                                             <Box className="studentCardList">
                                                                 <Typography component='span' className="profileTextTitle">Start Date :</Typography>
                                                                 <Typography component='p'>07/03/2023</Typography>
@@ -91,27 +91,27 @@ function Courses() {
                                                         </Grid>
                                                     </Grid>
                                                 </Grid>
-                                                <Grid lg={6} >
+                                                <Grid xl={6} lg={8} md={6} >
                                                     <Grid container spacing={3}>
-                                                        <Grid lg={6} p={0}>
+                                                        <Grid lg={6} md={7} xs={12} p={0}>
                                                             <Box className="studentCardList">
                                                                 <Typography component='span' className="profileTextTitle">Current Status :</Typography>
                                                                 <Typography component='p'>Enroll - Being Processed</Typography>
                                                             </Box>
                                                         </Grid>
-                                                        <Grid lg={6} p={0}>
+                                                        <Grid lg={6} md={5} xs={12} p={0}>
                                                             <Box className="studentCardList">
                                                                 <Typography component='span' className="profileTextTitle">Financial Aid Advisor :</Typography>
                                                                 <Typography component='p'>-</Typography>
                                                             </Box>
                                                         </Grid>
-                                                        <Grid lg={6} p={0}>
+                                                        <Grid lg={6} md={7} xs={12} p={0}>
                                                             <Box className="studentCardList">
                                                                 <Typography component='span' className="profileTextTitle">Campus :</Typography>
                                                                 <Typography component='p'>ONL - Miller Motte Online Programs</Typography>
                                                             </Box>
                                                         </Grid>
-                                                        <Grid lg={6} p={0}>
+                                                        <Grid lg={6} md={5} xs={12} p={0}>
                                                             <Box className="studentCardList">
                                                                 <Typography component='span' className="profileTextTitle">Advisor Email :</Typography>
                                                                 <Typography component='p'>-</Typography>
@@ -119,7 +119,7 @@ function Courses() {
                                                         </Grid>
                                                     </Grid>
                                                 </Grid>
-                                                <Grid lg={3}>
+                                                <Grid xl={3} lg={2} md={12}>
                                                     <Box className="studentCardList">
                                                         <Typography component='span' className="profileTextTitle">Balance :</Typography>
                                                         <Typography component='p'>0.00</Typography>
