@@ -1,0 +1,1341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css');
+
+$red: #ff0000;
+$green: #5AB675;
+$grayBtn : #ECECEC;
+$textColor : #323232;
+$blueShade : #2B4574;
+$white : white;
+$blueHeader: #2894D1;
+$whiteShadeOne: #F4F6F9;
+$whiteShadeTwo: #e3e9ed;
+$grayShade: #A8A8A8;
+$orange: #FFB300;
+$whiteShadeThree: #FBFBFB;
+$textColor: #323232;
+$whiteShadeFour: #EBF8FF;
+$addBtn: #dfebf5;
+$addBtnTxt: #3591c5;
+$headingColorBlue : #2B4574;
+$greenLight:#1BB75D;
+$onlBlue :#2792D3;
+$fname : #888888;
+$editBtnBorder : #506588;
+$greenCheckBack:#2DCC70;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+    background-color: $whiteShadeFour;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.navbar-cal {
+  // padding-top: 3px;
+  // min-height: 8vh;
+    border-bottom-color: $whiteShadeTwo;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    background-color: $white;
+}
+
+.navbar-cal header {
+    padding: 6px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    min-width: 100%;
+    z-index: 10;
+}
+
+.logo-cal img {
+    object-fit: contain;
+    width: 100px;
+    height: 50px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notification-cal {
+    background-color: $whiteShadeOne;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile img {
+    object-fit: fill;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.user-detail {
+    margin-right: 9px;
+    display: flex;
+}
+
+.user-profile .user-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+
+.user-detail .user-name {
+    font-size: 0.8em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: $textColor;
+    letter-spacing: 0.2px;
+    opacity: 1;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0;
+}
+
+.user-profile .nav-down {
+  margin: -7px 0 0 0;
+}
+
+.user-detail .sub-name {
+    margin-top: 3px;
+    font-size: 0.65em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.count-not {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $red;
+    position: absolute;
+    top: 20px;
+    right: 194px;
+    color: $white;
+    opacity: 1;
+    font-size: 0.4em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;   
+}
+
+@media only screen and (min-width:320px) and (max-width: 481px) {
+    .navbar-cal header {
+        // padding: 0px 10px 0px 15px;
+        padding: 15px 20px 15px 25px;
+    }
+    .logo-cal img {
+        object-fit: contain;
+        width: 150px;
+        height: 60px;
+    }
+    .user-profile img {
+        object-fit:cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 9px;
+    }
+    .count-not,
+    .sub-name,
+    .user-name,
+    .notification-cal,
+    .nav-down {
+        display: none;
+    }
+
+    .user-profile {
+        margin-right: 0
+    }
+
+    .user-profile img {
+        margin-right: 0
+    }
+}
+
+
+@mixin hfontLarge {
+  font-size: 40px;
+  line-height: 20px;
+  color: #000;
+}
+
+@mixin grey-hline {
+  border-top: 0.5px solid #0000001F;
+  opacity: 1;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@mixin timeLineFont{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/*** Footer : Start ***/
+
+
+.footer-container {
+  display: flex;
+  background-color: $blueShade;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+
+}
+
+.footer-cal {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px 50px;
+}
+
+.footer-cal h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: $white;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.8px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: -18px;
+}
+
+.footer-cal footer {
+  display: flex;
+}
+
+.ftab {
+  display: flex;
+  color: $white;
+  margin-top: 10px;
+}
+
+.second-flabel {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.72rem;
+  line-height: 1.3rem;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.first-link {
+  column-count: 2;
+  column-gap: 60px;
+}
+
+.first-link li {
+  list-style-type: square;
+  color: $white;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.first-link li a {
+  color: $white;
+}
+
+.question-icon {
+  margin-right: 5px;
+}
+
+.scan-cal a {
+  text-align: end;
+  box-shadow: 0px 2px 30px #00000029;
+  border-radius: 50px;
+  background-color: $blueHeader;
+  border: none;
+  color: $white;
+  padding: 6px 9px 6px 7px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.scan-cal {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.scan-cal a span {
+  margin-left: 10px;
+}
+
+.scan-cal img {
+  width: 55px;
+  height: 55px;
+  border-radius: 30px;
+}
+
+.scan-img {
+  text-align: left;
+}
+
+.scan-content {
+  padding: 0;
+  margin: 0;
+  width: 130px;
+  text-align: left;
+  margin-left: 10px;
+  line-height: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+@media screen and (max-width:628px) {
+
+  .footer-container,
+  .second-flabel {
+      flex-direction: column;
+  }
+
+  .first-link {
+      margin: 0
+  }
+
+  .scan-cal {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+  }
+}
+
+/*** Footer : End ***/
+@media only screen and (min-width:320px) and (max-width: 599px) {
+  .MuiTabs-root .MuiTabs-scrollButtons {
+    display: inline-flex;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+/**** Profile : Start ***/
+
+.profile-cal {
+  background-color: $white;
+  margin: 20px 60px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px 2px #0000001F;
+}
+
+.tabi {
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkblue {
+  background-color: $blueShade;
+}
+
+.gray {
+  background-color: $grayShade;
+}
+
+.orange {
+  background-color: $orange;
+}
+.lightgreen{
+  background-color: $greenLight;
+}
+
+.Mui-selected .gray {
+  background-color: $orange;
+}
+
+.Mui-selected .green, .Mui-selected .lightgreen {
+  background-color: $greenLight;
+}
+
+.tab-comp {
+  width: '200px';
+  text-align: 'left';
+  background-color: $grayShade;
+}
+
+.tab-cal {
+  background-color: $whiteShadeThree;
+  @include grey-hline;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tlabel {
+  width: 100px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.orange-col {
+  color: $orange;
+  font-weight: 500;
+}
+
+.darkblue-col {
+  color: $blueShade;
+  font-weight: 700;
+}
+
+.gray-col {
+  color: $grayShade;
+  font-weight: 400;
+}
+
+.green-col{
+  color: $greenLight;
+  font-weight: 400;
+}
+
+.Mui-selected .gray-col, .Mui-selected .green-col {
+  color: $orange;
+  font-weight: 500;
+}
+
+.Mui-selected .green-col, .Mui-selected .lightgreen-col {
+  color: $greenLight;
+  font-weight: 500;
+}
+
+// add collage style
+
+.add-collage {
+  // display: flex;
+  // flex-direction: column;
+  background-color: $whiteShadeOne;
+  padding: 20px 20px 20px 30px;
+  margin: 30px 0px;
+}
+
+.icon-to-mobile {
+  position: absolute;
+  right: 1rem;
+  bottom: 3.3rem;
+}
+
+.mobile-field-cal {
+  position: relative;
+}
+
+.add-sub-collage {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.date-field-mobile {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.add-collage-btn {
+  background-color: $addBtn;
+  padding: 3px 0px;
+  border-radius: 5px;
+
+}
+
+.add-collage-btn button {
+  border: none;
+  background-color: $addBtn;
+  color: $addBtnTxt;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: 400;
+
+}
+
+.add-collage-btn span {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.collage-field {
+  // padding: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+}
+
+.collage-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.edit-icn {
+  border-radius: 5px;
+  background-color: $white;
+  padding: 4px 7px;
+  margin-top: 8px;
+}
+
+.line-break {
+  margin: 20px 0px 30px 0px;
+}
+
+// resposive for mobile
+@media only screen and (min-width:320px) and (max-width: 730px) {
+  .profile-cal {
+      margin: 10px 0px;
+  }
+
+  .add-collage {
+      background-color: $white;
+      padding: 0px 0px 0px 4px;
+      margin: 0px;
+  }
+
+  .collage-field {
+      // padding: 20px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .add-sub-collage {
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .date-field-mobile {
+      width: 100%;
+  }
+
+  .mobile-field-cal {
+      width: 100%;
+      display: flex;
+      margin-left: 3px;
+  }
+
+  .date-field-mobile {
+      margin-left: 3px;
+  }
+}
+
+
+.profile-heading h1 {
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0px;
+  color:$blueHeader;
+  font-size: 1.1em;
+  line-height: 20px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.profile-gline {
+  border: 1px solid $green;
+  opacity: 1;
+  width: 62px;
+  height: 0px;
+}
+
+.profile-hline {
+ @include grey-hline;
+}
+
+
+.profile-content, .profileDetai h6 {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0px;
+  color: $textColor;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+}
+.common-heading{
+  text-align: left;
+  margin-top: 20px;
+}
+.common-heading h4, .profileDetai h4, , .profileDetai h5{
+  color:$blueShade;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.css-qbzht5 {
+  font-style: normal;
+  font-weight: 700;
+  margin: 8px 0 20px;
+}
+
+.common-heading p{
+  color:$textColor;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;;
+}
+.enrollContent{
+  font-weight: 400;
+}
+
+/**** Profile : End ***/
+
+/*** Contact : Start ****/
+
+.profileDetai {
+  @include grey-hline;
+  padding: 20px 40px;
+  background-color:$white;
+  margin-top: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.equal-width {
+  display: -webkit-flex;
+  display: flex;
+  column-count: 3;
+}
+
+.profileDetai form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+  padding-right: 8px;
+  padding-left: 0px;
+}
+.buttons-cal {
+  display: flex;
+  margin-top: 40px;
+  justify-content: flex-end;
+  // margin-bottom: 30px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 481px) {
+  .buttons-cal {
+      justify-content: center;
+  }
+
+  .profileDetai {
+      // margin: 20px 0px;
+      padding: 20px 15px;
+  }
+}
+/*** Contact : End ****/
+
+
+
+.progress-line {
+  margin-top: 20px;
+}
+.enroll-top{
+  margin-top: 50px;
+}
+.footer-space {
+  margin: 20px 60px;
+}
+
+// add program selection style
+.campus-onl {
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.85em;
+  font-family: 'Roboto', sans-serif;
+}
+.campus-onl span{
+  color:$onlBlue;
+  font-weight: 400;
+}
+.add-space-both{
+  padding: 40px 60px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 481px) {
+  .footer-space {
+      margin: 0px;
+  }
+  .add-space-both{
+      padding: 20px 20px;
+  }
+}
+@media only screen and (min-width:736px) and (max-width: 1200px) {
+  .add-space-both{
+      padding: 20px 40px;
+  }
+}
+@media only screen and (min-width:484px) and (max-width: 732px) {
+  .footer-space {
+      margin: 0px;
+  }
+  .add-space-both{
+      padding: 20px 40px;
+  }
+}
+
+@media only screen and (min-width:482px) and (max-width: 735px) {
+  .add-space-both{
+      padding: 20px 40px;
+  }
+}
+.MuiFormControl-root {
+  margin-bottom: 1.3rem !important;
+}
+.MuiInputLabel-root {
+  transform: translate(0px, -23px) scale(1) !important;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: #212529;
+  background-color: transparent;
+  padding: 0px 3px !important;
+left: -3px !important;
+}
+
+#virtualize-autocomplete-label {
+  transform: translate(0px, -7px) scale(1) !important;
+}
+
+#sfesdnf .css-hw63qq-MuiFormControl-root-MuiTextField-root {
+  margin-top: 14px;
+}
+
+.MuiSelect-select {
+  border: 1px solid #ced4da !important;
+  font-size: 0.8rem !important;
+  padding: .230rem .75rem !important;
+}
+
+input {
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1px solid #ced4da !important;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #ced4da !important;
+  display: none;
+}
+
+
+.previous-button {
+    background-color: #ECECEC !important;
+  text-align: end;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  box-shadow: none !important;
+  color: #323232;
+  max-height: 40px;
+}
+
+.previous-button button {
+  background-color: $grayBtn;
+  border-radius: 5px;
+  border: none;
+  color: $textColor;
+  margin-left: 5px;
+}
+
+.previous-button p, .next-button p {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.next-button {
+  background-color:$blueShade;
+  text-align: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  max-height: 40px;
+}
+
+.next-button button {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  background-color:$blueShade;
+  color: $white;
+  border: none;
+  margin-right: 5px;
+}
+@media only screen and (min-width:320px) and (max-width: 481px) {
+  .previous-button, .next-button{
+      padding: 8px 8px;
+      font-size: 0.8rem;
+  }
+  .next-button button{
+      margin-right: 4px;
+  }
+  .previous-button button{
+      margin-left: 4px;
+  }
+}
+
+
+
+.confirmation-heading {
+  color: $headingColorBlue;
+  text-align: left;
+  padding: 0;
+  margin:0;
+  margin-bottom:20px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.edit-common-btn {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top:13px
+}
+
+.edit-common-btn button {
+  background-color: $white;
+  border: 1px solid #a9b4c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1.5px 13px;
+}
+
+.edit-common-btn span {
+  vertical-align: sub;
+  display: inline-block;
+}
+
+.edit-txt {
+  font-size: 0.7rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color:$editBtnBorder;
+  font-size: 0.8rem;
+}
+.edit-iconn{
+  position: relative;
+  bottom: 1.5px;
+  margin-right: 6px;
+}
+
+@media screen and (min-width:320px) and (max-width:599px){
+  .edit-iconn{
+      margin:0;
+  }
+  .edit-common-btn button {
+      padding:0;
+      padding: 6px 8px;
+  }
+  .confirmation-heading{
+      font-size: 1.2rem;
+  }
+}
+
+
+
+.enroll-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.enroll-headingcal {
+  display: flex;
+  flex-direction: row;
+}
+
+.enroll-vline {
+  height: 80%;
+  border: 1px solid #CBCBCB;
+  margin: 0px 20px;
+}
+
+.enroll-left {
+  flex: 3;
+}
+
+.enroll-left p {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0px;
+  color: $textColor;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.enroll-right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.enrollmobile-right {
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.enroll-icontxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enrollmobile-icontxt {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enrollmobile-icontxt label {
+  margin-left: 10px;
+}
+
+.enroll-icontxt label {
+  color: $fname;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+
+.enrollStatusIcn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: $greenLight;
+
+}
+
+.enrollStatus {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: $greenLight;
+}
+
+.enroll-orange {
+  color: $orange
+}
+
+.enroll-gray {
+  color: $fname
+}
+
+.enrollIcn-orange {
+  background-color: $orange
+}
+
+.enrollIcn-gray {
+  background-color: $fname
+}
+
+.enroll-action {}
+
+.enroll-action span {
+  width: 30px;
+  display: inline-flex;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: $editBtnBorder
+}
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+  .enroll-headingcal {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .enroll-vline {
+      height: 40px;
+      border: 1px solid #CBCBCB;
+      margin: 0px 20px;
+  }
+}
+
+@media only screen and (min-width:481px) and (max-width: 730px) {
+  .enroll-left {
+      flex: 1.5;
+  }
+
+  .enroll-right {
+      flex: 1;
+  }
+}
+
+@media only screen and (min-width:731px) and (max-width: 920px) {
+  .enroll-left {
+      flex: 2;
+  }
+
+  .enroll-right {
+      flex: 1.5;
+  }
+}
+
+.add-enrollment {
+  background-color: #fbfbfb;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 0px 0px 15px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+}
+
+
+.enroll-spacing {
+  display: flex;
+  flex: 1
+}
+
+.enrollBtn-cal {
+  width: 150px;
+  border: 1px solid $editBtnBorder;
+  background-color: white;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.enrollBtn-cal button {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 500;
+  color: $editBtnBorder;
+  margin-left: 8px;
+}
+
+.enroll-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enrolltab{
+  background-color: #fbfbfb;
+  padding: 17px 0px 0px 15px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  columns: 2;
+}
+.enrol-input{
+  width: 100%;
+}
+@media only screen and (min-width:320px) and (max-width: 480px) {
+  .add-enrollment{
+      flex-direction: column;
+      width: 100%;
+  }
+}
+
+/***** Program Selection *********/
+
+.prselection form {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.prselection .cardTabBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.prselection .cardTab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #d4ecff;
+  justify-content: center;
+  width: 20%;
+  padding: 15px 0px;
+  color: #2b4574;
+}
+
+.prselection .cardTab p {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  padding-left: 8px;
+  font-size: 0.92rem;
+  vertical-align: middle;
+  line-height: 1.8rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.prselection .innerCardTab {
+  border-right: 1px solid #8aaeee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.prselection .removeTabBorder {
+  border: none;
+}
+
+.prselection .cardTab .programTabs {
+  text-align: center;
+  line-height: 1.5rem;
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+}
+
+.prselection .shadeOne {
+  color: white;
+  background-color: #2b4574;
+}
+
+.prselection .filterprbutns button {
+  border: 0;
+  background: transparent;
+  letter-spacing: 0.00938em;
+  color: #506588;
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.prselection .filterprbutns button.Mui-selected {
+  font-weight: 500;
+text-transform: capitalize;
+border-bottom: solid;
+border-radius: 0;
+}
+
+.prselection .MuiFormControl-root {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1121px) {
+  .prselection .innerCardTab {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+  }
+  .prselection .cardTab p {
+    text-align: left;
+    line-height: 1.3rem;
+    margin-left: 2px;
+  }
+  .prselection .cardTab {
+    padding: 0;
+  }
+  .prselection .cardTab .programTabs {
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 703px) and (max-width: 910px) {
+  .prselection .innerCardTab {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 703px) {
+  .prselection .cardTab p {
+    display: none;
+  }
+  .prselection .innerCardTab {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+  }
+}
+.prselection .selectActive {
+  background-color: #2b4574;
+}
+.prselection .selectActiveLabel {
+  text-align: left;
+  text-transform: capitalize;
+  color: white;
+  font-size: 0.85rem;
+  vertical-align: middle;
+  line-height: 1.8rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+}
+.prselection .selectInActiveLabel {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  vertical-align: middle;
+  line-height: 1.8rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  color: #2b4574;
+}
+
+
+.prselection .programSelection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $white;
+}
+.prselection .buttons-cal {
+  display: flex;
+  margin-top: 40px;
+  justify-content: flex-end;
+  // margin-bottom: 30px;
+}
+@media only screen and (min-width: 320px) and (max-width: 481px) {
+  
+  .prselection .buttons-cal {
+    justify-content: center;
+  }
+
+  .prselection .buttons-cal {
+    justify-content: center;
+  }
+}
+

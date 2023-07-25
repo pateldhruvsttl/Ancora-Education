@@ -6,246 +6,247 @@
     position: static !important;
 }
 
-.navbar {
+.navbarWrap {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9;
-    .mui-fixed{
+
+    .mui-fixed {
         box-shadow: none;
         border-bottom: 1px solid #D4D4D4;
     }
-}
 
-header {
-    background-color: $white;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
-    width: 100%;
-    z-index: 10;
-
-    .headerWrap {
+    header {
+        background-color: $white;
+        padding: 20px 0;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-    }
-
-    .logo-cal {
-        img {
-            object-fit: contain;
-            width: 100px;
-            height: 50px;
-        }
-    }
-
-    .logo-heading {
-        display: flex;
         align-items: center;
+        vertical-align: middle;
+        width: 100%;
+        z-index: 10;
 
-        .desktopLogo {
-
-            img {
-                padding: 0 15px 0 0;
-                margin: 0 15px 0 0;
-                border-right: 1px solid #ccc;
-                width: 100%;
-                max-width: 170px;
-
-                @media (max-width:1230px) {
-                    max-width: 150px;
-
-                }
-
-                @media (max-width:900px) {
-                    max-width: 130px;
-
-                }
-
-                @media (max-width:600px) {
-                    display: none;
-
-                }
-            }
-        }
-
-        .mobileLogo {
-            display: none;
-            padding: 0 5px 0 0;
-            margin: 0 5px 0 0;
-            border-right: 1px solid #ccc;
-            height: 50px;
-
-            img {
-                width: 40px;
-
-            }
-
-
-            @media (max-width:600px) {
-                display: block;
-                border: none;
-            }
-        }
-
-
-        .page-title {
-            h2 {
-                font-size: 24px;
-                font-weight: 600;
-
-                color: $greenLight;
-
-                @media (max-width:1300px) {
-                    font-size: 20px;
-
-                }
-
-                @media (max-width:360px) {
-                    font-size: 16px;
-
-                }
-            }
-        }
-    }
-
-    .navbar-option {
-        display: flex;
-        align-items: center;
-
-        button {
-            text-decoration: none;
-            padding: 0 15px;
-            color: $textColor;
-            text-transform: capitalize;
-            font-size: 16px;
-            transition: all 0.3s;
-
-            &:hover {
-                color: #1BB75D;
-                background-color: transparent;
-            }
-
-            @media (max-width:1299px) {
-                padding: 0 10px;
-
-            }
-
-            @media (max-width:1200px) {
-                margin: 0;
-                padding: 0;
-
-            }
-        }
-
-        .navbar-ul ul {
+        .headerWrap {
             display: flex;
             align-items: center;
-            list-style: none;
+            justify-content: space-between;
+        }
 
-            li:last-child a {
-                padding: 0;
+        .logo-cal {
+            img {
+                object-fit: contain;
+                width: 100px;
+                height: 50px;
+            }
+        }
+
+        .logo-heading {
+            display: flex;
+            align-items: center;
+
+            .desktopLogo {
+
+                img {
+                    padding: 0 15px 0 0;
+                    margin: 0 15px 0 0;
+                    border-right: 1px solid #ccc;
+                    width: 100%;
+                    max-width: 170px;
+
+                    @media (max-width:1230px) {
+                        max-width: 150px;
+
+                    }
+
+                    @media (max-width:900px) {
+                        max-width: 130px;
+
+                    }
+
+                    @media (max-width:600px) {
+                        display: none;
+
+                    }
+                }
             }
 
-            li a {
+            .mobileLogo {
+                display: none;
+                padding: 0 5px 0 0;
+                margin: 0 5px 0 0;
+                border-right: 1px solid #ccc;
+                height: 50px;
+
+                img {
+                    width: 40px;
+
+                }
+
+
+                @media (max-width:600px) {
+                    display: block;
+                    border: none;
+                }
+            }
+
+
+            .page-title {
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+
+                    color: $greenLight;
+
+                    @media (max-width:1300px) {
+                        font-size: 20px;
+
+                    }
+
+                    @media (max-width:360px) {
+                        font-size: 16px;
+
+                    }
+                }
+            }
+        }
+
+        .navbar-option {
+            display: flex;
+            align-items: center;
+
+            button {
                 text-decoration: none;
-                display: inline-block;
                 padding: 0 15px;
                 color: $textColor;
-            }
-        }
-
-        .notification {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar-icons {
-            margin: 0 0 0 20px;
-            padding: 0 0 0 20px;
-            border-left: 1px solid #C4C4C4;
-
-            @media (max-width:600px) {
-                padding: 0;
-            }
-
-            .ball-bage {
-                @media (max-width:600px) {
-                    display: none;
-                }
-
-                .MuiBadge-badge {
-                    position: absolute;
-                    top: 5px;
-                    right: 5px;
-                }
-            }
-
-            .ball-bage span {
-                background-color: #FF0000;
-                width: 10px;
-            }
-
-            .ball-bage>span {
-                background-color: $whiteShadeOne;
-                width: 40px;
-                border-radius: 50%;
-                aspect-ratio: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .profile-image {
-                width: 32px;
-                height: 32px
-            }
-
-            .profile-btn {
-                padding: 0 0 0 15px;
-            }
-
-            .profile-btn:hover {
-                background-color: transparent;
-            }
-
-            .profile-icon {
-                display: flex;
-                align-items: center;
-            }
-
-            .person-name {
-                margin: 0 10px;
-                text-align: left;
                 text-transform: capitalize;
-                line-height: 21px;
+                font-size: 16px;
+                transition: all 0.3s;
 
-                @media (max-width:900px) {
-                    display: none;
+                &:hover {
+                    color: #1BB75D;
+                    background-color: transparent;
                 }
 
-                strong {
-                    font-weight: 600;
-                    font-size: 14px;
+                @media (max-width:1299px) {
+                    padding: 0 10px;
+
                 }
 
-                span {
-                    display: block;
-                    font-size: 12px;
+                @media (max-width:1200px) {
+                    margin: 0;
+                    padding: 0;
+
                 }
-
-
             }
 
-            .down-icon {
-                transform: rotate(90deg);
+            .navbar-ul ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
 
-                @media (max-width:900px) {
-                    display: none;
+                li:last-child a {
+                    padding: 0;
+                }
 
+                li a {
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 0 15px;
+                    color: $textColor;
+                }
+            }
+
+            .notification {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar-icons {
+                margin: 0 0 0 20px;
+                padding: 0 0 0 20px;
+                border-left: 1px solid #C4C4C4;
+
+                @media (max-width:600px) {
+                    padding: 0;
+                }
+
+                .ball-bage {
+                    @media (max-width:600px) {
+                        display: none;
+                    }
+
+                    .MuiBadge-badge {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                    }
+                }
+
+                .ball-bage span {
+                    background-color: #FF0000;
+                    width: 10px;
+                }
+
+                .ball-bage>span {
+                    background-color: $whiteShadeOne;
+                    width: 40px;
+                    border-radius: 50%;
+                    aspect-ratio: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .profile-image {
+                    width: 32px;
+                    height: 32px
+                }
+
+                .profile-btn {
+                    padding: 0 0 0 15px;
+                }
+
+                .profile-btn:hover {
+                    background-color: transparent;
+                }
+
+                .profile-icon {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .person-name {
+                    margin: 0 10px;
+                    text-align: left;
+                    text-transform: capitalize;
+                    line-height: 21px;
+
+                    @media (max-width:900px) {
+                        display: none;
+                    }
+
+                    strong {
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+                    }
+
+
+                }
+
+                .down-icon {
+                    transform: rotate(90deg);
+
+                    @media (max-width:900px) {
+                        display: none;
+
+                    }
                 }
             }
         }

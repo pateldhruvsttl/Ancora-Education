@@ -282,15 +282,19 @@
             }
 
             input {
-                border-bottom: 1px solid #B5D5EF;
-                box-shadow: none;
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                background-color: transparent;
+                border-bottom: 1px solid #B5D5EF !important;
+                box-shadow: none !important;
+                border-top: none !important;
+                border-right: none !important;
+                border-left: none !important;
+                background-color: transparent !important;
                 width: 100%;
                 margin: 0 0 0 20px;
                 outline: none;
+                border-radius: 0 !important;
+                height: auto !important;
+                padding: 0 !important;
+                font-size: 16px !important;
             }
         }
     }
@@ -469,15 +473,13 @@
             }
 
             .googleApp {
-                text-align: left;
-                // position: absolute;
                 bottom: 0;
                 width: auto;
                 left: 0;
                 padding: 25px 30px;
-                border-top: 2px solid #D9D7D7;
+                border-top: 1px solid #D9D7D7;
                 background-color: #FBFBFB;
-                margin: 0 -30px -34px -30px;
+                margin: 0 -26px -34px -26px;
 
                 strong {
                     color: #2B4574;
@@ -492,7 +494,6 @@
                     list-style: none;
                     margin: 0;
                     padding: 0;
-                    width: 60%;
 
                     li {
                         align-items: center;
