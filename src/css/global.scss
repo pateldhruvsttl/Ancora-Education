@@ -2622,11 +2622,17 @@ input {
             tr {
                 border-bottom: 1px solid #A7A7A7;
 
+
                 th {
                     border-bottom: none;
                     padding: 13px 10px;
                     color: #323232;
                     font-size: 16px;
+
+                    @media (max-width:900px) {
+                        padding: 7px 10px;
+
+                    }
                 }
 
                 td {
@@ -2636,6 +2642,11 @@ input {
                     a {
                         color: #506588;
                         font-size: 16px;
+
+                        @media (max-width:900px) {
+                            font-size: 14px;
+
+                        }
                     }
                 }
             }
