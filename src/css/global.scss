@@ -1,6 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css');
+
+@import './mixin.scss';
+@import '../../src/utils/colors/color.scss';
 
 $red: #ff0000;
 $green: #5AB675;
@@ -19,11 +21,11 @@ $whiteShadeFour: #EBF8FF;
 $addBtn: #dfebf5;
 $addBtnTxt: #3591c5;
 $headingColorBlue : #2B4574;
-$greenLight:#1BB75D;
+$greenLight: #1BB75D;
 $onlBlue :#2792D3;
 $fname : #888888;
 $editBtnBorder : #506588;
-$greenCheckBack:#2DCC70;
+$greenCheckBack: #2DCC70;
 
 body {
   margin: 0;
@@ -43,11 +45,12 @@ code {
   text-align: center;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -78,14 +81,15 @@ code {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 .page {
-    background-color: $whiteShadeFour;
-    padding-bottom: 10px;
+  background-color: $whiteShadeFour;
+  padding-bottom: 10px;
 }
 
 
@@ -95,76 +99,76 @@ code {
 .navbar-cal {
   // padding-top: 3px;
   // min-height: 8vh;
-    border-bottom-color: $whiteShadeTwo;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    background-color: $white;
+  border-bottom-color: $whiteShadeTwo;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  background-color: $white;
 }
 
 .navbar-cal header {
-    padding: 6px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
-    min-width: 100%;
-    z-index: 10;
+  padding: 6px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  min-width: 100%;
+  z-index: 10;
 }
 
 .logo-cal img {
-    object-fit: contain;
-    width: 100px;
-    height: 50px;
+  object-fit: contain;
+  width: 100px;
+  height: 50px;
 }
 
 .user-profile {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .notification-cal {
-    background-color: $whiteShadeOne;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: $whiteShadeOne;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-profile img {
-    object-fit: fill;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 9px;
+  object-fit: fill;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 9px;
 }
 
 .user-detail {
-    margin-right: 9px;
-    display: flex;
+  margin-right: 9px;
+  display: flex;
 }
 
 .user-profile .user-detail {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 
 }
 
 
 .user-detail .user-name {
-    font-size: 0.8em;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    color: $textColor;
-    letter-spacing: 0.2px;
-    opacity: 1;
-    text-transform: capitalize;
-    cursor: pointer;
-    margin: 0;
+  font-size: 0.8em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: $textColor;
+  letter-spacing: 0.2px;
+  opacity: 1;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0;
 }
 
 .user-profile .nav-down {
@@ -172,62 +176,65 @@ code {
 }
 
 .user-detail .sub-name {
-    margin-top: 3px;
-    font-size: 0.65em;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;   
+  margin-top: 3px;
+  font-size: 0.65em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 .count-not {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $red;
-    position: absolute;
-    top: 20px;
-    right: 194px;
-    color: $white;
-    opacity: 1;
-    font-size: 0.4em;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;   
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $red;
+  position: absolute;
+  top: 20px;
+  right: 194px;
+  color: $white;
+  opacity: 1;
+  font-size: 0.4em;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
-    .navbar-cal header {
-        // padding: 0px 10px 0px 15px;
-        padding: 15px 20px 15px 25px;
-    }
-    .logo-cal img {
-        object-fit: contain;
-        width: 150px;
-        height: 60px;
-    }
-    .user-profile img {
-        object-fit:cover;
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        margin-right: 9px;
-    }
-    .count-not,
-    .sub-name,
-    .user-name,
-    .notification-cal,
-    .nav-down {
-        display: none;
-    }
+  .navbar-cal header {
+    // padding: 0px 10px 0px 15px;
+    padding: 15px 20px 15px 25px;
+  }
 
-    .user-profile {
-        margin-right: 0
-    }
+  .logo-cal img {
+    object-fit: contain;
+    width: 150px;
+    height: 60px;
+  }
 
-    .user-profile img {
-        margin-right: 0
-    }
+  .user-profile img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 9px;
+  }
+
+  .count-not,
+  .sub-name,
+  .user-name,
+  .notification-cal,
+  .nav-down {
+    display: none;
+  }
+
+  .user-profile {
+    margin-right: 0
+  }
+
+  .user-profile img {
+    margin-right: 0
+  }
 }
 
 
@@ -244,7 +251,7 @@ code {
   margin-top: 20px;
 }
 
-@mixin timeLineFont{
+@mixin timeLineFont {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
@@ -372,17 +379,17 @@ code {
 
   .footer-container,
   .second-flabel {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .first-link {
-      margin: 0
+    margin: 0
   }
 
   .scan-cal {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
   }
 }
 
@@ -424,7 +431,8 @@ code {
 .orange {
   background-color: $orange;
 }
-.lightgreen{
+
+.lightgreen {
   background-color: $greenLight;
 }
 
@@ -432,7 +440,8 @@ code {
   background-color: $orange;
 }
 
-.Mui-selected .green, .Mui-selected .lightgreen {
+.Mui-selected .green,
+.Mui-selected .lightgreen {
   background-color: $greenLight;
 }
 
@@ -474,17 +483,19 @@ code {
   font-weight: 400;
 }
 
-.green-col{
+.green-col {
   color: $greenLight;
   font-weight: 400;
 }
 
-.Mui-selected .gray-col, .Mui-selected .green-col {
+.Mui-selected .gray-col,
+.Mui-selected .green-col {
   color: $orange;
   font-weight: 500;
 }
 
-.Mui-selected .green-col, .Mui-selected .lightgreen-col {
+.Mui-selected .green-col,
+.Mui-selected .lightgreen-col {
   color: $greenLight;
   font-weight: 500;
 }
@@ -533,7 +544,7 @@ code {
   background-color: $addBtn;
   color: $addBtnTxt;
   font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;   
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 
 }
@@ -572,51 +583,52 @@ code {
 // resposive for mobile
 @media only screen and (min-width:320px) and (max-width: 730px) {
   .profile-cal {
-      margin: 10px 0px;
+    margin: 10px 0px;
   }
 
   .add-collage {
-      background-color: $white;
-      padding: 0px 0px 0px 4px;
-      margin: 0px;
+    background-color: $white;
+    padding: 0px 0px 0px 4px;
+    margin: 0px;
   }
 
   .collage-field {
-      // padding: 20px 0px 0px 0px;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    // padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .add-sub-collage {
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .date-field-mobile {
-      width: 100%;
+    width: 100%;
   }
 
   .mobile-field-cal {
-      width: 100%;
-      display: flex;
-      margin-left: 3px;
+    width: 100%;
+    display: flex;
+    margin-left: 3px;
   }
 
   .date-field-mobile {
-      margin-left: 3px;
+    margin-left: 3px;
   }
 }
 
 
 .profile-heading h1 {
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
+  ;
   font-weight: 700;
   font-size: 1.1em;
   letter-spacing: 0px;
-  color:$blueHeader;
+  color: $blueHeader;
   font-size: 1.1em;
   line-height: 20px;
   opacity: 1;
@@ -632,11 +644,12 @@ code {
 }
 
 .profile-hline {
- @include grey-hline;
+  @include grey-hline;
 }
 
 
-.profile-content, .profileDetai h6 {
+.profile-content,
+.profileDetai h6 {
   font-family: 'Roboto', sans-serif;
   text-align: left;
   font-weight: 500;
@@ -648,12 +661,17 @@ code {
   margin-bottom: 40px;
 
 }
-.common-heading{
+
+.common-heading {
   text-align: left;
   margin-top: 20px;
 }
-.common-heading h4, .profileDetai h4, , .profileDetai h5{
-  color:$blueShade;
+
+.common-heading h4,
+.profileDetai h4,
+,
+.profileDetai h5 {
+  color: $blueShade;
   font-size: 0.9rem;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -665,13 +683,15 @@ code {
   margin: 8px 0 20px;
 }
 
-.common-heading p{
-  color:$textColor;
+.common-heading p {
+  color: $textColor;
   font-size: 0.8rem;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
+  ;
 }
-.enrollContent{
+
+.enrollContent {
   font-weight: 400;
 }
 
@@ -682,7 +702,7 @@ code {
 .profileDetai {
   @include grey-hline;
   padding: 20px 40px;
-  background-color:$white;
+  background-color: $white;
   margin-top: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -699,10 +719,80 @@ code {
   margin-bottom: 20px;
 }
 
-col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
   padding-right: 8px;
   padding-left: 0px;
 }
+
 .buttons-cal {
   display: flex;
   margin-top: 40px;
@@ -712,14 +802,15 @@ col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, 
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
   .buttons-cal {
-      justify-content: center;
+    justify-content: center;
   }
 
   .profileDetai {
-      // margin: 20px 0px;
-      padding: 20px 15px;
+    // margin: 20px 0px;
+    padding: 20px 15px;
   }
 }
+
 /*** Contact : End ****/
 
 
@@ -727,9 +818,11 @@ col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, 
 .progress-line {
   margin-top: 20px;
 }
-.enroll-top{
+
+.enroll-top {
   margin-top: 50px;
 }
+
 .footer-space {
   margin: 20px 60px;
 }
@@ -741,44 +834,52 @@ col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, 
   font-size: 0.85em;
   font-family: 'Roboto', sans-serif;
 }
-.campus-onl span{
-  color:$onlBlue;
+
+.campus-onl span {
+  color: $onlBlue;
   font-weight: 400;
 }
-.add-space-both{
+
+.add-space-both {
   padding: 40px 60px;
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
   .footer-space {
-      margin: 0px;
+    margin: 0px;
   }
-  .add-space-both{
-      padding: 20px 20px;
+
+  .add-space-both {
+    padding: 20px 20px;
   }
 }
+
 @media only screen and (min-width:736px) and (max-width: 1200px) {
-  .add-space-both{
-      padding: 20px 40px;
+  .add-space-both {
+    padding: 20px 40px;
   }
 }
+
 @media only screen and (min-width:484px) and (max-width: 732px) {
   .footer-space {
-      margin: 0px;
+    margin: 0px;
   }
-  .add-space-both{
-      padding: 20px 40px;
+
+  .add-space-both {
+    padding: 20px 40px;
   }
 }
 
 @media only screen and (min-width:482px) and (max-width: 735px) {
-  .add-space-both{
-      padding: 20px 40px;
+  .add-space-both {
+    padding: 20px 40px;
   }
 }
+
 .MuiFormControl-root {
   margin-bottom: 1.3rem !important;
 }
+
 .MuiInputLabel-root {
   transform: translate(0px, -23px) scale(1) !important;
   font-weight: 400;
@@ -787,7 +888,7 @@ col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, 
   color: #212529;
   background-color: transparent;
   padding: 0px 3px !important;
-left: -3px !important;
+  left: -3px !important;
 }
 
 #virtualize-autocomplete-label {
@@ -815,7 +916,7 @@ input {
   background-clip: padding-box;
   border: 1px solid #ced4da !important;
   border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .MuiOutlinedInput-notchedOutline {
@@ -825,7 +926,7 @@ input {
 
 
 .previous-button {
-    background-color: #ECECEC !important;
+  background-color: #ECECEC !important;
   text-align: end;
   margin-right: 20px;
   display: flex;
@@ -849,13 +950,14 @@ input {
   margin-left: 5px;
 }
 
-.previous-button p, .next-button p {
+.previous-button p,
+.next-button p {
   font-size: 0.8rem;
   text-transform: capitalize;
 }
 
 .next-button {
-  background-color:$blueShade;
+  background-color: $blueShade;
   text-align: end;
   display: flex;
   justify-content: center;
@@ -869,21 +971,26 @@ input {
 .next-button button {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  background-color:$blueShade;
+  background-color: $blueShade;
   color: $white;
   border: none;
   margin-right: 5px;
 }
+
 @media only screen and (min-width:320px) and (max-width: 481px) {
-  .previous-button, .next-button{
-      padding: 8px 8px;
-      font-size: 0.8rem;
+
+  .previous-button,
+  .next-button {
+    padding: 8px 8px;
+    font-size: 0.8rem;
   }
-  .next-button button{
-      margin-right: 4px;
+
+  .next-button button {
+    margin-right: 4px;
   }
-  .previous-button button{
-      margin-left: 4px;
+
+  .previous-button button {
+    margin-left: 4px;
   }
 }
 
@@ -893,8 +1000,8 @@ input {
   color: $headingColorBlue;
   text-align: left;
   padding: 0;
-  margin:0;
-  margin-bottom:20px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 1rem;
   font-weight: 700;
   line-height: 20px;
@@ -905,7 +1012,7 @@ input {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top:13px
+  top: 13px
 }
 
 .edit-common-btn button {
@@ -927,25 +1034,28 @@ input {
   font-size: 0.7rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color:$editBtnBorder;
+  color: $editBtnBorder;
   font-size: 0.8rem;
 }
-.edit-iconn{
+
+.edit-iconn {
   position: relative;
   bottom: 1.5px;
   margin-right: 6px;
 }
 
-@media screen and (min-width:320px) and (max-width:599px){
-  .edit-iconn{
-      margin:0;
+@media screen and (min-width:320px) and (max-width:599px) {
+  .edit-iconn {
+    margin: 0;
   }
+
   .edit-common-btn button {
-      padding:0;
-      padding: 6px 8px;
+    padding: 0;
+    padding: 6px 8px;
   }
-  .confirmation-heading{
-      font-size: 1.2rem;
+
+  .confirmation-heading {
+    font-size: 1.2rem;
   }
 }
 
@@ -1070,34 +1180,34 @@ input {
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
   .enroll-headingcal {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .enroll-vline {
-      height: 40px;
-      border: 1px solid #CBCBCB;
-      margin: 0px 20px;
+    height: 40px;
+    border: 1px solid #CBCBCB;
+    margin: 0px 20px;
   }
 }
 
 @media only screen and (min-width:481px) and (max-width: 730px) {
   .enroll-left {
-      flex: 1.5;
+    flex: 1.5;
   }
 
   .enroll-right {
-      flex: 1;
+    flex: 1;
   }
 }
 
 @media only screen and (min-width:731px) and (max-width: 920px) {
   .enroll-left {
-      flex: 2;
+    flex: 2;
   }
 
   .enroll-right {
-      flex: 1.5;
+    flex: 1.5;
   }
 }
 
@@ -1146,7 +1256,8 @@ input {
   align-items: center;
   justify-content: center;
 }
-.enrolltab{
+
+.enrolltab {
   background-color: #fbfbfb;
   padding: 17px 0px 0px 15px;
   border-radius: 8px;
@@ -1156,13 +1267,15 @@ input {
   width: 100%;
   columns: 2;
 }
-.enrol-input{
+
+.enrol-input {
   width: 100%;
 }
+
 @media only screen and (min-width:320px) and (max-width: 480px) {
-  .add-enrollment{
-      flex-direction: column;
-      width: 100%;
+  .add-enrollment {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -1172,6 +1285,7 @@ input {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .prselection .cardTabBox {
   display: flex;
   flex-direction: row;
@@ -1241,9 +1355,9 @@ input {
 
 .prselection .filterprbutns button.Mui-selected {
   font-weight: 500;
-text-transform: capitalize;
-border-bottom: solid;
-border-radius: 0;
+  text-transform: capitalize;
+  border-bottom: solid;
+  border-radius: 0;
 }
 
 .prselection .MuiFormControl-root {
@@ -1257,14 +1371,17 @@ border-radius: 0;
     height: 50px;
     justify-content: center;
   }
+
   .prselection .cardTab p {
     text-align: left;
     line-height: 1.3rem;
     margin-left: 2px;
   }
+
   .prselection .cardTab {
     padding: 0;
   }
+
   .prselection .cardTab .programTabs {
     align-items: center;
     justify-content: center;
@@ -1272,6 +1389,7 @@ border-radius: 0;
     margin-left: 5px;
   }
 }
+
 @media screen and (min-width: 703px) and (max-width: 910px) {
   .prselection .innerCardTab {
     display: flex;
@@ -1280,10 +1398,12 @@ border-radius: 0;
     justify-content: center;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 703px) {
   .prselection .cardTab p {
     display: none;
   }
+
   .prselection .innerCardTab {
     display: flex;
     align-items: center;
@@ -1291,9 +1411,11 @@ border-radius: 0;
     justify-content: center;
   }
 }
+
 .prselection .selectActive {
   background-color: #2b4574;
 }
+
 .prselection .selectActiveLabel {
   text-align: left;
   text-transform: capitalize;
@@ -1304,6 +1426,7 @@ border-radius: 0;
   letter-spacing: 0.4px;
   font-weight: 400;
 }
+
 .prselection .selectInActiveLabel {
   text-align: left;
   text-transform: capitalize;
@@ -1322,14 +1445,16 @@ border-radius: 0;
   flex-direction: column;
   background-color: $white;
 }
+
 .prselection .buttons-cal {
   display: flex;
   margin-top: 40px;
   justify-content: flex-end;
   // margin-bottom: 30px;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 481px) {
-  
+
   .prselection .buttons-cal {
     justify-content: center;
   }
@@ -1339,3 +1464,1046 @@ border-radius: 0;
   }
 }
 
+
+
+
+
+
+//  =================== User Progile file css =========================
+
+
+
+
+.userProfileWrap {
+  margin: 100px 0 0 0;
+}
+
+.alertGrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  flex-wrap: wrap;
+
+  strong {
+    font-size: 12px;
+    font-weight: 600;
+
+    @media (max-width:576px) {
+      font-size: 9px;
+    }
+  }
+
+  .MuiPaper-rounded {
+    margin: 5px 10px;
+    border-radius: 40px;
+    color: #D50202;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #F8A5A5;
+
+    @media (max-width:476px) {
+      padding: 0 1px;
+
+    }
+
+    .MuiAlert-icon {
+      display: none;
+    }
+
+    .MuiAlert-message {
+      padding: 5px;
+
+      @media (max-width:576px) {
+        font-size: 9px;
+
+      }
+    }
+  }
+}
+
+.profileBox {
+  padding: 30px 0;
+
+  .profileContent {
+    border-radius: 20px;
+    box-shadow: 0px 2px 16px #0000001F;
+    margin-bottom: 30px;
+
+    .profileInfo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .cardImages {
+        background-color: #f1f1f1;
+        width: 85px;
+        height: 90px;
+        border-radius: 15px;
+        border: 2px solid #ccc;
+        overflow: hidden;
+
+        @media (max-width:476px) {
+          width: 65px;
+          height: 70px;
+
+        }
+
+        img {
+          object-position: 0 10px;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+        }
+      }
+
+      .profileMemberName {
+        padding: 0 0 0 30px;
+        text-align: left;
+        width: calc(100% - 85px);
+
+        @media (max-width:1199px) {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        @media (max-width:476px) {
+          padding: 0;
+          width: 100%;
+          margin: 20px 0 0 0;
+
+        }
+
+
+        .greeting {
+          font-size: 18px;
+          color: #506588;
+          font-weight: 600;
+
+          span {
+            font-weight: 600;
+          }
+
+          @media (max-width:476px) {
+            line-height: 20px;
+
+          }
+
+          strong {
+            display: block;
+            font-size: 26px;
+            color: #54a973;
+            line-height: 34px;
+            margin-top: 5px;
+            font-weight: 700;
+
+            @media (max-width:600px) {
+              font-size: 22px;
+              line-height: 24px;
+            }
+          }
+
+          p {
+            margin: 20px 0;
+            font-size: 14px;
+            color: #888888;
+
+            @media (max-width:1199px) {
+              margin: 10px 0;
+            }
+
+            span {
+              color: #323232;
+              font-weight: 500;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .otherText {
+          button {
+            text-transform: capitalize;
+            background-color: #f2f9ff;
+            border: 1px solid #506588;
+            color: #506588;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px 20px;
+            line-height: normal;
+
+            @media (max-width:600px) {
+              padding: 11px;
+              line-height: 0;
+              display: initial;
+              min-width: auto;
+
+            }
+
+            span {
+              @media (max-width:600px) {
+                display: none;
+              }
+            }
+          }
+
+
+
+
+          svg {
+            margin: 0 5px 0 0;
+
+            @media (max-width:600px) {
+              margin: 0;
+              width: 18px;
+              height: 18px;
+
+            }
+          }
+
+          svg path {
+            stroke: #506588;
+          }
+        }
+      }
+    }
+
+    .profileTextListing {
+      >div {
+        padding: 0;
+      }
+
+      .profileTextList {
+        text-align: left;
+
+        span {
+          color: #888888;
+          font-size: 14px;
+
+        }
+
+        p {
+          color: #323232;
+          font-weight: 500;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .calender {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 16px #0000001f;
+    padding: 30px;
+    position: relative;
+    height: 100%;
+
+    @media (max-width:1024px) {
+      padding: 20px;
+
+    }
+
+    @media (max-width:900px) {
+      min-height: 670px;
+
+    }
+
+    .heading {
+      h3 {
+        margin: 0 0 40px 0;
+      }
+    }
+
+    >div {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .tableContent {
+    text-align: left;
+    padding: 30px;
+    border-top: 1px solid #B5D5EF;
+    background-color: #F2F9FF;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 2px 16px #0000001F;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2B4574;
+      font-weight: 500;
+      padding: 10px 0 0 0;
+    }
+
+    .inputFuild {
+      padding: 0 0 25px 0;
+      display: flex;
+      align-items: center;
+
+      span {
+        color: #2B4574;
+        font-weight: 500;
+      }
+
+      input {
+        border-bottom: 1px solid #B5D5EF !important;
+        box-shadow: none !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-left: none !important;
+        background-color: transparent !important;
+        width: 100%;
+        margin: 0 0 0 20px;
+        outline: none;
+        border-radius: 0 !important;
+        height: auto !important;
+        padding: 0 !important;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .tableWrap {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 2px 16px #0000001f;
+    padding: 30px;
+
+    &.tabele2Wrap {
+      height: 100%;
+    }
+
+    .table1 {
+      // overflow: auto;
+      // max-height: 300px;
+      box-shadow: none;
+
+      @media (max-width:1199px) {
+        max-height: 180px;
+
+      }
+
+      .tableHeading {
+        @include tableHeading;
+      }
+
+      .tableContant {
+        td {
+          color: #A8A8A8;
+        }
+
+        th {
+          padding: 8px;
+          font-size: 16px;
+          color: #2B4574;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .table2 {
+      // overflow: auto;
+      // max-height: 240px;
+
+      @media (max-width:1200px) {
+        max-height: 350px;
+
+      }
+
+      .tableHeading {
+        @include tableHeading
+      }
+
+      .tableContant {
+
+        th,
+        td {
+          padding: 13px;
+        }
+      }
+
+    }
+
+    .cutomScroll {
+      div {
+        &:nth-child(2) {
+          background-color: #e6e6e6;
+
+          div {
+            background-color: #2b4574 !important;
+          }
+        }
+
+        &:last-child {
+          background-color: #e6e6e6;
+
+          div {
+            background-color: #2b4574 !important;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .heading {
+    h3 {
+      @include heading;
+    }
+  }
+
+
+  .cardWrap {
+    @include cardDesign;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    >div {
+      height: 100%;
+    }
+
+    .cradBtn {
+      @include accessBtn
+    }
+
+    .cardInner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ProfileCardContent {
+      text-align: left;
+
+      p {
+        line-height: 26px;
+
+        a {
+          text-decoration: none;
+          color: #2792D3;
+        }
+      }
+
+      strong {
+        color: #555555;
+        margin: 10px 0;
+        display: block;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+        list-style: none;
+
+        li {
+          position: relative;
+          line-height: 24px;
+          color: #555555;
+          padding: 0 0 0 10px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 9px;
+            height: 9px;
+            background-color: #A8A8A8;
+          }
+        }
+      }
+    }
+
+    .myResourcesCard {
+      .resourceUl {
+        text-align: left;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        li {
+          border-bottom: 1px solid #E6E6E6;
+          padding: 10px 0;
+          color: #555555;
+          font-weight: 500;
+        }
+      }
+
+      .googleApp {
+        bottom: 0;
+        width: auto;
+        left: 0;
+        padding: 25px 30px;
+        border-top: 1px solid #D9D7D7;
+        background-color: #FBFBFB;
+        margin: 0 -26px -34px -26px;
+
+        strong {
+          color: #2B4574;
+          padding: 0 0 20px 0;
+          display: block;
+          font-weight: 600;
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            width: auto;
+
+            a {
+              padding: 0 20px 0 0;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .bookStoreCard,
+    .paymentCard,
+    .myResourcesCard,
+    .supportCard,
+    .studentCard,
+    .campusCard {
+      @include innerCard
+    }
+
+
+    .paymentCard {
+      .patmentListing {
+        display: flex;
+        flex-wrap: wrap;
+
+        .patmentList {
+          width: 50%;
+          text-align: left;
+          line-height: 24px;
+          padding: 0 0 10px 0;
+
+          span {
+            display: block;
+            color: #888888;
+            font-size: 14px;
+          }
+
+          strong {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .supportCard {
+      text-align: left;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          position: relative;
+          padding: 5px 0 5px 30px;
+          line-height: 24px;
+
+          svg {
+            position: absolute;
+            left: 0;
+            top: 7px
+          }
+
+          a {
+            text-decoration: none;
+            color: #2B4574;
+            font-weight: 600;
+          }
+
+          p {
+            display: inline-block;
+            color: #555555;
+
+            span {
+              &:last-child {
+
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .studentCard {
+      text-align: left;
+
+      p {
+        margin: 10px 0;
+        line-height: 23px;
+        color: #555555;
+
+        a {
+          color: #2792D3;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .campusCard {
+      text-align: left;
+
+      .campusContent {
+        color: #2B4574;
+        font-size: 20px;
+
+        strong {
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+        ul {
+          list-style: none;
+          margin: 15px 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 80%;
+
+          li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            font-size: 16px;
+
+            svg {
+              position: absolute;
+              left: 0;
+              top: 12px
+            }
+          }
+        }
+      }
+
+
+      .cradBtn {
+        padding: 10px 0 0 0;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          text-align: left;
+          font-size: 14px;
+          color: #555555;
+
+          li {
+            padding: 2px 0;
+            display: flex;
+            align-items: center;
+
+            &:nth-child(2) {
+              color: #2B4574;
+              font-weight: 600;
+              font-size: 16px;
+
+            }
+
+            &:last-child {
+              a {
+                text-decoration: none;
+                color: #555555;
+                padding: 0 0 0 10px;
+                font-size: 16px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .MuiDayCalendar-header {
+    justify-content: space-around !important;
+
+    span {
+      font-size: 16px;
+      color: #222222;
+      font-weight: 600;
+    }
+  }
+
+  .MuiPickersCalendarHeader-label {
+    color: #2B4574;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+
+    @media (max-width:1024px) {
+      font-size: 14px;
+
+    }
+  }
+
+  .MuiPickersDay-root {
+    color: #222222;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 0;
+  }
+
+  .MuiDayCalendar-weekContainer {
+    justify-content: space-between !important;
+  }
+
+  .MuiPickersDay-today {
+    background-color: #EEF7FF !important;
+    border: 2px solid #297FB8 !important;
+  }
+
+  .MuiPickersDay-root[aria-colindex="1"] {
+    color: #ff0000;
+  }
+
+  .MuiPickersCalendarHeader-root {
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B5D5EF;
+  }
+
+  .MuiDayCalendar-slideTransition {
+    min-height: 290px;
+  }
+
+
+}
+
+@media (max-width:1199px) {
+
+  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+    width: 33.3%;
+  }
+
+}
+
+@media (max-width:991px) {
+
+  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+    width: 50%;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+    width: 50%;
+  }
+
+}
+
+@media (max-width:576px) {
+
+  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+    width: 100%;
+  }
+
+}
+
+
+
+// ==================== Footer section scss ====================
+
+
+.footer-container {
+  background-color: $blueShade;
+  border-radius: 40px !important;
+  color: $white;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  justify-content: center !important;
+
+  strong {
+    font-weight: 400;
+  }
+
+}
+
+
+
+// ======================= Navbar file all css ==========================
+
+.MuiAppBar-colorPrimary {
+  background-color: #fff !important;
+  position: static !important;
+}
+
+.navbarWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+
+  .mui-fixed {
+    box-shadow: none;
+    border-bottom: 1px solid #D4D4D4;
+  }
+
+  header {
+    background-color: $white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 10;
+
+    .headerWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-cal {
+      img {
+        object-fit: contain;
+        width: 100px;
+        height: 50px;
+      }
+    }
+
+    .logo-heading {
+      display: flex;
+      align-items: center;
+
+      .desktopLogo {
+
+        img {
+          padding: 0 15px 0 0;
+          margin: 0 15px 0 0;
+          border-right: 1px solid #ccc;
+          width: 100%;
+          max-width: 170px;
+
+          @media (max-width:1230px) {
+            max-width: 150px;
+
+          }
+
+          @media (max-width:900px) {
+            max-width: 130px;
+
+          }
+
+          @media (max-width:600px) {
+            display: none;
+
+          }
+        }
+      }
+
+      .mobileLogo {
+        display: none;
+        padding: 0 5px 0 0;
+        margin: 0 5px 0 0;
+        border-right: 1px solid #ccc;
+        height: 50px;
+
+        img {
+          width: 40px;
+
+        }
+
+
+        @media (max-width:600px) {
+          display: block;
+          border: none;
+        }
+      }
+
+
+      .page-title {
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+
+          color: $greenLight;
+
+          @media (max-width:1300px) {
+            font-size: 20px;
+
+          }
+
+          @media (max-width:360px) {
+            font-size: 16px;
+
+          }
+        }
+      }
+    }
+
+    .navbar-option {
+      display: flex;
+      align-items: center;
+
+      button {
+        text-decoration: none;
+        padding: 0 15px;
+        color: $textColor;
+        text-transform: capitalize;
+        font-size: 16px;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #1BB75D;
+          background-color: transparent;
+        }
+
+        @media (max-width:1299px) {
+          padding: 0 10px;
+
+        }
+
+        @media (max-width:1200px) {
+          margin: 0;
+          padding: 0;
+
+        }
+      }
+
+      .navbar-ul ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        li:last-child a {
+          padding: 0;
+        }
+
+        li a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 0 15px;
+          color: $textColor;
+        }
+      }
+
+      .notification {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-icons {
+        margin: 0 0 0 20px;
+        padding: 0 0 0 20px;
+        border-left: 1px solid #C4C4C4;
+
+        @media (max-width:600px) {
+          padding: 0;
+        }
+
+        .ball-bage {
+          @media (max-width:600px) {
+            display: none;
+          }
+
+          .MuiBadge-badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+          }
+        }
+
+        .ball-bage span {
+          background-color: #FF0000;
+          width: 10px;
+        }
+
+        .ball-bage>span {
+          background-color: $whiteShadeOne;
+          width: 40px;
+          border-radius: 50%;
+          aspect-ratio: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .profile-image {
+          width: 32px;
+          height: 32px
+        }
+
+        .profile-btn {
+          padding: 0 0 0 15px;
+        }
+
+        .profile-btn:hover {
+          background-color: transparent;
+        }
+
+        .profile-icon {
+          display: flex;
+          align-items: center;
+        }
+
+        .person-name {
+          margin: 0 10px;
+          text-align: left;
+          text-transform: capitalize;
+          line-height: 21px;
+
+          @media (max-width:900px) {
+            display: none;
+          }
+
+          strong {
+            font-weight: 600;
+            font-size: 14px;
+          }
+
+          span {
+            display: block;
+            font-size: 12px;
+          }
+
+
+        }
+
+        .down-icon {
+          transform: rotate(90deg);
+
+          @media (max-width:900px) {
+            display: none;
+
+          }
+        }
+      }
+    }
+  }
+}

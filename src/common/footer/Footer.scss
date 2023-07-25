@@ -1,16 +1,1 @@
-@import '../../utils/colors/_color';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-
-.footer-container {
-    background-color: $blueShade;
-    border-radius: 40px !important;
-    color: $white;
-    padding: 20px;
-    margin: 0 0 20px 0;
-    justify-content: center !important;
-    strong{
-        font-weight: 400 ;
-    }
-
-}
+// All css is in global.scss
