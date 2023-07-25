@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css');
 
-@import './mixin.scss';
-@import '../../src/utils/colors/color.scss';
+@import './mixin';
+@import '../../src/utils/colors/color';
 
 $red: #ff0000;
 $green: #5AB675;
@@ -28,68 +28,68 @@ $editBtnBorder : #506588;
 $greenCheckBack: #2DCC70;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .page {
-  background-color: $whiteShadeFour;
-  padding-bottom: 10px;
+    background-color: $whiteShadeFour;
+    padding-bottom: 10px;
 }
 
 
@@ -97,602 +97,601 @@ code {
 
 
 .navbar-cal {
-  // padding-top: 3px;
-  // min-height: 8vh;
-  border-bottom-color: $whiteShadeTwo;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  background-color: $white;
+    // padding-top: 3px;
+    // min-height: 8vh;
+    border-bottom-color: $whiteShadeTwo;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    background-color: $white;
 }
 
 .navbar-cal header {
-  padding: 6px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  vertical-align: middle;
-  min-width: 100%;
-  z-index: 10;
+    padding: 6px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    min-width: 100%;
+    z-index: 10;
 }
 
 .logo-cal img {
-  object-fit: contain;
-  width: 100px;
-  height: 50px;
+    object-fit: contain;
+    width: 100px;
+    height: 50px;
 }
 
 .user-profile {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .notification-cal {
-  background-color: $whiteShadeOne;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: $whiteShadeOne;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-profile img {
-  object-fit: fill;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 9px;
+    object-fit: fill;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 9px;
 }
 
 .user-detail {
-  margin-right: 9px;
-  display: flex;
+    margin-right: 9px;
+    display: flex;
 }
 
 .user-profile .user-detail {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 
 }
 
 
 .user-detail .user-name {
-  font-size: 0.8em;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  color: $textColor;
-  letter-spacing: 0.2px;
-  opacity: 1;
-  text-transform: capitalize;
-  cursor: pointer;
-  margin: 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: $textColor;
+    letter-spacing: 0.2px;
+    opacity: 1;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0;
 }
 
 .user-profile .nav-down {
-  margin: -7px 0 0 0;
+    margin: -7px 0 0 0;
 }
 
 .user-detail .sub-name {
-  margin-top: 3px;
-  font-size: 0.65em;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+    margin-top: 3px;
+    font-size: 0.65em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .count-not {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: $red;
-  position: absolute;
-  top: 20px;
-  right: 194px;
-  color: $white;
-  opacity: 1;
-  font-size: 0.4em;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto', sans-serif;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $red;
+    position: absolute;
+    top: 20px;
+    right: 194px;
+    color: $white;
+    opacity: 1;
+    font-size: 0.4em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
-  .navbar-cal header {
-    // padding: 0px 10px 0px 15px;
-    padding: 15px 20px 15px 25px;
-  }
+    .navbar-cal header {
+        // padding: 0px 10px 0px 15px;
+        padding: 15px 20px 15px 25px;
+    }
 
-  .logo-cal img {
-    object-fit: contain;
-    width: 150px;
-    height: 60px;
-  }
+    .logo-cal img {
+        object-fit: contain;
+        width: 150px;
+        height: 60px;
+    }
 
-  .user-profile img {
-    object-fit: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 9px;
-  }
+    .user-profile img {
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 9px;
+    }
 
-  .count-not,
-  .sub-name,
-  .user-name,
-  .notification-cal,
-  .nav-down {
-    display: none;
-  }
+    .count-not,
+    .sub-name,
+    .user-name,
+    .notification-cal,
+    .nav-down {
+        display: none;
+    }
 
-  .user-profile {
-    margin-right: 0
-  }
+    .user-profile {
+        margin-right: 0
+    }
 
-  .user-profile img {
-    margin-right: 0
-  }
+    .user-profile img {
+        margin-right: 0
+    }
 }
 
 
 @mixin hfontLarge {
-  font-size: 40px;
-  line-height: 20px;
-  color: #000;
+    font-size: 40px;
+    line-height: 20px;
+    color: #000;
 }
 
 @mixin grey-hline {
-  border-top: 0.5px solid #0000001F;
-  opacity: 1;
-  width: 100%;
-  margin-top: 20px;
+    border-top: 0.5px solid #0000001F;
+    opacity: 1;
+    width: 100%;
+    margin-top: 20px;
 }
 
 @mixin timeLineFont {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 /*** Footer : Start ***/
 
 
 .footer-container {
-  display: flex;
-  background-color: $blueShade;
-  flex-direction: row;
-  justify-content: space-between;
-  border-radius: 15px;
+    display: flex;
+    background-color: $blueShade;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
 
 }
 
 .footer-cal {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 50px;
 }
 
 .footer-cal h4 {
-  margin: 0;
-  padding: 0;
-  font-size: 0.9rem;
-  color: $white;
-  font-weight: 500;
-  text-align: left;
-  letter-spacing: 0.8px;
-  font-family: 'Roboto', sans-serif;
-  margin-left: -18px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    color: $white;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -18px;
 }
 
 .footer-cal footer {
-  display: flex;
+    display: flex;
 }
 
 .ftab {
-  display: flex;
-  color: $white;
-  margin-top: 10px;
+    display: flex;
+    color: $white;
+    margin-top: 10px;
 }
 
 .second-flabel {
-  display: flex;
-  flex-direction: row;
-  font-size: 0.72rem;
-  line-height: 1.3rem;
-  margin-top: 10px;
-  opacity: 1;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.72rem;
+    line-height: 1.3rem;
+    margin-top: 10px;
+    opacity: 1;
 }
 
 .first-link {
-  column-count: 2;
-  column-gap: 60px;
+    column-count: 2;
+    column-gap: 60px;
 }
 
 .first-link li {
-  list-style-type: square;
-  color: $white;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+    list-style-type: square;
+    color: $white;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .first-link li a {
-  color: $white;
+    color: $white;
 }
 
 .question-icon {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .scan-cal a {
-  text-align: end;
-  box-shadow: 0px 2px 30px #00000029;
-  border-radius: 50px;
-  background-color: $blueHeader;
-  border: none;
-  color: $white;
-  padding: 6px 9px 6px 7px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
+    text-align: end;
+    box-shadow: 0px 2px 30px #00000029;
+    border-radius: 50px;
+    background-color: $blueHeader;
+    border: none;
+    color: $white;
+    padding: 6px 9px 6px 7px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 
 .scan-cal {
-  margin-top: 20px;
-  margin-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .scan-cal a span {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .scan-cal img {
-  width: 55px;
-  height: 55px;
-  border-radius: 30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
 }
 
 .scan-img {
-  text-align: left;
+    text-align: left;
 }
 
 .scan-content {
-  padding: 0;
-  margin: 0;
-  width: 130px;
-  text-align: left;
-  margin-left: 10px;
-  line-height: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 0.75rem;
+    padding: 0;
+    margin: 0;
+    width: 130px;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
 }
 
 *:focus {
-  outline: 0 !important;
+    outline: 0 !important;
 }
 
 @media screen and (max-width:628px) {
 
-  .footer-container,
-  .second-flabel {
-    flex-direction: column;
-  }
+    .footer-container,
+    .second-flabel {
+        flex-direction: column;
+    }
 
-  .first-link {
-    margin: 0
-  }
+    .first-link {
+        margin: 0
+    }
 
-  .scan-cal {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
+    .scan-cal {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 }
 
 /*** Footer : End ***/
 @media only screen and (min-width:320px) and (max-width: 599px) {
-  .MuiTabs-root .MuiTabs-scrollButtons {
-    display: inline-flex;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
+    .MuiTabs-root .MuiTabs-scrollButtons {
+        display: inline-flex;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 }
 
 /**** Profile : Start ***/
 
 .profile-cal {
-  background-color: $white;
-  margin: 20px 60px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 4px 2px #0000001F;
+    background-color: $white;
+    margin: 20px 60px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 2px #0000001F;
 }
 
 .tabi {
-  border-radius: 50%;
-  width: 23px;
-  height: 23px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .darkblue {
-  background-color: $blueShade;
+    background-color: $blueShade;
 }
 
 .gray {
-  background-color: $grayShade;
+    background-color: $grayShade;
 }
 
 .orange {
-  background-color: $orange;
+    background-color: $orange;
 }
 
 .lightgreen {
-  background-color: $greenLight;
+    background-color: $greenLight;
 }
 
 .Mui-selected .gray {
-  background-color: $orange;
+    background-color: $orange;
 }
 
 .Mui-selected .green,
 .Mui-selected .lightgreen {
-  background-color: $greenLight;
+    background-color: $greenLight;
 }
 
 .tab-comp {
-  width: '200px';
-  text-align: 'left';
-  background-color: $grayShade;
+    width: '200px';
+    text-align: 'left';
+    background-color: $grayShade;
 }
 
 .tab-cal {
-  background-color: $whiteShadeThree;
-  @include grey-hline;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+    background-color: $whiteShadeThree;
+    @include grey-hline;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .tlabel {
-  width: 100px;
-  text-align: left;
-  text-transform: capitalize;
-  font-size: 0.8rem;
-  font-family: 'Roboto', sans-serif;
+    width: 100px;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .orange-col {
-  color: $orange;
-  font-weight: 500;
+    color: $orange;
+    font-weight: 500;
 }
 
 .darkblue-col {
-  color: $blueShade;
-  font-weight: 700;
+    color: $blueShade;
+    font-weight: 700;
 }
 
 .gray-col {
-  color: $grayShade;
-  font-weight: 400;
+    color: $grayShade;
+    font-weight: 400;
 }
 
 .green-col {
-  color: $greenLight;
-  font-weight: 400;
+    color: $greenLight;
+    font-weight: 400;
 }
 
 .Mui-selected .gray-col,
 .Mui-selected .green-col {
-  color: $orange;
-  font-weight: 500;
+    color: $orange;
+    font-weight: 500;
 }
 
 .Mui-selected .green-col,
 .Mui-selected .lightgreen-col {
-  color: $greenLight;
-  font-weight: 500;
+    color: $greenLight;
+    font-weight: 500;
 }
 
 // add collage style
 
 .add-collage {
-  // display: flex;
-  // flex-direction: column;
-  background-color: $whiteShadeOne;
-  padding: 20px 20px 20px 30px;
-  margin: 30px 0px;
+    // display: flex;
+    // flex-direction: column;
+    background-color: $whiteShadeOne;
+    padding: 20px 20px 20px 30px;
+    margin: 30px 0px;
 }
 
 .icon-to-mobile {
-  position: absolute;
-  right: 1rem;
-  bottom: 3.3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 3.3rem;
 }
 
 .mobile-field-cal {
-  position: relative;
+    position: relative;
 }
 
 .add-sub-collage {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
 }
 
 .date-field-mobile {
-  width: 100%;
-  flex-direction: row;
-  display: flex;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
 }
 
 .add-collage-btn {
-  background-color: $addBtn;
-  padding: 3px 0px;
-  border-radius: 5px;
+    background-color: $addBtn;
+    padding: 3px 0px;
+    border-radius: 5px;
 
 }
 
 .add-collage-btn button {
-  border: none;
-  background-color: $addBtn;
-  color: $addBtnTxt;
-  font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+    border: none;
+    background-color: $addBtn;
+    color: $addBtnTxt;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 
 }
 
 .add-collage-btn span {
-  font-weight: 500;
-  font-size: 1.3rem;
-  margin-right: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-right: 10px;
 }
 
 .collage-field {
-  // padding: 20px 0px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  width: 96%;
+    // padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 96%;
 }
 
 .collage-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 .edit-icn {
-  border-radius: 5px;
-  background-color: $white;
-  padding: 4px 7px;
-  margin-top: 8px;
+    border-radius: 5px;
+    background-color: $white;
+    padding: 4px 7px;
+    margin-top: 8px;
 }
 
 .line-break {
-  margin: 20px 0px 30px 0px;
+    margin: 20px 0px 30px 0px;
 }
 
 // resposive for mobile
 @media only screen and (min-width:320px) and (max-width: 730px) {
-  .profile-cal {
-    margin: 10px 0px;
-  }
+    .profile-cal {
+        margin: 10px 0px;
+    }
 
-  .add-collage {
-    background-color: $white;
-    padding: 0px 0px 0px 4px;
-    margin: 0px;
-  }
+    .add-collage {
+        background-color: $white;
+        padding: 0px 0px 0px 4px;
+        margin: 0px;
+    }
 
-  .collage-field {
-    // padding: 20px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+    .collage-field {
+        // padding: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .add-sub-collage {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+    .add-sub-collage {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .date-field-mobile {
-    width: 100%;
-  }
+    .date-field-mobile {
+        width: 100%;
+    }
 
-  .mobile-field-cal {
-    width: 100%;
-    display: flex;
-    margin-left: 3px;
-  }
+    .mobile-field-cal {
+        width: 100%;
+        display: flex;
+        margin-left: 3px;
+    }
 
-  .date-field-mobile {
-    margin-left: 3px;
-  }
+    .date-field-mobile {
+        margin-left: 3px;
+    }
 }
 
 
 .profile-heading h1 {
-  font-family: 'Roboto', sans-serif;
-  ;
-  font-weight: 700;
-  font-size: 1.1em;
-  letter-spacing: 0px;
-  color: $blueHeader;
-  font-size: 1.1em;
-  line-height: 20px;
-  opacity: 1;
-  text-align: left;
-  margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    ;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 0px;
+    color: $blueHeader;
+    font-size: 1.1em;
+    line-height: 20px;
+    opacity: 1;
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 .profile-gline {
-  border: 1px solid $green;
-  opacity: 1;
-  width: 62px;
-  height: 0px;
+    border: 1px solid $green;
+    opacity: 1;
+    width: 62px;
+    height: 0px;
 }
 
 .profile-hline {
-  @include grey-hline;
+    @include grey-hline;
 }
 
 
 .profile-content,
 .profileDetai h6 {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 0px;
-  color: $textColor;
-  opacity: 1;
-  margin-top: 10px;
-  margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0px;
+    color: $textColor;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 40px;
 
 }
 
 .common-heading {
-  text-align: left;
-  margin-top: 20px;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .common-heading h4,
 .profileDetai h4,
-,
 .profileDetai h5 {
-  color: $blueShade;
-  font-size: 0.9rem;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+    color: $blueShade;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 .css-qbzht5 {
-  font-style: normal;
-  font-weight: 700;
-  margin: 8px 0 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 8px 0 20px;
 }
 
 .common-heading p {
-  color: $textColor;
-  font-size: 0.8rem;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  ;
+    color: $textColor;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    ;
 }
 
 .enrollContent {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 /**** Profile : End ***/
@@ -700,23 +699,23 @@ code {
 /*** Contact : Start ****/
 
 .profileDetai {
-  @include grey-hline;
-  padding: 20px 40px;
-  background-color: $white;
-  margin-top: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+    @include grey-hline;
+    padding: 20px 40px;
+    background-color: $white;
+    margin-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .equal-width {
-  display: -webkit-flex;
-  display: flex;
-  column-count: 3;
+    display: -webkit-flex;
+    display: flex;
+    column-count: 3;
 }
 
 .profileDetai form {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 col,
@@ -789,26 +788,26 @@ col,
 .col-xl-8,
 .col-xl-9,
 .col-xl-auto {
-  padding-right: 8px;
-  padding-left: 0px;
+    padding-right: 8px;
+    padding-left: 0px;
 }
 
 .buttons-cal {
-  display: flex;
-  margin-top: 40px;
-  justify-content: flex-end;
-  // margin-bottom: 30px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+    // margin-bottom: 30px;
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
-  .buttons-cal {
-    justify-content: center;
-  }
+    .buttons-cal {
+        justify-content: center;
+    }
 
-  .profileDetai {
-    // margin: 20px 0px;
-    padding: 20px 15px;
-  }
+    .profileDetai {
+        // margin: 20px 0px;
+        padding: 20px 15px;
+    }
 }
 
 /*** Contact : End ****/
@@ -816,652 +815,652 @@ col,
 
 
 .progress-line {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .enroll-top {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .footer-space {
-  margin: 20px 60px;
+    margin: 20px 60px;
 }
 
 // add program selection style
 .campus-onl {
-  text-align: left;
-  font-weight: 700;
-  font-size: 0.85em;
-  font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.85em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .campus-onl span {
-  color: $onlBlue;
-  font-weight: 400;
+    color: $onlBlue;
+    font-weight: 400;
 }
 
 .add-space-both {
-  padding: 40px 60px;
+    padding: 40px 60px;
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
-  .footer-space {
-    margin: 0px;
-  }
+    .footer-space {
+        margin: 0px;
+    }
 
-  .add-space-both {
-    padding: 20px 20px;
-  }
+    .add-space-both {
+        padding: 20px 20px;
+    }
 }
 
 @media only screen and (min-width:736px) and (max-width: 1200px) {
-  .add-space-both {
-    padding: 20px 40px;
-  }
+    .add-space-both {
+        padding: 20px 40px;
+    }
 }
 
 @media only screen and (min-width:484px) and (max-width: 732px) {
-  .footer-space {
-    margin: 0px;
-  }
+    .footer-space {
+        margin: 0px;
+    }
 
-  .add-space-both {
-    padding: 20px 40px;
-  }
+    .add-space-both {
+        padding: 20px 40px;
+    }
 }
 
 @media only screen and (min-width:482px) and (max-width: 735px) {
-  .add-space-both {
-    padding: 20px 40px;
-  }
+    .add-space-both {
+        padding: 20px 40px;
+    }
 }
 
 .MuiFormControl-root {
-  margin-bottom: 1.3rem !important;
+    margin-bottom: 1.3rem !important;
 }
 
 .MuiInputLabel-root {
-  transform: translate(0px, -23px) scale(1) !important;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
-  color: #212529;
-  background-color: transparent;
-  padding: 0px 3px !important;
-  left: -3px !important;
+    transform: translate(0px, -23px) scale(1) !important;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: #212529;
+    background-color: transparent;
+    padding: 0px 3px !important;
+    left: -3px !important;
 }
 
 #virtualize-autocomplete-label {
-  transform: translate(0px, -7px) scale(1) !important;
+    transform: translate(0px, -7px) scale(1) !important;
 }
 
 #sfesdnf .css-hw63qq-MuiFormControl-root-MuiTextField-root {
-  margin-top: 14px;
+    margin-top: 14px;
 }
 
 .MuiSelect-select {
-  border: 1px solid #ced4da !important;
-  font-size: 0.8rem !important;
-  padding: .230rem .75rem !important;
+    border: 1px solid #ced4da !important;
+    font-size: 0.8rem !important;
+    padding: .230rem .75rem !important;
 }
 
 input {
-  height: calc(1.5em + .75rem + 2px);
-  padding: .375rem .75rem !important;
-  font-size: 0.8rem !important;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057 !important;
-  background-color: #fff !important;
-  background-clip: padding-box;
-  border: 1px solid #ced4da !important;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem !important;
+    font-size: 0.8rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057 !important;
+    background-color: #fff !important;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .MuiOutlinedInput-notchedOutline {
-  border-color: #ced4da !important;
-  display: none;
+    border-color: #ced4da !important;
+    display: none;
 }
 
 
 .previous-button {
-  background-color: #ECECEC !important;
-  text-align: end;
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 14px;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  box-shadow: none !important;
-  color: #323232;
-  max-height: 40px;
+    background-color: #ECECEC !important;
+    text-align: end;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    box-shadow: none !important;
+    color: #323232;
+    max-height: 40px;
 }
 
 .previous-button button {
-  background-color: $grayBtn;
-  border-radius: 5px;
-  border: none;
-  color: $textColor;
-  margin-left: 5px;
+    background-color: $grayBtn;
+    border-radius: 5px;
+    border: none;
+    color: $textColor;
+    margin-left: 5px;
 }
 
 .previous-button p,
 .next-button p {
-  font-size: 0.8rem;
-  text-transform: capitalize;
+    font-size: 0.8rem;
+    text-transform: capitalize;
 }
 
 .next-button {
-  background-color: $blueShade;
-  text-align: end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 9px 14px;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  max-height: 40px;
+    background-color: $blueShade;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    max-height: 40px;
 }
 
 .next-button button {
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  background-color: $blueShade;
-  color: $white;
-  border: none;
-  margin-right: 5px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    background-color: $blueShade;
+    color: $white;
+    border: none;
+    margin-right: 5px;
 }
 
 @media only screen and (min-width:320px) and (max-width: 481px) {
 
-  .previous-button,
-  .next-button {
-    padding: 8px 8px;
-    font-size: 0.8rem;
-  }
+    .previous-button,
+    .next-button {
+        padding: 8px 8px;
+        font-size: 0.8rem;
+    }
 
-  .next-button button {
-    margin-right: 4px;
-  }
+    .next-button button {
+        margin-right: 4px;
+    }
 
-  .previous-button button {
-    margin-left: 4px;
-  }
+    .previous-button button {
+        margin-left: 4px;
+    }
 }
 
 
 
 .confirmation-heading {
-  color: $headingColorBlue;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 20px;
+    color: $headingColorBlue;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
 }
 
 .edit-common-btn {
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: 13px
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 13px
 }
 
 .edit-common-btn button {
-  background-color: $white;
-  border: 1px solid #a9b4c5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  padding: 1.5px 13px;
+    background-color: $white;
+    border: 1px solid #a9b4c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1.5px 13px;
 }
 
 .edit-common-btn span {
-  vertical-align: sub;
-  display: inline-block;
+    vertical-align: sub;
+    display: inline-block;
 }
 
 .edit-txt {
-  font-size: 0.7rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: $editBtnBorder;
-  font-size: 0.8rem;
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $editBtnBorder;
+    font-size: 0.8rem;
 }
 
 .edit-iconn {
-  position: relative;
-  bottom: 1.5px;
-  margin-right: 6px;
+    position: relative;
+    bottom: 1.5px;
+    margin-right: 6px;
 }
 
 @media screen and (min-width:320px) and (max-width:599px) {
-  .edit-iconn {
-    margin: 0;
-  }
+    .edit-iconn {
+        margin: 0;
+    }
 
-  .edit-common-btn button {
-    padding: 0;
-    padding: 6px 8px;
-  }
+    .edit-common-btn button {
+        padding: 0;
+        padding: 6px 8px;
+    }
 
-  .confirmation-heading {
-    font-size: 1.2rem;
-  }
+    .confirmation-heading {
+        font-size: 1.2rem;
+    }
 }
 
 
 
 .enroll-header {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .enroll-headingcal {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .enroll-vline {
-  height: 80%;
-  border: 1px solid #CBCBCB;
-  margin: 0px 20px;
+    height: 80%;
+    border: 1px solid #CBCBCB;
+    margin: 0px 20px;
 }
 
 .enroll-left {
-  flex: 3;
+    flex: 3;
 }
 
 .enroll-left p {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 0px;
-  color: $textColor;
-  opacity: 1;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0px;
+    color: $textColor;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .enroll-right {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .enrollmobile-right {
-  justify-content: space-around;
-  margin-top: 10px;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 .enroll-icontxt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .enrollmobile-icontxt {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .enrollmobile-icontxt label {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .enroll-icontxt label {
-  color: $fname;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 0.75rem;
-  margin-top: 5px;
+    color: $fname;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-top: 5px;
 }
 
 .enrollStatusIcn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin-left: 10px;
-  background-color: $greenLight;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: $greenLight;
 
 }
 
 .enrollStatus {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: $greenLight;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $greenLight;
 }
 
 .enroll-orange {
-  color: $orange
+    color: $orange
 }
 
 .enroll-gray {
-  color: $fname
+    color: $fname
 }
 
 .enrollIcn-orange {
-  background-color: $orange
+    background-color: $orange
 }
 
 .enrollIcn-gray {
-  background-color: $fname
+    background-color: $fname
 }
 
 .enroll-action {}
 
 .enroll-action span {
-  width: 30px;
-  display: inline-flex;
-  margin-left: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: $editBtnBorder
+    width: 30px;
+    display: inline-flex;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $editBtnBorder
 }
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
-  .enroll-headingcal {
-    display: flex;
-    flex-direction: column;
-  }
+    .enroll-headingcal {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .enroll-vline {
-    height: 40px;
-    border: 1px solid #CBCBCB;
-    margin: 0px 20px;
-  }
+    .enroll-vline {
+        height: 40px;
+        border: 1px solid #CBCBCB;
+        margin: 0px 20px;
+    }
 }
 
 @media only screen and (min-width:481px) and (max-width: 730px) {
-  .enroll-left {
-    flex: 1.5;
-  }
+    .enroll-left {
+        flex: 1.5;
+    }
 
-  .enroll-right {
-    flex: 1;
-  }
+    .enroll-right {
+        flex: 1;
+    }
 }
 
 @media only screen and (min-width:731px) and (max-width: 920px) {
-  .enroll-left {
-    flex: 2;
-  }
+    .enroll-left {
+        flex: 2;
+    }
 
-  .enroll-right {
-    flex: 1.5;
-  }
+    .enroll-right {
+        flex: 1.5;
+    }
 }
 
 .add-enrollment {
-  background-color: #fbfbfb;
-  vertical-align: baseline;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 17px 0px 0px 15px;
-  border-radius: 8px;
-  border: 1px solid #dddddd;
-  margin-top: 20px;
+    background-color: #fbfbfb;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0px 0px 15px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
 }
 
 
 .enroll-spacing {
-  display: flex;
-  flex: 1
+    display: flex;
+    flex: 1
 }
 
 .enrollBtn-cal {
-  width: 150px;
-  border: 1px solid $editBtnBorder;
-  background-color: white;
-  padding: 10px;
-  margin-top: 25px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    width: 150px;
+    border: 1px solid $editBtnBorder;
+    background-color: white;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .enrollBtn-cal button {
-  border: none;
-  background-color: white;
-  font-size: 18px;
-  font-weight: 500;
-  color: $editBtnBorder;
-  margin-left: 8px;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    color: $editBtnBorder;
+    margin-left: 8px;
 }
 
 .enroll-plus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .enrolltab {
-  background-color: #fbfbfb;
-  padding: 17px 0px 0px 15px;
-  border-radius: 8px;
-  border: 1px solid #dddddd;
-  margin-top: 20px;
-  display: block;
-  width: 100%;
-  columns: 2;
+    background-color: #fbfbfb;
+    padding: 17px 0px 0px 15px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    columns: 2;
 }
 
 .enrol-input {
-  width: 100%;
+    width: 100%;
 }
 
 @media only screen and (min-width:320px) and (max-width: 480px) {
-  .add-enrollment {
-    flex-direction: column;
-    width: 100%;
-  }
+    .add-enrollment {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 /***** Program Selection *********/
 
 .prselection form {
-  margin-top: 0px;
-  margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .prselection .cardTabBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .prselection .cardTab {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #d4ecff;
-  justify-content: center;
-  width: 20%;
-  padding: 15px 0px;
-  color: #2b4574;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d4ecff;
+    justify-content: center;
+    width: 20%;
+    padding: 15px 0px;
+    color: #2b4574;
 }
 
 .prselection .cardTab p {
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  padding-left: 8px;
-  font-size: 0.92rem;
-  vertical-align: middle;
-  line-height: 1.8rem;
-  letter-spacing: 0.4px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    padding-left: 8px;
+    font-size: 0.92rem;
+    vertical-align: middle;
+    line-height: 1.8rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
 }
 
 .prselection .innerCardTab {
-  border-right: 1px solid #8aaeee;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex: 1;
-  justify-content: center;
+    border-right: 1px solid #8aaeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
 }
 
 .prselection .removeTabBorder {
-  border: none;
+    border: none;
 }
 
 .prselection .cardTab .programTabs {
-  text-align: center;
-  line-height: 1.5rem;
-  vertical-align: middle;
-  position: relative;
-  bottom: 2px;
+    text-align: center;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
 }
 
 .prselection .shadeOne {
-  color: white;
-  background-color: #2b4574;
+    color: white;
+    background-color: #2b4574;
 }
 
 .prselection .filterprbutns button {
-  border: 0;
-  background: transparent;
-  letter-spacing: 0.00938em;
-  color: #506588;
-  font-weight: 400;
-  font-size: 0.85rem;
-  text-transform: capitalize;
+    border: 0;
+    background: transparent;
+    letter-spacing: 0.00938em;
+    color: #506588;
+    font-weight: 400;
+    font-size: 0.85rem;
+    text-transform: capitalize;
 }
 
 .prselection .filterprbutns button.Mui-selected {
-  font-weight: 500;
-  text-transform: capitalize;
-  border-bottom: solid;
-  border-radius: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: solid;
+    border-radius: 0;
 }
 
 .prselection .MuiFormControl-root {
-  margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 @media screen and (min-width: 481px) and (max-width: 1121px) {
-  .prselection .innerCardTab {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    justify-content: center;
-  }
+    .prselection .innerCardTab {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: center;
+    }
 
-  .prselection .cardTab p {
-    text-align: left;
-    line-height: 1.3rem;
-    margin-left: 2px;
-  }
+    .prselection .cardTab p {
+        text-align: left;
+        line-height: 1.3rem;
+        margin-left: 2px;
+    }
 
-  .prselection .cardTab {
-    padding: 0;
-  }
+    .prselection .cardTab {
+        padding: 0;
+    }
 
-  .prselection .cardTab .programTabs {
-    align-items: center;
-    justify-content: center;
-    bottom: 2px;
-    margin-left: 5px;
-  }
+    .prselection .cardTab .programTabs {
+        align-items: center;
+        justify-content: center;
+        bottom: 2px;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (min-width: 703px) and (max-width: 910px) {
-  .prselection .innerCardTab {
-    display: flex;
-    align-items: center;
-    height: 90px;
-    justify-content: center;
-  }
+    .prselection .innerCardTab {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 703px) {
-  .prselection .cardTab p {
-    display: none;
-  }
+    .prselection .cardTab p {
+        display: none;
+    }
 
-  .prselection .innerCardTab {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    justify-content: center;
-  }
+    .prselection .innerCardTab {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: center;
+    }
 }
 
 .prselection .selectActive {
-  background-color: #2b4574;
+    background-color: #2b4574;
 }
 
 .prselection .selectActiveLabel {
-  text-align: left;
-  text-transform: capitalize;
-  color: white;
-  font-size: 0.85rem;
-  vertical-align: middle;
-  line-height: 1.8rem;
-  letter-spacing: 0.4px;
-  font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    color: white;
+    font-size: 0.85rem;
+    vertical-align: middle;
+    line-height: 1.8rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
 }
 
 .prselection .selectInActiveLabel {
-  text-align: left;
-  text-transform: capitalize;
-  font-size: 0.85rem;
-  vertical-align: middle;
-  line-height: 1.8rem;
-  letter-spacing: 0.4px;
-  font-weight: 400;
-  color: #2b4574;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    vertical-align: middle;
+    line-height: 1.8rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    color: #2b4574;
 }
 
 
 .prselection .programSelection {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: $white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $white;
 }
 
 .prselection .buttons-cal {
-  display: flex;
-  margin-top: 40px;
-  justify-content: flex-end;
-  // margin-bottom: 30px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+    // margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 481px) {
 
-  .prselection .buttons-cal {
-    justify-content: center;
-  }
+    .prselection .buttons-cal {
+        justify-content: center;
+    }
 
-  .prselection .buttons-cal {
-    justify-content: center;
-  }
+    .prselection .buttons-cal {
+        justify-content: center;
+    }
 }
 
 
@@ -1474,762 +1473,739 @@ input {
 
 
 
-.userProfileWrap {
-  margin: 100px 0 0 0;
-}
+// ===================== custom scroll css ====================
 
-.alertGrp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 15px;
-  flex-wrap: wrap;
 
-  strong {
-    font-size: 12px;
-    font-weight: 600;
-
-    @media (max-width:576px) {
-      font-size: 9px;
-    }
-  }
-
-  .MuiPaper-rounded {
-    margin: 5px 10px;
-    border-radius: 40px;
-    color: #D50202;
-    padding: 5px 10px;
-    font-size: 12px;
-    border: 1px solid #F8A5A5;
-
-    @media (max-width:476px) {
-      padding: 0 1px;
-
-    }
-
-    .MuiAlert-icon {
-      display: none;
-    }
-
-    .MuiAlert-message {
-      padding: 5px;
-
-      @media (max-width:576px) {
-        font-size: 9px;
-
-      }
-    }
-  }
-}
-
-.profileBox {
-  padding: 30px 0;
-
-  .profileContent {
-    border-radius: 20px;
-    box-shadow: 0px 2px 16px #0000001F;
-    margin-bottom: 30px;
-
-    .profileInfo {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
-
-      .cardImages {
-        background-color: #f1f1f1;
-        width: 85px;
-        height: 90px;
-        border-radius: 15px;
-        border: 2px solid #ccc;
-        overflow: hidden;
-
-        @media (max-width:476px) {
-          width: 65px;
-          height: 70px;
-
-        }
-
-        img {
-          object-position: 0 10px;
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-        }
-      }
-
-      .profileMemberName {
-        padding: 0 0 0 30px;
-        text-align: left;
-        width: calc(100% - 85px);
-
-        @media (max-width:1199px) {
-          display: flex;
-          justify-content: space-between;
-        }
-
-        @media (max-width:476px) {
-          padding: 0;
-          width: 100%;
-          margin: 20px 0 0 0;
-
-        }
-
-
-        .greeting {
-          font-size: 18px;
-          color: #506588;
-          font-weight: 600;
-
-          span {
-            font-weight: 600;
-          }
-
-          @media (max-width:476px) {
-            line-height: 20px;
-
-          }
-
-          strong {
-            display: block;
-            font-size: 26px;
-            color: #54a973;
-            line-height: 34px;
-            margin-top: 5px;
-            font-weight: 700;
-
-            @media (max-width:600px) {
-              font-size: 22px;
-              line-height: 24px;
-            }
-          }
-
-          p {
-            margin: 20px 0;
-            font-size: 14px;
-            color: #888888;
-
-            @media (max-width:1199px) {
-              margin: 10px 0;
-            }
-
-            span {
-              color: #323232;
-              font-weight: 500;
-              font-size: 16px;
-            }
-          }
-        }
-
-        .otherText {
-          button {
-            text-transform: capitalize;
-            background-color: #f2f9ff;
-            border: 1px solid #506588;
-            color: #506588;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: 400;
-            padding: 10px 20px;
-            line-height: normal;
-
-            @media (max-width:600px) {
-              padding: 11px;
-              line-height: 0;
-              display: initial;
-              min-width: auto;
-
-            }
-
-            span {
-              @media (max-width:600px) {
-                display: none;
-              }
-            }
-          }
-
-
-
-
-          svg {
-            margin: 0 5px 0 0;
-
-            @media (max-width:600px) {
-              margin: 0;
-              width: 18px;
-              height: 18px;
-
-            }
-          }
-
-          svg path {
-            stroke: #506588;
-          }
-        }
-      }
-    }
-
-    .profileTextListing {
-      >div {
-        padding: 0;
-      }
-
-      .profileTextList {
-        text-align: left;
-
-        span {
-          color: #888888;
-          font-size: 14px;
-
-        }
-
-        p {
-          color: #323232;
-          font-weight: 500;
-          margin-top: 5px;
-        }
-      }
-    }
-  }
-
-  .calender {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 2px 16px #0000001f;
-    padding: 30px;
-    position: relative;
-    height: 100%;
-
-    @media (max-width:1024px) {
-      padding: 20px;
-
-    }
-
-    @media (max-width:900px) {
-      min-height: 670px;
-
-    }
-
-    .heading {
-      h3 {
-        margin: 0 0 40px 0;
-      }
-    }
-
-    >div {
-      margin: 0;
-      width: 100%;
-    }
-  }
-
-  .tableContent {
-    text-align: left;
-    padding: 30px;
-    border-top: 1px solid #B5D5EF;
-    background-color: #F2F9FF;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0px 2px 16px #0000001F;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #2B4574;
-      font-weight: 500;
-      padding: 10px 0 0 0;
-    }
-
-    .inputFuild {
-      padding: 0 0 25px 0;
-      display: flex;
-      align-items: center;
-
-      span {
-        color: #2B4574;
-        font-weight: 500;
-      }
-
-      input {
-        border-bottom: 1px solid #B5D5EF !important;
-        box-shadow: none !important;
-        border-top: none !important;
-        border-right: none !important;
-        border-left: none !important;
-        background-color: transparent !important;
-        width: 100%;
-        margin: 0 0 0 20px;
-        outline: none;
-        border-radius: 0 !important;
-        height: auto !important;
-        padding: 0 !important;
-        font-size: 16px !important;
-      }
-    }
-  }
-
-  .tableWrap {
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0px 2px 16px #0000001f;
-    padding: 30px;
-
-    &.tabele2Wrap {
-      height: 100%;
-    }
-
-    .table1 {
-      // overflow: auto;
-      // max-height: 300px;
-      box-shadow: none;
-
-      @media (max-width:1199px) {
-        max-height: 180px;
-
-      }
-
-      .tableHeading {
-        @include tableHeading;
-      }
-
-      .tableContant {
-        td {
-          color: #A8A8A8;
-        }
-
-        th {
-          padding: 8px;
-          font-size: 16px;
-          color: #2B4574;
-          font-weight: 500;
-        }
-      }
-    }
-
-    .table2 {
-      // overflow: auto;
-      // max-height: 240px;
-
-      @media (max-width:1200px) {
-        max-height: 350px;
-
-      }
-
-      .tableHeading {
-        @include tableHeading
-      }
-
-      .tableContant {
-
-        th,
-        td {
-          padding: 13px;
-        }
-      }
-
-    }
-
-    .cutomScroll {
-      div {
+.cutomScroll {
+    div {
         &:nth-child(2) {
-          background-color: #e6e6e6;
+            background-color: #e6e6e6;
 
-          div {
-            background-color: #2b4574 !important;
-          }
+            div {
+                background-color: #2b4574 !important;
+            }
         }
 
         &:last-child {
-          background-color: #e6e6e6;
+            background-color: #e6e6e6;
 
-          div {
-            background-color: #2b4574 !important;
-          }
+            div {
+                background-color: #2b4574 !important;
+            }
         }
-      }
     }
-  }
+}
 
 
+.userProfileWrap {
+    margin: 100px 0 0 0;
+}
 
-  .heading {
-    h3 {
-      @include heading;
-    }
-  }
-
-
-  .cardWrap {
-    @include cardDesign;
-    height: 100%;
+.alertGrp {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    flex-wrap: wrap;
 
-    >div {
-      height: 100%;
+    strong {
+        font-size: 12px;
+        font-weight: 600;
+
+        @media (max-width:576px) {
+            font-size: 9px;
+        }
     }
 
-    .cradBtn {
-      @include accessBtn
+    .MuiPaper-rounded {
+        margin: 5px 10px;
+        border-radius: 40px;
+        color: #D50202;
+        padding: 5px 10px;
+        font-size: 12px;
+        border: 1px solid #F8A5A5;
+
+        @media (max-width:476px) {
+            padding: 0 1px;
+
+        }
+
+        .MuiAlert-icon {
+            display: none;
+        }
+
+        .MuiAlert-message {
+            padding: 5px;
+
+            @media (max-width:576px) {
+                font-size: 9px;
+
+            }
+        }
+    }
+}
+
+.profileBox {
+    padding: 30px 0;
+
+    .profileContent {
+        border-radius: 20px;
+        box-shadow: 0px 2px 16px #0000001F;
+        margin-bottom: 30px;
+
+        .profileInfo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .cardImages {
+                background-color: #f1f1f1;
+                width: 85px;
+                height: 90px;
+                border-radius: 15px;
+                border: 2px solid #ccc;
+                overflow: hidden;
+
+                @media (max-width:476px) {
+                    width: 65px;
+                    height: 70px;
+
+                }
+
+                img {
+                    object-position: 0 10px;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                }
+            }
+
+            .profileMemberName {
+                padding: 0 0 0 30px;
+                text-align: left;
+                width: calc(100% - 85px);
+
+                @media (max-width:1199px) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                @media (max-width:476px) {
+                    padding: 0;
+                    width: 100%;
+                    margin: 20px 0 0 0;
+
+                }
+
+
+                .greeting {
+                    font-size: 18px;
+                    color: #506588;
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 600;
+                    }
+
+                    @media (max-width:476px) {
+                        line-height: 20px;
+
+                    }
+
+                    strong {
+                        display: block;
+                        font-size: 26px;
+                        color: #54a973;
+                        line-height: 34px;
+                        margin-top: 5px;
+                        font-weight: 700;
+
+                        @media (max-width:600px) {
+                            font-size: 22px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    p {
+                        margin: 20px 0;
+                        font-size: 14px;
+                        color: #888888;
+
+                        @media (max-width:1199px) {
+                            margin: 10px 0;
+                        }
+
+                        span {
+                            color: #323232;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .otherText {
+                    @include editBtn;
+
+                    svg {
+                        margin: 0 5px 0 0;
+
+                        @media (max-width:600px) {
+                            margin: 0;
+                            width: 18px;
+                            height: 18px;
+
+                        }
+                    }
+
+                    svg path {
+                        stroke: #506588;
+                    }
+                }
+            }
+        }
+
+        .profileTextListing {
+            >div {
+                padding: 0;
+            }
+
+            .profileTextList {
+                text-align: left;
+
+                span {
+                    color: #888888;
+                    font-size: 14px;
+
+                }
+
+                p {
+                    color: #323232;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+            }
+        }
     }
 
-    .cardInner {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    .calender {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 2px 16px #0000001f;
+        padding: 30px;
+        position: relative;
+        height: 100%;
+
+        @media (max-width:1024px) {
+            padding: 20px;
+
+        }
+
+        @media (max-width:900px) {
+            min-height: 670px;
+
+        }
+
+        .heading {
+            h3 {
+                margin: 0 0 40px 0;
+            }
+        }
+
+        >div {
+            margin: 0;
+            width: 100%;
+        }
     }
 
-    .ProfileCardContent {
-      text-align: left;
+    .tableContent {
+        text-align: left;
+        padding: 30px;
+        border-top: 1px solid #B5D5EF;
+        background-color: #F2F9FF;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 2px 16px #0000001F;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
 
-      p {
-        line-height: 26px;
 
         a {
-          text-decoration: none;
-          color: #2792D3;
-        }
-      }
-
-      strong {
-        color: #555555;
-        margin: 10px 0;
-        display: block;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0 0 0 20px;
-        list-style: none;
-
-        li {
-          position: relative;
-          line-height: 24px;
-          color: #555555;
-          padding: 0 0 0 10px;
-
-          &:before {
-            content: '';
-            position: absolute;
-            left: -15px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 9px;
-            height: 9px;
-            background-color: #A8A8A8;
-          }
-        }
-      }
-    }
-
-    .myResourcesCard {
-      .resourceUl {
-        text-align: left;
-
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-
-        li {
-          border-bottom: 1px solid #E6E6E6;
-          padding: 10px 0;
-          color: #555555;
-          font-weight: 500;
-        }
-      }
-
-      .googleApp {
-        bottom: 0;
-        width: auto;
-        left: 0;
-        padding: 25px 30px;
-        border-top: 1px solid #D9D7D7;
-        background-color: #FBFBFB;
-        margin: 0 -26px -34px -26px;
-
-        strong {
-          color: #2B4574;
-          padding: 0 0 20px 0;
-          display: block;
-          font-weight: 600;
-        }
-
-        ul {
-          display: flex;
-          align-items: center;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-
-          li {
+            display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0;
-            width: auto;
-
-            a {
-              padding: 0 20px 0 0;
-              display: block;
-            }
-          }
-        }
-      }
-    }
-
-    .bookStoreCard,
-    .paymentCard,
-    .myResourcesCard,
-    .supportCard,
-    .studentCard,
-    .campusCard {
-      @include innerCard
-    }
-
-
-    .paymentCard {
-      .patmentListing {
-        display: flex;
-        flex-wrap: wrap;
-
-        .patmentList {
-          width: 50%;
-          text-align: left;
-          line-height: 24px;
-          padding: 0 0 10px 0;
-
-          span {
-            display: block;
-            color: #888888;
-            font-size: 14px;
-          }
-
-          strong {
-            font-weight: 600;
-          }
-        }
-      }
-    }
-
-    .supportCard {
-      text-align: left;
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-          position: relative;
-          padding: 5px 0 5px 30px;
-          line-height: 24px;
-
-          svg {
-            position: absolute;
-            left: 0;
-            top: 7px
-          }
-
-          a {
-            text-decoration: none;
             color: #2B4574;
-            font-weight: 600;
-          }
-
-          p {
-            display: inline-block;
-            color: #555555;
-
-            span {
-              &:last-child {
-
-                display: block;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .studentCard {
-      text-align: left;
-
-      p {
-        margin: 10px 0;
-        line-height: 23px;
-        color: #555555;
-
-        a {
-          color: #2792D3;
-          text-decoration: none;
-        }
-      }
-    }
-
-    .campusCard {
-      text-align: left;
-
-      .campusContent {
-        color: #2B4574;
-        font-size: 20px;
-
-        strong {
-          font-weight: 600;
-          font-size: 20px;
+            font-weight: 500;
+            padding: 10px 0 0 0;
         }
 
-        ul {
-          list-style: none;
-          margin: 15px 0;
-          padding: 0;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          width: 80%;
-
-          li {
-            padding: 10px 0 10px 30px;
-            position: relative;
-            font-size: 16px;
-
-            svg {
-              position: absolute;
-              left: 0;
-              top: 12px
-            }
-          }
-        }
-      }
-
-
-      .cradBtn {
-        padding: 10px 0 0 0;
-
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          text-align: left;
-          font-size: 14px;
-          color: #555555;
-
-          li {
-            padding: 2px 0;
+        .inputFuild {
+            padding: 0 0 25px 0;
             display: flex;
             align-items: center;
 
-            &:nth-child(2) {
-              color: #2B4574;
-              font-weight: 600;
-              font-size: 16px;
+            span {
+                color: #2B4574;
+                font-weight: 500;
+            }
+
+            input {
+                border-bottom: 1px solid #B5D5EF !important;
+                box-shadow: none !important;
+                border-top: none !important;
+                border-right: none !important;
+                border-left: none !important;
+                background-color: transparent !important;
+                width: 100%;
+                margin: 0 0 0 20px;
+                outline: none;
+                border-radius: 0 !important;
+                height: auto !important;
+                padding: 0 !important;
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .tableWrap {
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px 2px 16px #0000001f;
+        padding: 30px;
+
+        &.tabele2Wrap {
+            height: 100%;
+        }
+
+        .table1 {
+            // overflow: auto;
+            // max-height: 300px;
+            box-shadow: none;
+
+            @media (max-width:1199px) {
+                max-height: 180px;
 
             }
 
-            &:last-child {
-              a {
-                text-decoration: none;
-                color: #555555;
-                padding: 0 0 0 10px;
-                font-size: 16px;
-              }
+            .tableHeading {
+                @include tableHeading;
             }
-          }
+
+            .tableContant {
+                td {
+                    color: #A8A8A8;
+                }
+
+                th {
+                    padding: 8px;
+                    font-size: 16px;
+                    color: #2B4574;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .table2 {
+            // overflow: auto;
+            // max-height: 240px;
+
+            @media (max-width:1200px) {
+                max-height: 350px;
+
+            }
+
+            .tableHeading {
+                @include tableHeading
+            }
+
+            .tableContant {
+
+                th,
+                td {
+                    padding: 13px;
+                }
+            }
 
         }
-      }
     }
-  }
 
-  .MuiDayCalendar-header {
-    justify-content: space-around !important;
 
-    span {
-      font-size: 16px;
-      color: #222222;
-      font-weight: 600;
+
+    .heading {
+        h3 {
+            @include heading;
+        }
     }
-  }
 
-  .MuiPickersCalendarHeader-label {
-    color: #2B4574;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
 
-    @media (max-width:1024px) {
-      font-size: 14px;
+    .cardWrap {
+        @include cardDesign;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
+        >div {
+            height: 100%;
+        }
+
+        .cradBtn {
+            @include accessBtn
+        }
+
+        .cardInner {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ProfileCardContent {
+            text-align: left;
+
+            p {
+                line-height: 26px;
+
+                a {
+                    text-decoration: none;
+                    color: #2792D3;
+                }
+            }
+
+            strong {
+                color: #555555;
+                margin: 10px 0;
+                display: block;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0 0 0 20px;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    line-height: 24px;
+                    color: #555555;
+                    padding: 0 0 0 10px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -15px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 9px;
+                        height: 9px;
+                        background-color: #A8A8A8;
+                    }
+                }
+            }
+        }
+
+        .myResourcesCard {
+            .resourceUl {
+                text-align: left;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li {
+                    border-bottom: 1px solid #E6E6E6;
+                    padding: 10px 0;
+                    color: #555555;
+                    font-weight: 500;
+                }
+            }
+
+            .googleApp {
+                bottom: 0;
+                width: auto;
+                left: 0;
+                padding: 25px 30px;
+                border-top: 1px solid #D9D7D7;
+                background-color: #FBFBFB;
+                margin: 0 -26px -34px -26px;
+
+                strong {
+                    color: #2B4574;
+                    padding: 0 0 20px 0;
+                    display: block;
+                    font-weight: 600;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        width: auto;
+
+                        a {
+                            padding: 0 20px 0 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bookStoreCard,
+        .paymentCard,
+        .myResourcesCard,
+        .supportCard,
+        .studentCard,
+        .campusCard {
+            @include innerCard
+        }
+
+
+        .paymentCard {
+            .patmentListing {
+                display: flex;
+                flex-wrap: wrap;
+
+                .patmentList {
+                    width: 50%;
+                    text-align: left;
+                    line-height: 24px;
+                    padding: 0 0 10px 0;
+
+                    span {
+                        display: block;
+                        color: #888888;
+                        font-size: 14px;
+                    }
+
+                    strong {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .supportCard {
+            text-align: left;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    position: relative;
+                    padding: 5px 0 5px 30px;
+                    line-height: 24px;
+
+                    svg {
+                        position: absolute;
+                        left: 0;
+                        top: 7px
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #2B4574;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        display: inline-block;
+                        color: #555555;
+
+                        span {
+                            &:last-child {
+
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .studentCard {
+            text-align: left;
+
+            p {
+                margin: 10px 0;
+                line-height: 23px;
+                color: #555555;
+
+                a {
+                    color: #2792D3;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .campusCard {
+            text-align: left;
+
+            .campusContent {
+                color: #2B4574;
+                font-size: 20px;
+
+                strong {
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 15px 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 80%;
+
+                    li {
+                        padding: 10px 0 10px 30px;
+                        position: relative;
+                        font-size: 16px;
+
+                        svg {
+                            position: absolute;
+                            left: 0;
+                            top: 12px
+                        }
+                    }
+                }
+            }
+
+
+            .cradBtn {
+                padding: 10px 0 0 0;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    font-size: 14px;
+                    color: #555555;
+
+                    li {
+                        padding: 2px 0;
+                        display: flex;
+                        align-items: center;
+
+                        &:nth-child(2) {
+                            color: #2B4574;
+                            font-weight: 600;
+                            font-size: 16px;
+
+                        }
+
+                        &:last-child {
+                            a {
+                                text-decoration: none;
+                                color: #555555;
+                                padding: 0 0 0 10px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
     }
-  }
 
-  .MuiPickersDay-root {
-    color: #222222;
-    font-weight: 500;
-    font-size: 15px;
-    margin: 5px 0;
-  }
+    .MuiDayCalendar-header {
+        justify-content: space-around !important;
 
-  .MuiDayCalendar-weekContainer {
-    justify-content: space-between !important;
-  }
+        span {
+            font-size: 16px;
+            color: #222222;
+            font-weight: 600;
+        }
+    }
 
-  .MuiPickersDay-today {
-    background-color: #EEF7FF !important;
-    border: 2px solid #297FB8 !important;
-  }
+    .MuiPickersCalendarHeader-label {
+        color: #2B4574;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
 
-  .MuiPickersDay-root[aria-colindex="1"] {
-    color: #ff0000;
-  }
+        @media (max-width:1024px) {
+            font-size: 14px;
 
-  .MuiPickersCalendarHeader-root {
-    margin: 0 0 15px 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #B5D5EF;
-  }
+        }
+    }
 
-  .MuiDayCalendar-slideTransition {
-    min-height: 290px;
-  }
+    .MuiPickersDay-root {
+        color: #222222;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .MuiDayCalendar-weekContainer {
+        justify-content: space-between !important;
+    }
+
+    .MuiPickersDay-today {
+        background-color: #EEF7FF !important;
+        border: 2px solid #297FB8 !important;
+    }
+
+    .MuiPickersDay-root[aria-colindex="1"] {
+        color: #ff0000;
+    }
+
+    .MuiPickersCalendarHeader-root {
+        margin: 0 0 15px 0;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #B5D5EF;
+    }
+
+    .MuiDayCalendar-slideTransition {
+        min-height: 290px;
+    }
 
 
 }
 
 @media (max-width:1199px) {
 
-  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
-    width: 33.3%;
-  }
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 33.3%;
+    }
 
 }
 
 @media (max-width:991px) {
 
-  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
-    width: 50%;
-  }
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 50%;
+    }
 
 }
 
 @media (max-width:767px) {
 
-  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
-    width: 50%;
-  }
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 50%;
+    }
 
 }
 
 @media (max-width:576px) {
 
-  .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
-    width: 100%;
-  }
+    .customGrid .MuiGrid2-root.MuiGrid2-direction-xs-row.MuiGrid2-grid-lg-4.MuiGrid2-grid-md-6.MuiGrid2-grid-sm-12.MuiGrid2-grid-xs-12.css-1qrrcjv-MuiGrid2-root {
+        width: 100%;
+    }
 
 }
 
@@ -2239,16 +2215,16 @@ input {
 
 
 .footer-container {
-  background-color: $blueShade;
-  border-radius: 40px !important;
-  color: $white;
-  padding: 20px;
-  margin: 0 0 20px 0;
-  justify-content: center !important;
+    background-color: $blueShade;
+    border-radius: 40px !important;
+    color: $white;
+    padding: 18px;
+    margin: 0 0 20px 0;
+    justify-content: center !important;
 
-  strong {
-    font-weight: 400;
-  }
+    strong {
+        font-weight: 400;
+    }
 
 }
 
@@ -2257,253 +2233,630 @@ input {
 // ======================= Navbar file all css ==========================
 
 .MuiAppBar-colorPrimary {
-  background-color: #fff !important;
-  position: static !important;
+    background-color: #fff !important;
+    position: static !important;
 }
 
 .navbarWrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-
-  .mui-fixed {
-    box-shadow: none;
-    border-bottom: 1px solid #D4D4D4;
-  }
-
-  header {
-    background-color: $white;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 9;
 
-    .headerWrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .mui-fixed {
+        box-shadow: none;
+        border-bottom: 1px solid #D4D4D4;
     }
 
-    .logo-cal {
-      img {
-        object-fit: contain;
-        width: 100px;
-        height: 50px;
-      }
-    }
-
-    .logo-heading {
-      display: flex;
-      align-items: center;
-
-      .desktopLogo {
-
-        img {
-          padding: 0 15px 0 0;
-          margin: 0 15px 0 0;
-          border-right: 1px solid #ccc;
-          width: 100%;
-          max-width: 170px;
-
-          @media (max-width:1230px) {
-            max-width: 150px;
-
-          }
-
-          @media (max-width:900px) {
-            max-width: 130px;
-
-          }
-
-          @media (max-width:600px) {
-            display: none;
-
-          }
-        }
-      }
-
-      .mobileLogo {
-        display: none;
-        padding: 0 5px 0 0;
-        margin: 0 5px 0 0;
-        border-right: 1px solid #ccc;
-        height: 50px;
-
-        img {
-          width: 40px;
-
-        }
-
-
-        @media (max-width:600px) {
-          display: block;
-          border: none;
-        }
-      }
-
-
-      .page-title {
-        h2 {
-          font-size: 24px;
-          font-weight: 600;
-
-          color: $greenLight;
-
-          @media (max-width:1300px) {
-            font-size: 20px;
-
-          }
-
-          @media (max-width:360px) {
-            font-size: 16px;
-
-          }
-        }
-      }
-    }
-
-    .navbar-option {
-      display: flex;
-      align-items: center;
-
-      button {
-        text-decoration: none;
-        padding: 0 15px;
-        color: $textColor;
-        text-transform: capitalize;
-        font-size: 16px;
-        transition: all 0.3s;
-
-        &:hover {
-          color: #1BB75D;
-          background-color: transparent;
-        }
-
-        @media (max-width:1299px) {
-          padding: 0 10px;
-
-        }
-
-        @media (max-width:1200px) {
-          margin: 0;
-          padding: 0;
-
-        }
-      }
-
-      .navbar-ul ul {
+    header {
+        background-color: $white;
+        padding: 20px 0;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        list-style: none;
+        vertical-align: middle;
+        width: 100%;
+        z-index: 10;
 
-        li:last-child a {
-          padding: 0;
+        .headerWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        li a {
-          text-decoration: none;
-          display: inline-block;
-          padding: 0 15px;
-          color: $textColor;
-        }
-      }
-
-      .notification {
-        display: flex;
-        align-items: center;
-      }
-
-      .navbar-icons {
-        margin: 0 0 0 20px;
-        padding: 0 0 0 20px;
-        border-left: 1px solid #C4C4C4;
-
-        @media (max-width:600px) {
-          padding: 0;
+        .logo-cal {
+            img {
+                object-fit: contain;
+                width: 100px;
+                height: 50px;
+            }
         }
 
-        .ball-bage {
-          @media (max-width:600px) {
-            display: none;
-          }
+        .logo-heading {
+            display: flex;
+            align-items: center;
 
-          .MuiBadge-badge {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-          }
+            .desktopLogo {
+
+                img {
+                    padding: 0 15px 0 0;
+                    margin: 0 15px 0 0;
+                    border-right: 1px solid #ccc;
+                    width: 100%;
+                    max-width: 170px;
+
+                    @media (max-width:1230px) {
+                        max-width: 150px;
+
+                    }
+
+                    @media (max-width:900px) {
+                        max-width: 130px;
+
+                    }
+
+                    @media (max-width:600px) {
+                        display: none;
+
+                    }
+                }
+            }
+
+            .mobileLogo {
+                display: none;
+                padding: 0 5px 0 0;
+                margin: 0 5px 0 0;
+                border-right: 1px solid #ccc;
+                height: 50px;
+
+                img {
+                    width: 40px;
+
+                }
+
+
+                @media (max-width:600px) {
+                    display: block;
+                    border: none;
+                }
+            }
+
+
+            .page-title {
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+
+                    color: $greenLight;
+
+                    @media (max-width:1300px) {
+                        font-size: 20px;
+
+                    }
+
+                    @media (max-width:360px) {
+                        font-size: 16px;
+
+                    }
+                }
+            }
         }
 
-        .ball-bage span {
-          background-color: #FF0000;
-          width: 10px;
+        .navbar-option {
+            display: flex;
+            align-items: center;
+
+            button {
+                text-decoration: none;
+                padding: 0 15px;
+                color: $textColor;
+                text-transform: capitalize;
+                font-size: 16px;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: #1BB75D;
+                    background-color: transparent;
+                }
+
+                @media (max-width:1299px) {
+                    padding: 0 10px;
+
+                }
+
+                @media (max-width:1200px) {
+                    margin: 0;
+                    padding: 0;
+
+                }
+            }
+
+            .navbar-ul ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                li:last-child a {
+                    padding: 0;
+                }
+
+                li a {
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 0 15px;
+                    color: $textColor;
+                }
+            }
+
+            .notification {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar-icons {
+                margin: 0 0 0 20px;
+                padding: 0 0 0 20px;
+                border-left: 1px solid #C4C4C4;
+
+                @media (max-width:600px) {
+                    padding: 0;
+                }
+
+                .ball-bage {
+                    @media (max-width:600px) {
+                        display: none;
+                    }
+
+                    .MuiBadge-badge {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                    }
+                }
+
+                .ball-bage span {
+                    background-color: #FF0000;
+                    width: 10px;
+                }
+
+                .ball-bage>span {
+                    background-color: $whiteShadeOne;
+                    width: 40px;
+                    border-radius: 50%;
+                    aspect-ratio: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .profile-image {
+                    width: 32px;
+                    height: 32px
+                }
+
+                .profile-btn {
+                    padding: 0 0 0 15px;
+                }
+
+                .profile-btn:hover {
+                    background-color: transparent;
+                }
+
+                .profile-icon {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .person-name {
+                    margin: 0 10px;
+                    text-align: left;
+                    text-transform: capitalize;
+                    line-height: 21px;
+
+                    @media (max-width:900px) {
+                        display: none;
+                    }
+
+                    strong {
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 12px;
+                    }
+
+
+                }
+
+                .down-icon {
+                    transform: rotate(90deg);
+
+                    @media (max-width:900px) {
+                        display: none;
+
+                    }
+                }
+            }
         }
-
-        .ball-bage>span {
-          background-color: $whiteShadeOne;
-          width: 40px;
-          border-radius: 50%;
-          aspect-ratio: 1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .profile-image {
-          width: 32px;
-          height: 32px
-        }
-
-        .profile-btn {
-          padding: 0 0 0 15px;
-        }
-
-        .profile-btn:hover {
-          background-color: transparent;
-        }
-
-        .profile-icon {
-          display: flex;
-          align-items: center;
-        }
-
-        .person-name {
-          margin: 0 10px;
-          text-align: left;
-          text-transform: capitalize;
-          line-height: 21px;
-
-          @media (max-width:900px) {
-            display: none;
-          }
-
-          strong {
-            font-weight: 600;
-            font-size: 14px;
-          }
-
-          span {
-            display: block;
-            font-size: 12px;
-          }
-
-
-        }
-
-        .down-icon {
-          transform: rotate(90deg);
-
-          @media (max-width:900px) {
-            display: none;
-
-          }
-        }
-      }
     }
-  }
+}
+
+
+// =================== accessing file all css ====================
+
+
+.accessingWrap {
+    margin-top: 100px;
+}
+
+.breadCrumbWrap {
+    padding: 9px 0;
+    background: #E1F2FF;
+    border-bottom: 1px solid #BDDAF1;
+
+    .MainBreadCrumbs {
+        li {
+            a {
+                font-size: 16px;
+                color: #2B4574;
+            }
+
+            &:last-child {
+                p {
+                    font-weight: 600;
+                    color: #2B4574;
+                    font-size: 16px
+                }
+            }
+        }
+    }
+}
+
+.heading {
+    h3 {
+        @include heading;
+    }
+}
+
+.contantWrap {
+    margin: 20px 0 30px 0;
+
+    .contentBox {
+        @include cardDesign;
+        padding: 30px;
+
+        .contentText {
+            text-align: left;
+            padding: 10px 0 0 0;
+
+            h6 {
+                strong {
+                    color: #323232;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+
+            .ContentListing {
+                li {
+                    display: block;
+                    padding: 10px 0 10px 23px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #A8A8A8;
+                        top: 17px;
+                        left: 0;
+
+                    }
+
+                    span {
+                        display: block;
+                        font-weight: 600;
+                        color: #2B4574;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: #555555;
+                        font-size: 16px;
+                        margin: 5px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ================ academin file all css ========================
+
+.academicWrap {
+    margin-top: 90px;
+
+    .academicTableInner {
+        @include cardDesign;
+        padding: 30px;
+        margin: 20px 0 30px 0;
+    }
+
+    .academicTable {
+
+        thead {
+            position: relative;
+            z-index: 2;
+
+            tr {
+                th {
+                    background-color: #fff;
+                    position: sticky;
+                    top: 0;
+                    color: #2B4574;
+                    font-weight: 600;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #2B4574;
+                        left: 0;
+                        bottom: 0;
+
+                    }
+                }
+            }
+        }
+
+        tbody {
+
+            tr {
+                border-bottom: 1px solid #A7A7A7;
+
+                th {
+                    border-bottom: none;
+                    padding: 13px 10px;
+                    color: #323232;
+                    font-size: 16px;
+                }
+
+                td {
+                    border-bottom: none;
+                    padding: 13px 10px;
+
+                    a {
+                        color: #506588;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// =================== financeAccount file all css ======================== 
+
+.financeWrap {
+    margin-top: 90px;
+
+    .studentCards {
+        padding: 20px 0 30px 0;
+
+
+        .studentDetailCard {
+            @include cardDesign;
+            padding: 30px;
+
+            .heading {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .otherText {
+                @include editBtn;
+
+                button {
+                    padding: 7px 15px;
+                }
+            }
+
+            .studentCardListing {
+                padding: 15px 0 0 0;
+
+                >div {
+                    padding: 0;
+                }
+
+                .studentCardList {
+                    text-align: left;
+                    padding: 0 0 10px 0;
+
+
+                    span {
+                        color: #888888;
+                        font-size: 14px;
+
+                    }
+
+                    p {
+                        color: #323232;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .financeToolCard {
+            @include cardDesign;
+            padding: 30px;
+
+            .financeListing {
+                padding: 30px 0 0 0;
+
+                .MuiGrid2-grid-lg-4:last-child {
+                    .financeList {
+                        padding: 0;
+                        margin: 0;
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+                .financeList {
+                    padding: 0 15px 0 0;
+                    margin: 0 15px 0 0;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 1px;
+                        height: 180px;
+                        top: 0;
+                        right: -3px;
+                        background-color: #DCDCDC;
+                    }
+
+                    p {
+                        padding: 25px 0 0 0;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// ================== student service file css ===============
+
+.studentServiceWrap {
+    margin-top: 90px;
+
+    .studentSupportCard {
+        padding: 30px 0 0 0;
+
+        .studentSupportCardInner {
+            @include cardDesign;
+            padding: 30px;
+
+            .formControl {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+// =============== Courses file css ============
+
+.coursesWrap {
+    margin-top: 90px;
+
+    .coursesCardWrap {
+        padding: 20px 0;
+
+        .coursesCard {
+            @include cardDesign;
+            padding: 30px;
+
+            .heading {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .otherText {
+                @include editBtn;
+
+                button {
+                    padding: 7px 15px;
+                }
+            }
+
+            .studentCardListing {
+                padding: 15px 0 0 0;
+
+                >div {
+                    padding: 0;
+                }
+
+                .studentCardList {
+                    text-align: left;
+                    padding: 0 0 10px 0;
+
+
+                    span {
+                        color: #888888;
+                        font-size: 14px;
+
+                    }
+
+                    p {
+                        color: #323232;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .coursesInnerCard {
+        padding: 20px 0 30px 0;
+
+        .coursesInnerWrap {
+            @include cardDesign;
+            padding: 30px;
+
+            .heading {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+
+            .courseBtn {
+                a {
+                    display: inline-block;
+                    background-color: #2B4574;
+                    color: #fff;
+                    padding: 10px 30px;
+                    border-radius: 8px;
+                    font-size: 18px;
+                    line-height: 24px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .coursesUl {
+                li {
+                    padding: 13px 0;
+                    border-bottom: 1px solid #E0E1E2;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #2B4574;
+                }
+            }
+        }
+    }
+
 }

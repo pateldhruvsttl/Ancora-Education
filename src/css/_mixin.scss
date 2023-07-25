@@ -73,12 +73,13 @@
         display: inline-block;
         transition: all 0.3s;
         font-size: 18px;
-        svg{
+
+        svg {
             margin: 0 0 0 5px;
         }
 
         &:hover {
-            background-color: #2894D1 ;
+            background-color: #2894D1;
             color: #fff;
         }
     }
@@ -90,4 +91,32 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+}
+
+@mixin editBtn {
+    button {
+        text-transform: capitalize;
+        background-color: #f2f9ff;
+        border: 1px solid #506588;
+        color: #506588;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 20px;
+        line-height: normal;
+
+        @media (max-width:600px) {
+            padding: 11px;
+            line-height: 0;
+            display: initial;
+            min-width: auto;
+
+        }
+
+        span {
+            @media (max-width:600px) {
+                display: none;
+            }
+        }
+    }
 }
