@@ -2752,6 +2752,25 @@ input {
 
         }
     }
+
+    .FinanceTableWrap {
+        .tableHeading {
+            @include tableHeading;
+            padding: 0 10px
+        }
+
+        .mainTable {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 24px;
+            box-shadow: 0px 2px 16px #0000001f;
+        }
+    }
+}
+
+
+.MuiDataGrid-footerContainer {
+    display: none !important;
 }
 
 
@@ -2761,16 +2780,87 @@ input {
     margin-top: 90px;
 
     .studentSupportCard {
-        padding: 30px 0 0 0;
+        padding: 30px 0;
 
         .studentSupportCardInner {
             @include cardDesign;
-            padding: 30px;
+            padding: 30px 30px 40px 30px;
 
             .formControl {
                 width: 100%;
+                padding: 30px 0 40px 0;
+                margin-bottom: 40px !important;
+                border-bottom: 1px solid #A7A7A7;
+
+                .selectFuild {
+                    width: 100%;
+                    text-align: left;
+
+                    em {
+                        color: #323232;
+                        font-size: 16px;
+                        font-style: normal;
+                    }
+
+                    MenuItem {
+                        font-size: 16px !important;
+                    }
+
+                    >div {
+                        padding: 10px !important;
+                    }
+                }
+
+                .inputFuild {
+                    width: 100%;
+                }
+
+                .oneFulid {
+                    position: relative;
+                    padding: 5px 0 0 0;
+
+                    &::placeholder {
+                        color: #323232;
+                    }
+
+                    label {
+                        font-size: 15px;
+                        color: #323232;
+                    }
+
+                    input {
+                        padding: 10px !important;
+                        font-size: 16px !important;
+                        border: 1px solid #DBDBDB;
+                    }
+
+                    .redioGroup {
+                        flex-direction: row;
+                    }
+
+                    .textArea {
+                        width: 100%;
+                        border: 1px solid #DBDBDB;
+                        border-radius: 5px;
+                    }
+                }
             }
         }
+
+        .submitBtn {
+            text-align: right;
+
+            a {
+                display: inline-block;
+                padding: 15px 40px;
+                background-color: #2B4574;
+                color: #fff !important;
+                border-radius: 8px;
+                line-height: 24px;
+                letter-spacing: 1px;
+            }
+        }
+
 
     }
 }
