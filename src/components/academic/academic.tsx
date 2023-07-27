@@ -191,7 +191,7 @@ function Academics() {
                                 </Typography>
                             </Box>
                             <TableContainer className="academicTable">
-                                <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 1300, }}>
+                                <Scrollbars className='cutomScroll' autoHide hideTracksWhenNotNeeded style={{ height: 1200, }}>
                                     <Table size="small" aria-label="a dense table">
                                         <TableHead>
                                             <TableRow className="tableHeading">

@@ -1,4 +1,4 @@
-
+import React from "react";
 
 import Footer from '../../common/footer/Footer'
 import Navbar from '../../common/navbar/Navbar'
@@ -10,6 +10,7 @@ import Academics from '../academic/academic'
 import Finance from '../financesAccount/finances'
 import StudentService from '../studentService/studentservice'
 import Courses from '../courses/courses'
+import AcademicAccount from "../academicAccount/academicAccount";
 
 function Dashboard() {
 
@@ -17,7 +18,7 @@ function Dashboard() {
     return (
         <>
             <Navbar />
-            <Academics />
+            <AcademicAccount />
             <Footer />
         </>
     )

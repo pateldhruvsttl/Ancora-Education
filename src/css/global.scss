@@ -1477,7 +1477,7 @@ input {
 
 
 .cutomScroll {
-    div {
+    >div {
         &:nth-child(2) {
             background-color: #e6e6e6;
 
@@ -2661,6 +2661,11 @@ input {
 
 .financeWrap {
     margin-top: 90px;
+    padding: 0 0 30px 0;
+
+    .DataGrid {
+        margin-top: 100px;
+    }
 
     .studentCards {
         padding: 20px 0 30px 0;
@@ -2753,7 +2758,52 @@ input {
         }
     }
 
-    .FinanceTableWrap {
+    .financeTableWrap {
+
+        .financeTableInner {
+            background-color: #fff;
+            box-shadow: 0px 2px 16px #0000001f;
+            border-radius: 24px;
+
+            table {
+                thead {
+                    th {
+                        &:first-child {
+                            padding-left: 50px;
+                        }
+                    }
+                }
+
+                tbody {
+                    th {
+                        &:first-child {
+                            padding-left: 50px;
+                        }
+                    }
+                }
+            }
+
+            .tableContant {
+
+                th,
+                td {
+                    background-color: #F2F9FF;
+                    border-bottom: 1px solid #BDDAF1;
+                    padding: 12px;
+                    color: #506588
+                }
+
+            }
+
+            .tableInnerTable {
+                padding: 0 30px;
+
+                .tableInnerWrap {
+                    padding: 30px 0 0 0;
+                }
+            }
+        }
+
         .tableHeading {
             @include tableHeading;
             padding: 0 10px
@@ -2764,6 +2814,12 @@ input {
             background-color: #fff;
             border-radius: 24px;
             box-shadow: 0px 2px 16px #0000001f;
+        }
+    }
+
+    .tableTopHeading {
+        h3 {
+            @include tableTopHeading
         }
     }
 }
@@ -2871,55 +2927,6 @@ input {
 .coursesWrap {
     margin-top: 90px;
 
-    .coursesCardWrap {
-        padding: 20px 0;
-
-        .coursesCard {
-            @include cardDesign;
-            padding: 30px;
-
-            .heading {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-
-            .otherText {
-                @include editBtn;
-
-                button {
-                    padding: 7px 15px;
-                }
-            }
-
-            .studentCardListing {
-                padding: 15px 0 0 0;
-
-                >div {
-                    padding: 0;
-                }
-
-                .studentCardList {
-                    text-align: left;
-                    padding: 0 0 10px 0;
-
-
-                    span {
-                        color: #888888;
-                        font-size: 14px;
-
-                    }
-
-                    p {
-                        color: #323232;
-                        font-weight: 500;
-                    }
-                }
-            }
-        }
-
-    }
-
     .coursesInnerCard {
         padding: 20px 0 30px 0;
 
@@ -2959,6 +2966,183 @@ input {
                 }
             }
         }
+    }
+
+}
+
+.coursesCardWrap {
+    padding: 20px 0;
+
+    .coursesCard {
+        @include cardDesign;
+        padding: 30px;
+
+        .heading {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .otherText {
+            @include editBtn;
+
+            button {
+                padding: 7px 15px;
+            }
+        }
+
+        .studentCardListing {
+            padding: 15px 0 0 0;
+
+            >div {
+                padding: 0;
+            }
+
+            .studentCardList {
+                text-align: left;
+                padding: 0 0 10px 0;
+
+
+                span {
+                    color: #888888;
+                    font-size: 14px;
+
+                }
+
+                p {
+                    color: #323232;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}
+
+
+// ================ Academic Table file css =============
+
+.academicAccountWrap {
+    margin: 90px 0 0 0;
+
+    .academicTableInner {
+        background-color: #fff;
+        box-shadow: 0px 2px 16px #0000001f;
+        border-radius: 24px;
+        margin: 0 0 30px 0;
+
+        .tableHeading {
+            @include tableHeading;
+        }
+
+        table{
+            @media (max-width:1199px) {
+                width: 1199px;
+                
+            }
+        }
+
+
+        >table {
+            thead {
+                th {
+                    &:first-child {
+                        padding-left: 50px;
+                    }
+                }
+            }
+
+            tbody {
+                th {
+                    &:first-child {
+                        padding-left: 50px;
+                    }
+                }
+            }
+        }
+
+        .tableContant {
+
+            th,
+            td {
+                background-color: #F2F9FF;
+                border-bottom: 1px solid #BDDAF1;
+                padding: 12px;
+                color: #506588
+            }
+
+        }
+
+        .tableInnerTable {
+            padding: 30px;
+            @media (max-width:1199px) {
+                width: 1199px;
+                
+            }
+
+            table {
+                thead {
+                    tr {
+                        @include tableHeading;
+                    }
+                }
+
+                tfoot {
+                    tr {
+
+                        th,
+                        td {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #555555;
+                        }
+                    }
+                }
+
+                th {
+                    padding: 15px;
+                    border-bottom: 1px solid #AAD8F1;
+                }
+
+                tr {
+                    border-bottom: 1px solid #AAD8F1;
+                }
+
+                td {
+                    border: none;
+                    font-size: 16px;
+                    color: #555555;
+                }
+            }
+
+            .tableInnerWrap {
+
+                >div {
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+
+                .accDetail {
+                    padding: 0;
+                }
+            }
+
+
+
+            .accordianTitle {
+                background-color: #E8F7FF;
+                border-bottom: 1px solid #8BC2E1;
+                border-top: 1px solid #8BC2E1;
+
+                strong {
+                    font-weight: 600;
+                    color: #2E84B5;
+                    font-size: 18px;
+                }
+            }
+        }
+
     }
 
 }
