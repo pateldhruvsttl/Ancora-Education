@@ -2657,173 +2657,133 @@ input {
 
 
 
-// =================== financeAccount file all css ======================== 
-
-.financeWrap {
-    margin-top: 90px;
-    padding: 0 0 30px 0;
-
-    .DataGrid {
-        margin-top: 100px;
-    }
-
-    .studentCards {
-        padding: 20px 0 30px 0;
+// =================== finance Account file all css ======================== 
 
 
-        .studentDetailCard {
-            @include cardDesign;
-            padding: 30px;
-
-            .heading {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-
-            .otherText {
-                @include editBtn;
-
-                button {
-                    padding: 7px 15px;
-                }
-            }
-
-            .studentCardListing {
-                padding: 15px 0 0 0;
-
-                >div {
-                    padding: 0;
-                }
-
-                .studentCardList {
-                    text-align: left;
-                    padding: 0 0 10px 0;
+.studentCards {
+    padding: 20px 0 30px 0;
 
 
-                    span {
-                        color: #888888;
-                        font-size: 14px;
+    .studentDetailCard {
+        @include cardDesign;
+        padding: 30px;
 
-                    }
+        .heading {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
 
-                    p {
-                        color: #323232;
-                        font-weight: 500;
-                    }
-                }
+        .otherText {
+            @include editBtn;
+
+            button {
+                padding: 7px 15px;
             }
         }
 
-        .financeToolCard {
-            @include cardDesign;
-            padding: 30px;
+        .studentCardListing {
+            padding: 15px 0 0 0;
 
-            .financeListing {
-                padding: 30px 0 0 0;
+            >div {
+                padding: 0;
+            }
 
-                .MuiGrid2-grid-lg-4:last-child {
-                    .financeList {
-                        padding: 0;
-                        margin: 0;
+            .studentCardList {
+                text-align: left;
+                padding: 0 0 10px 0;
 
-                        &::before {
-                            display: none;
-                        }
-                    }
+
+                span {
+                    color: #888888;
+                    font-size: 14px;
+
                 }
 
+                p {
+                    color: #323232;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .financeToolCard {
+        @include cardDesign;
+        padding: 30px;
+
+        .financeListing {
+            padding: 30px 0 0 0;
+
+            .MuiGrid2-grid-lg-4:last-child {
                 .financeList {
-                    padding: 0 15px 0 0;
-                    margin: 0 15px 0 0;
-                    position: relative;
+                    padding: 0;
+                    margin: 0;
 
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        width: 1px;
-                        height: 180px;
-                        top: 0;
-                        right: -3px;
-                        background-color: #DCDCDC;
-                    }
-
-                    p {
-                        padding: 25px 0 0 0;
-                        line-height: 21px;
+                    &::before {
+                        display: none;
                     }
                 }
             }
 
-        }
-    }
+            .financeList {
+                padding: 0 15px 0 0;
+                margin: 0 15px 0 0;
+                position: relative;
 
-    .financeTableWrap {
+                @media (max-width:899px) {
+                    margin: 0 0 20px 0;
+                    padding: 0;
+                    
+                }
 
-        .financeTableInner {
-            background-color: #fff;
-            box-shadow: 0px 2px 16px #0000001f;
-            border-radius: 24px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 180px;
+                    top: 0;
+                    right: -3px;
+                    background-color: #DCDCDC;
 
-            table {
-                thead {
-                    th {
-                        &:first-child {
-                            padding-left: 50px;
-                        }
+                    @media (max-width:1200px) {
+                        height: 150px;
+
+                    }
+
+                    @media (max-width:899px) {
+                        display: none;
+
                     }
                 }
 
-                tbody {
-                    th {
-                        &:first-child {
-                            padding-left: 50px;
-                        }
-                    }
-                }
-            }
-
-            .tableContant {
-
-                th,
-                td {
-                    background-color: #F2F9FF;
-                    border-bottom: 1px solid #BDDAF1;
-                    padding: 12px;
-                    color: #506588
-                }
-
-            }
-
-            .tableInnerTable {
-                padding: 0 30px;
-
-                .tableInnerWrap {
-                    padding: 30px 0 0 0;
+                p {
+                    padding: 25px 0 0 0;
+                    line-height: 21px;
                 }
             }
         }
 
-        .tableHeading {
-            @include tableHeading;
-            padding: 0 10px
-        }
-
-        .mainTable {
-            margin-bottom: 30px;
-            background-color: #fff;
-            border-radius: 24px;
-            box-shadow: 0px 2px 16px #0000001f;
-        }
-    }
-
-    .tableTopHeading {
-        h3 {
-            @include tableTopHeading
-        }
     }
 }
 
+
+.financeWrap {
+    margin-top: 90px;
+
+    .tableInnerWrap+.tableInnerWrap {
+        padding: 20px 0 0 0;
+    }
+
+
+}
+
+.tableTopHeading {
+    h3 {
+        @include tableTopHeading;
+        padding: 0 0 10px 0
+    }
+}
 
 .MuiDataGrid-footerContainer {
     display: none !important;
@@ -3020,25 +2980,28 @@ input {
 }
 
 
-// ================ Academic Table file css =============
+// ================ Academic Account file css =============
 
 .academicAccountWrap {
     margin: 90px 0 0 0;
+
+    .academicTableWrap {
+        padding: 10px 0 30px 0;
+    }
 
     .academicTableInner {
         background-color: #fff;
         box-shadow: 0px 2px 16px #0000001f;
         border-radius: 24px;
-        margin: 0 0 30px 0;
 
         .tableHeading {
             @include tableHeading;
         }
 
-        table{
+        table {
             @media (max-width:1199px) {
                 width: 1199px;
-                
+
             }
         }
 
@@ -3075,9 +3038,10 @@ input {
 
         .tableInnerTable {
             padding: 30px;
+
             @media (max-width:1199px) {
                 width: 1199px;
-                
+
             }
 
             table {
