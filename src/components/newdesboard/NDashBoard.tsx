@@ -5,12 +5,13 @@ import Navbar from '../../common/navbar/Navbar'
 import '../newdesboard/Ndashboard.scss'
 import UserProfile from '../userprofile/userprofile'
 import Accessing from '../accessingCMS/accessing'
-import '../../css/global.scss'
 import Academics from '../academic/academic'
 import Finance from '../financesAccount/finances'
 import StudentService from '../studentService/studentservice'
 import Courses from '../courses/courses'
 import AcademicAccount from "../academicAccount/academicAccount";
+import FinancialAid from "../MyFinancialAid/financialAid";
+import '../../css/global.scss'
 
 function Dashboard() {
 
@@ -18,7 +19,7 @@ function Dashboard() {
     return (
         <>
             <Navbar />
-            <AcademicAccount />
+            <FinancialAid />
             <Footer />
         </>
     )

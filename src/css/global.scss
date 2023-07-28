@@ -2734,7 +2734,7 @@ input {
                 @media (max-width:899px) {
                     margin: 0 0 20px 0;
                     padding: 0;
-                    
+
                 }
 
                 &:before {
@@ -3000,7 +3000,7 @@ input {
 
         table {
             @media (max-width:1199px) {
-                width: 1199px;
+                width: 1240px;
 
             }
         }
@@ -3030,7 +3030,7 @@ input {
             td {
                 background-color: #F2F9FF;
                 border-bottom: 1px solid #BDDAF1;
-                padding: 12px;
+                padding: 12px 16px;
                 color: #506588
             }
 
@@ -3040,7 +3040,7 @@ input {
             padding: 30px;
 
             @media (max-width:1199px) {
-                width: 1199px;
+                width: 1240px;
 
             }
 
@@ -3109,4 +3109,109 @@ input {
 
     }
 
+}
+
+
+
+
+// ================ finacial Aid file all css ===================
+
+.finacialAidWrap {
+
+    .css-1ps6pg7-MuiPaper-root {
+        box-shadow: none;
+    }
+
+    .academicTableInner {
+        .heading {
+            padding: 30px 0 0 30px;
+        }
+
+        .accordianTitle {
+            strong {
+                color: #506588 !important;
+            }
+
+            span {
+                display: block;
+                text-align: left;
+                color: #2B4574;
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        .tableInnerTable {
+            padding: 15px 30px 30px 30px;
+
+            .tableInnerWrap {
+                border: 1px solid #AAD8F1;
+                margin: 0 0 10px 0;
+
+                .tableHeading {
+                    background-color: #E8F7FF;
+                    text-align: left;
+                    padding: 15px;
+                    border-bottom: 1px solid #AAD8F1;
+
+                    strong {
+                        font-weight: 600;
+                        color: #506588;
+                        font-size: 18px;
+
+                    }
+                }
+            }
+
+
+
+            .accordianTitle {
+                border-top: none;
+                border-bottom: none;
+            }
+
+            table {
+                th {
+                    border-top: 1px solid #AAD8F1;
+                }
+
+                tbody {
+                    background-color: #F9FCFF;
+                }
+
+                tfoot {
+                    tr {
+
+                        td,
+                        th {
+                            background-color: #F9FCFF;
+                        }
+
+                        &:first-child {
+
+                            td,
+                            th {
+                                background-color: #E8F7FF;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .InnerPaddingTabel {
+                padding: 20px;
+                background-color: #F9FCFF;
+
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            flex-direction: row-reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
