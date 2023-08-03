@@ -59,11 +59,9 @@ function perfectinterview() {
                         </Stack>
                     </Container>
                 </Box>
-
                 <Box className='alertGrp'>
                     <Alert severity="error"><Typography component="strong">Alert:</Typography >You have not completed the enrollment process. Complete your enrollment now!</Alert>
                 </Box>
-
                 <Box className="contantWrap perfect-interview">
                     <Container maxWidth="xl">
                         <Box className="contentBox">
@@ -109,10 +107,7 @@ function perfectinterview() {
                                                             </Typography>
                                                         </Box>
                                                     </Grid>
-
-
                                                 </Grid>
-
                                             </Box>
                                         </Grid>
                                     </Grid>
@@ -144,11 +139,7 @@ function perfectinterview() {
                                                             <Typography component='p' className='text-with-icon'><Mail /><Typography component='a' href='#'>carole.dempsey@miller-motte.edu</Typography> </Typography>
                                                         </Box>
                                                     </Grid>
-
-
-
                                                 </Grid>
-
                                             </Box>
                                         </Grid>
                                     </Grid>
