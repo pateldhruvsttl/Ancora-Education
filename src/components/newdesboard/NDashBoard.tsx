@@ -11,6 +11,7 @@ import StudentService from '../studentService/studentservice'
 import Courses from '../courses/courses'
 import AcademicAccount from "../academicAccount/academicAccount";
 import FinancialAid from "../MyFinancialAid/financialAid";
+import PerfectInterview from "../PerfectInterview/perfectinterview";
 import '../../css/global.scss'
 
 function Dashboard() {
@@ -19,7 +20,7 @@ function Dashboard() {
     return (
         <>
             <Navbar />
-            <FinancialAid />
+            <PerfectInterview />
             <Footer />
         </>
     )
