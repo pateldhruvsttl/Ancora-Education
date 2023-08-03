@@ -11,7 +11,7 @@ import StudentService from '../studentService/studentservice'
 import Courses from '../courses/courses'
 import AcademicAccount from "../academicAccount/academicAccount";
 import FinancialAid from "../MyFinancialAid/financialAid";
-import PerfectInterview from "../PerfectInterview/perfectinterview";
+import PerfectInterview from "../PerfectInterview/PerfectInterview";
 import '../../css/global.scss'
 
 function Dashboard() {

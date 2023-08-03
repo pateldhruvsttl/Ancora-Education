@@ -7,11 +7,11 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Box from '@mui/material/Box/Box';
 import { Container } from '@mui/material';
 import Alert from '@mui/material/Alert';
-import './perfectinterview.scss';
+import '../PerfectInterview/PerfectInterview.scss'
 import '../userprofile/userprofile.scss';
 import Grid from '@mui/material/Unstable_Grid2';
 import Mail from '../../assets/icons/Mail';
-import LoanCalculator from '../../assets/images/PerfectInterview.png';
+import PerfectInterviewLogo from '../../assets/images/PerfectInterview.png';
 import Pdf from '../../assets/icons/Pdf';
 
 function perfectinterview() {
@@ -27,10 +27,10 @@ function perfectinterview() {
             href="#"
             onClick={handleClick}
         >
-            My Finances
+            My Academic
         </Link>,
         <Typography key="3" color="text.primary">
-            Accessing My 1098-T
+            Academic Completed Documents
         </Typography>,
     ];
 
@@ -78,7 +78,7 @@ function perfectinterview() {
                                                 <Grid container spacing={0} p={0}>
                                                     <Grid className="" lg={3} md={4} xs={12}>
                                                         <Box className="logo-perfectinterview">
-                                                            <img src={LoanCalculator} alt="Perfect Interview" />
+                                                            <img src={PerfectInterviewLogo} alt="Perfect Interview" />
                                                         </Box>
                                                     </Grid>
                                                     <Grid className="text-perfectinterview" lg={9} md={8} xs={12}>
